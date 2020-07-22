@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%= render "/top_includes.*" %>
+  <title><%= @item[:title] %> - <%= COURSE_SHORT_NAME %></title>
+</head>
+
+<body>
+  <% @citem = Toc.instance.n2c(@item) %>
+  <%= render "/banner.*", toc: Toc.instance, item: item, citem: @citem %>
+  <%= render "/nav-menus.*", toc: Toc.instance, item: item, citem: @citem %>
+  <section>
+    <div class="container DocSearch-content">
+      <div class="row">
+        <div class="col-md-9">
+          <%= render "/body_header.*", toc: Toc.instance, item: item, citem: @citem %>
+          <%= yield %>
+        </div>
+        <%= render "/sidebar.*" %>
+      </div>
+    </div>
+  </section>
+  <%= render "/bottom_includes.*" %>
+  <footer>
+    <%= render "/body_footer.*" %>
+  </footer>
+</body>
+
+</html>

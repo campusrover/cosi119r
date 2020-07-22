@@ -1,0 +1,29 @@
+---
+title: "Guest Lecture: Charlie Squires"
+desc: Electronics, Kinematics, Kalman Filters
+homework: 1) Read and respond to warmups for PRR Chapter 10
+cat: fundmamentals
+---
+
+<%= homework_hdr %>
+
+1. <%= partbadge %> <%= pdfbadge %> **Read and Do** Read PRR Chapter 10. **PLEASE** remember to refer to this (<%= link_to_topic :localization %> in parallel and use the code I provided!). There's not a lot of code to write, but I would like you to actually run all the examples and try to understand what is going on. With that, answer the following questions about TF2:
+    1. Why is it important to get a good initial localization? Why is that needed at all? Could AMCL work without it?
+    1. This one is a little tricky. When I am using AMCL and move_base, can I use teleop to cause the robot to crash into the wall. Give your reasoning! You might  need to try this to get a good answer. It will be a very interesting experiment.
+    1. Please write one or two things that are still confusing to you; if it's all clear, then please write one or two major takeaways.
+    <%= deliverable "Your responses to the above questions, in brief, in a pdf with your name and homework number at the top." %>
+
+<%= include_topic :charlie_squires %>
+
+#### Outline
+
+The [attached zip file contains two powerpoint decks](/content/topics/documents/electronicslecturenotes.zip) that will be used today.
+
+* Real time systems and Noise
+* What is Noise
+* How to mitigate noise
+* Filters
+* Averaging Filters
+* Kalman Filters
+* Basic concepts of electricity using a Water Analog
+* Robotics, ROS and getting a job

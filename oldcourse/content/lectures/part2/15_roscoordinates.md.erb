@@ -1,0 +1,130 @@
+---
+title: ROS Coordinates
+desc: How does ROS handle coordinates, frames, transforms
+homework: 1) Do Maze Assignment
+cat: fundamentals
+---
+<%= homework_hdr %>
+
+1. **Programming: Maze** Please do <%= link_to_topic :hw_ros_maze %>. Note that this is a pair assignment, which means that you should work together with someone and have a single deliverable. It's important that you actually really collaborate. And that both people get a good understanding of how things work. Getting comfortable with your teammates and sorting out how to divide up the work will continue to be important. I have created the following teams:
+
+   * Dh Suh - Jesse Yang
+   * Matthew Milendorf - Jacob Smith
+   * Tirtho Aungon - Christopher Tan
+   * Zekai Wang - Maxwell Hunslinger
+   * Luis Andino - Benjamin Mallintyn  
+   * Addison Phita - Jade Garish
+   * Zhidong Liu - Danbing Chen
+
+#### Discussion about projects
+
+
+* "Post-it Note" exercise
+* List on the board the projects and teams that are in Discussion
+* Discuss what makes a good project and how many people is appropriate
+* Take a look at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713) for ideas. 
+* Lets look at <%= link_to_section :lab, :project_list %>
+
+#### Coordinate Systems:
+
+* Coordinate systems
+  * Where is a robot? How do we designate the location?
+  * If it's a surface moving mobile robot, then an x,y coordinate would seem to be sufficient
+  * We need to determine the units: for us, usually Meters
+  * We need to designate the origin
+  * Anything else?
+
+* What about the "real world"?
+  * Where is that 0,0?
+  * Does it matter?
+
+* What part of the robot are we talking about?
+  * The "middle"?
+  * Who says where the middle is?
+  * Does it matter how high of the ground it is?
+
+* What about where it is pointing?
+  * Is that part of the orientation?
+  * What does it mean to tell the robot to rotate right or left?
+  * Is that direction also part of the orientation in space?
+  * When would that matter?
+
+* What other aspects of orientation in space?
+  * If the Robot has a camera mounted on it?
+  * If there is an arm?
+  * Robot pushing an elevator button
+
+* Taking action based on orientation. Think about:
+  * Turn Right
+  * Turn North
+  * Point camera in the direction of the sound
+
+* "Pose"
+  * The combination of the robot's position and orientation (direction it is pointing)
+  * Each one has 3 dimensions: x,y,z and r,p,y
+  * x,y,z are cartesian coordinates
+  * r,p,y are Euler coordinates
+
+* Multiple Coordinate systems
+  * Each component of the robot potentially has a coordinate system
+  * Many of them have a fixed relationship to each other
+  * Point 0,0 for the robot's tf might be Point 10,0 for the camera's tf
+  * There are coordinate systems attached to (each) robot
+  * But also to the rest of the "world" the robot knows about
+
+* Converting between coordinate systems
+  * Very common calculation is to convert a certain actual point
+  * From one coordinate system to another
+#### ROS Units and data types
+
+##### Units in ROS
+* In ROS, we use the following units:
+   * Distance: Meter
+   * Velocity: Meters/Second
+   * Angles: Radians (sometimes degrees)
+   * Orientation: Euler angles (roll pitch yaw) or Quaterions
+
+* Euler Angles and Quaterions
+   * Conventional way to represent orientation
+   * Pitch, Roll, Yaw (from airplanes)
+   * Can be radians or angles, but for ROS poses, it's radians
+   * Reminder: Radians go from 0 (0 degrees) to 2 * PI (360 degrees == 0 degrees)ss
+   * Quaternion represents the same, but with 4 numbers
+   * There's an exact conversion between Euler angles and Quaterions
+   * For subtle mathematical reasons, when combining a series of rotations, Quaterions work better
+   * Don't try to interpret the x,y,z,r of a quaternion, it doesn't have an intuitive mapping to x,y and z euler angles.
+   
+* Points
+   * x, y, z as float64 (double)
+   * Right Hand Rule
+   * positive x-forward, positive y-left, positive z-up
+ 
+##### Datatypes in ROS
+
+* ROS "messages", also *.msg files
+* Really amount to a C `struct`
+
+* Point (geometry_msgs/Point.msg)
+   * x,y,z: float64
+   * A point in 3D space
+ 
+ * Vector3 (geometry_msgs/Vector3.msg)
+   * x, y, z: float64
+   * Simple, generic representation of 3 float64
+
+ * Orientation (geometry_msgs/Quaternion.msg)
+   * x, y, z, w: float64
+   * An orientation in space, in quaternion form
+   * Quaterions are another way to express orientation
+
+ * Pose (geometry_msgs/Pose.msg)
+   * position: Point
+   * orientation: Quaternion
+   * A combination of "where" and "facing what way"
+
+* Twist (geometry_msgs/Twist.msg)
+   * linear, angular: Vector3
+   * Velocity in free space, broken into linear and angular
+ 
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>

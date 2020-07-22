@@ -1,0 +1,39 @@
+---
+title: "How do robots know what to do?"
+desc: "Big Themes: How do Robots know what to do?"
+homework: 1) Read and do PRR Chapters 1 and 2; 2) Demonstrate booting to ssd
+cat: fundamentals
+---
+<%= include_topic :whattodo %>
+
+<%= homework_hdr %>
+
+1. <%= partbadge %> **Reading**:  PRR - Chapters 1,2 (Follow along - <%= link_to_topic :ros_intro %>, <%= link_to_topic :ros_fundamentals %>). After doing this please answer the following warmup questions:
+    * It is said that ROS nodes communicate peer to peer. What does this mean?
+    * If a ROS node is running on a robot and another one is running on my laptop, how do they even talk to each other?
+    * In what way is a robot `pose` different from its `position`?
+    * What one or two things are you still totally confused about in this reading? If its all clear, then what are your biggest takeaways from this reading?
+    * <%= deliverable "Submit warmup questions in Latte" %> as a pdf.
+
+1. <%= partbadge %> <%= zipbadge %> **Programming Environment**: Demonstrate booting to the SSD. Make a short narrated video with your phone showing your computer booting up into Linux and you running roscore from the shell. If roscore runs you likely have a good install. <%= deliverable "Your short video" %>
+
+<%= include_topic :cosi119a_book %>
+
+#### Review
+* <%= link_to_topic :threads_processes %>
+* <%= link_to_topic :unix_shell %>
+
+<%= include_topic :ros_intro %>
+<%= include_topic :ros_fundamentals %>
+
+#### Review
+* Autonomous robot behaviors are mechanisms constructed from carefully designed algorithms and representations.
+* What's an operating system?
+* Robot behavior is inherently concurrent and the code therefore his highly concurrent
+* Requires the use of some kind of distributed operating system
+* Distributed nature of behavior
+* ROS nodes, topics and messages
+
+#### Next Class
+* Look at homework: <%= link_to_next_lecture %>
+

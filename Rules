@@ -1,0 +1,80 @@
+require './cg_config.rb'
+
+preprocess do
+  Toc.instance.prepare @items, SECTION_CONFIG
+end
+
+compile '/bootstrap/**/*' do
+  nil
+end
+
+compile '/extras/**/*' do
+  nil
+end
+
+compile '/content/topics/robotcode/**/*' do
+  nil
+end
+
+compile '/content/scripts/**/*' do
+  nil
+end
+
+compile '/**/*.ical.erb' do
+  filter :erb
+end
+
+compile '/**/*.{md,ical}.erb' do
+  if item[:status] != "hidden"
+    filter :erb
+    filter :kramdown, coderay_line_numbers: nil
+    layout '/course.*'
+  else
+    nil
+  end
+end
+
+compile '/**/*.md.erb', rep: :slides do
+  if item[:status] != "hidden"
+    filter :erb
+    layout '/slides.*'
+    write item.identifier.without_ext + '/slides.html'
+  else
+    nil
+  end
+end
+
+compile '/**/*' do
+  if item.binary? || item[:status] == "hidden"
+    nil
+  end
+end
+
+route '/bootstrap/**/*' do
+  @item.identifier.to_s
+end
+
+# Select which .md.erb becomes the home page of the site
+route HOME_PAGE do
+  '/index.html'
+end
+
+route HOME_PAGE, rep: :slides do
+  '/slides.html'
+end
+
+route '/**/*' do
+  if item[:extension].nil?
+    raise RuntimeError, "Missing required extension: \".#{item.identifier}\""
+  elsif item.binary?
+    item.identifier.to_s
+  elsif item[:status] == "hidden"
+    nil
+  elsif item[:type] == "subsection"
+    nil
+  elsif item[:extension] != "css"
+    item.identifier.without_ext + '/index.html'
+  end
+end
+
+layout '/**/*', :erb

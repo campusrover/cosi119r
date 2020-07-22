@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg bg-dark py-0">
+  <nav class="nav py-0">
+    <% MENULINKS.each do |label, link| %>
+    <a class="nav-link py-0 text-light" href="<%= link %>">
+      <%= label %>
+    </a>
+    <% end %>
+  </nav>
+  <div class="navbar-control py-0">
+    <form role="form" class="form-inline">
+      <div class="input-group input-group-sm">
+        <input type="search" class="form-control" placeholder="search..." id="tipue_search_input"
+          autocomplete="off" required />
+      </div>
+    </form>
+  </div>
+</nav>

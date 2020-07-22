@@ -7,17 +7,17 @@
 require 'coursegen'
 
 # AUTHOR
-AUTHOR_NAME = 'yourname'
-AUTHOR_EMAIL = 'yourname'
+AUTHOR_NAME = 'R. Pito Salas'
+AUTHOR_EMAIL = 'pitosalas@brandeis.edu'
 COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}"
 
 # Bucket Deployment of the course
-AWS_BUCKET = "yourbucketname"
+AWS_BUCKET = "cosi102r"
 
 # COURSE
-COURSE_SHORT_NAME = 'cool'
-COURSE_LONG_NAME = 'Cool Course'
-COURSE_ABBREV = 'CC'
+COURSE_SHORT_NAME = 'Robotics'
+COURSE_LONG_NAME = 'Autonomous Robotics'
+COURSE_ABBREV = 'AR'
 
 # Lectures_schedule defines the schedule of lectures.
 #
@@ -49,7 +49,8 @@ SECTION_CONFIG = [
   SectionDef.new("Intro", "intro", type: :section, collapsed: false, bullet: :star),
   SectionDef.new("Lectures", "lectures",
                  type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
-  SectionDef.new("Homework", "homework", hidden: true, type: :section),
+  SectionDef.new("Homework", "homework", hidden: false, type: :section),
+  SectionDef.new("topics", "topics", hidden: true, type: :section)
 ].freeze
 
 # SITE

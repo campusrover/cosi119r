@@ -50,6 +50,8 @@ SECTION_CONFIG = [
   SectionDef.new("Lectures", "lectures",
                  type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
   SectionDef.new("Homework", "homework", hidden: false, type: :section),
+  SectionDef.new("Background", "background", hidden: false, type: :section),
+  SectionDef.new("extras", "extras", hidden: true, type: :section),
   SectionDef.new("topics", "topics", hidden: true, type: :section)
 ].freeze
 
@@ -63,7 +65,7 @@ SITE_URL = "http://coolcourse.s3-website-us-east-1.amazonaws.com"
 # This is usually /content/index.md.erb.
 #
 # Note: the .erb suffix is required when setting the HOME_PAGE path.
-HOME_PAGE = "/content/intro/welcome.md.erb"
+HOME_PAGE = "/content/intro/10_syllabus.md.erb"
 
 # Menulinks defines the links on the navigation bar.
 # They are formatted as "Name" - "URL" pair.
@@ -71,7 +73,7 @@ HOME_PAGE = "/content/intro/welcome.md.erb"
 # Examples:
 #   %w[HOME /content/index.md]
 #   %w[TOC /content/course_toc.md]
-MENULINKS = [%w[lectures /content/intro/welcome.md/]].freeze
+MENULINKS = [%w[syllabus /intro/10_syllabus.md.erb]].freeze
 
 # Helpful_box provides a feedback box on the sidebar.
 #

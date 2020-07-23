@@ -12,7 +12,7 @@ AUTHOR_EMAIL = 'pitosalas@brandeis.edu'
 COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}"
 
 # Bucket Deployment of the course
-AWS_BUCKET = "cosi102r"
+AWS_BUCKET = "cosi119r"
 
 # COURSE
 COURSE_SHORT_NAME = 'Robotics'
@@ -59,7 +59,7 @@ SECTION_CONFIG = [
 #
 # The URL of the deployed site.
 # Please include any http or https prefix.
-SITE_URL = "http://coolcourse.s3-website-us-east-1.amazonaws.com"
+SITE_URL = "http://cosi119r.s3-website-us-west-2.amazonaws.com"
 
 # Home_page sets the home page of the site.
 # This is usually /content/index.md.erb.

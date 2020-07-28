@@ -25,8 +25,8 @@ COURSE_ABBREV = 'AR'
 # and 2) figure out the ordering of classes on the sidebar.
 
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jul-20-2020",
-  weekdays: [:monday,],
+  first_day: "aug-27-2020",
+  weekdays: [:tuesday, :thursday],
   start_times: ["15:30", "15:30"],
   end_times: ["16:50", "16:50"],
   number: 28,
@@ -49,7 +49,7 @@ SECTION_CONFIG = [
   SectionDef.new("Intro", "intro", type: :section, collapsed: false, bullet: :star),
   SectionDef.new("Lectures", "lectures",
                  type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
-  SectionDef.new("Homework", "homework", hidden: false, type: :section),
+  SectionDef.new("Homework", "homework", hidden: true, type: :section),
   SectionDef.new("Background", "background", hidden: false, type: :section),
   SectionDef.new("extras", "extras", hidden: true, type: :section),
   SectionDef.new("topics", "topics", hidden: true, type: :section)

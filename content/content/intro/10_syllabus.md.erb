@@ -5,8 +5,8 @@ desc: Syllabus for Cosi119a
 <% tbh = TableHelper.new(:normal) %>
 <% tbh.headers("", "") %>
 <% tbh.row("Instructor", "Pito Salas") %>
-<% tbh.row("Schedule", "TBD") %>
-<% tbh.row("Location", "TBD") %>
+<% tbh.row("Schedule", "10:00am to 11:30am, Tuesdays and Thursdays") %>
+<% tbh.row("Location", "Zoom, mostly") %>
 <% tbh.row("On-demand office Hours", "http://www.calendly.com/pitosalas/ftf") %>
 <% tbh.row("Prerequisites", "Cosi12b, 21a and one other elective") %>
 <% tbh.row("Expectations", "Success in this 4 credit hour course is based on the expectation that students will spend a total of 10-15  hours every week on it") %>
@@ -17,14 +17,22 @@ desc: Syllabus for Cosi119a
 
 <%= include_topic :cosi119a_learningobjectives %>
 
+<%= include_topic :cosi119a_modality %>
+
 <%= include_topic :cosi119a_grading %>
 
 <%= include_topic :cosi119a_prerequisites %>
 
-<%= include_topic :crlab_course_materials %>
+<%= include_topic :cosi119a_course_materials %>
 
-#### General Policies
+## General Policies
 
 <%= include_topic :syllabus_change_policy %>
 
-<%= include_topic :experiential %>
+### Academic Integrity 
+
+<%= include_topic :academic_integrity %>
+
+<%= include_topic :class_participation %>
+
+<%= include_topic :participation_blog %>

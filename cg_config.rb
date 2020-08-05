@@ -107,7 +107,7 @@ SEARCH_CONFIG = {
 # SLIDES
 SLIDES_CONFIG = {
   # Ignore_selectors ignore certain html elements from rendering in the slides.
-  ignore_selectors: ['li ul'],
+  ignore_selectors: ['li ul', 'li p:not(:first-child)'],
 
   # Reveal.js specific options
   # See: https://revealjs.com/config/

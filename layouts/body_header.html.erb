@@ -12,11 +12,11 @@
             <% if citem.lecture? && citem.section != "root" %>
               | <%=link_to_next(toc, item) %>
             <% end %>
-            <% if citem.slides %> | 
-              <%= link_to_slides %>
-            <% end %>
-            | <%= link_to_homework citem %>
+          | <%= link_to_homework citem %>
             </span>
+        <% end %>
+        <% if citem.slides %> | 
+            <%= link_to_slides %>
         <% end %>
       </span>
     </h1>

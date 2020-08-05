@@ -46,11 +46,11 @@ LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
 # Additionally, you can choose to hide the section on the sidebar by setting
 # hidden: true.
 SECTION_CONFIG = [
-  SectionDef.new("Intro", "intro", type: :section, collapsed: false, bullet: :star),
+  SectionDef.new("Welcome", "intro", type: :section, collapsed: false, bullet: :star),
   SectionDef.new("Lectures", "lectures",
                  type: :lecture, schedule: LECTURES_SCHEDULE_CONFIG, bullet: :dash),
   SectionDef.new("Homework", "homework", hidden: true, type: :section),
-  SectionDef.new("Background", "background", hidden: false, type: :section),
+  SectionDef.new("Course Resources", "background", hidden: false, type: :section),
   SectionDef.new("extras", "extras", hidden: true, type: :section),
   SectionDef.new("topics", "topics", hidden: true, type: :section)
 ].freeze

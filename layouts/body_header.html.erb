@@ -5,19 +5,19 @@
       <span style="font-size: 1rem;">
         <% if citem.lecture? %>
           (<%= citem.lecture_date_s %>, lect <%= citem.lecture_number.to_s %>, wk <%= ((citem.lecture_number)/2).to_s %>)
-          <span class="float-right">
-            <% if citem.lecture? && citem.section != "root" %>
-              | <%= link_to_prev(toc, item) %> 
-            <% end %>
-            <% if citem.lecture? && citem.section != "root" %>
-              | <%=link_to_next(toc, item) %>
-            <% end %>
-          | <%= link_to_homework citem %>
-            </span>
         <% end %>
-        <% if citem.slides %> | 
-            <%= link_to_slides %>
-        <% end %>
+        <span class="float-right">
+          <% if citem.lecture? && citem.section != "root" %>
+            | <%= link_to_prev(toc, item) %> 
+          <% end %>
+          <% if citem.lecture? && citem.section != "root" %>
+            | <%=link_to_next(toc, item) %>
+          <% end %>
+            <%= link_to_homework citem %>
+          <% if citem.slides %> | 
+              <%= link_to_slides %>
+          <% end %>
+        </span>
       </span>
     </h1>
   </div>

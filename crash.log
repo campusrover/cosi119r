@@ -1,8 +1,8 @@
-Crashlog created at 2020-08-06 07:52:43 -0400
+Crashlog created at 2020-08-11 10:47:00 -0400
 
 ===== MESSAGE:
 
-RuntimeError: 'gopigo3_intro': invalid reference in section "topics"
+RuntimeError: 'gpg_overview': duplicate referenced in section "topics"
 
 ===== ITEM BEING COMPILED:
 
@@ -10,7 +10,7 @@ Current item: /content/lectures/part1/15_rosfundamentals.md.erb (:default repres
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/data/section.rb:22:in `find_by_short_name'
+  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/data/section.rb:23:in `find_by_short_name'
   1. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/data/toc.rb:52:in `lookup_citem'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/helpers/content_helpers.rb:30:in `lookup_nitem'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/helpers/content_helpers.rb:4:in `include_topic'
@@ -353,11 +353,14 @@ Darwin iMac-2018.local 19.6.0 Darwin Kernel Version 19.6.0: Sun Jul  5 00:43:10 
   48. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/i18n-1.8.3/lib
   49. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/thread_safe-0.3.6/lib
   50. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/tzinfo-1.2.7/lib
-  51. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0
-  52. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0/x86_64-darwin19
-  53. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby
-  54. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0
-  55. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0/x86_64-darwin19
-  56. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby
-  57. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0
-  58. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/x86_64-darwin19
+  51. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/kramdown-2.2.1/lib
+  52. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/rexml-3.2.4/lib
+  53. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/rouge-3.13.0/lib
+  54. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0
+  55. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0/x86_64-darwin19
+  56. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby
+  57. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0
+  58. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0/x86_64-darwin19
+  59. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby
+  60. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0
+  61. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/x86_64-darwin19

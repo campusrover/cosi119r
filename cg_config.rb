@@ -73,7 +73,9 @@ HOME_PAGE = "/content/intro/10_syllabus.md.erb"
 # Examples:
 #   %w[HOME /content/index.md]
 #   %w[TOC /content/course_toc.md]
-MENULINKS = [%w[syllabus /intro/10_syllabus.md.erb]].freeze
+MENULINKS = [%w[lectures /content/intro/20_coursetoc.md/],
+             %w[homeworks /content/intro/40_weeks.md/],
+             %w[latte https://moodle2.brandeis.edu/course/view.php?id=21653]].freeze
 
 # Helpful_box provides a feedback box on the sidebar.
 #

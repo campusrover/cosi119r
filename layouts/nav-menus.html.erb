@@ -1,11 +1,15 @@
 <nav class="navbar navbar-expand-lg bg-dark py-0">
-  <nav class="nav py-0">
+  <nav class="btn-group-sm mr-5" role="group">
+    <span class="text-light">shortcuts: </span>
     <% MENULINKS.each do |label, link| %>
-    <a class="nav-link py-0 text-light" href="<%= link %>">
-      <%= label %>
-    </a>
+    <button type="button" class="btn btn-primary p-0">
+      <a class="nav-link py-0 text-light" href="<%= link %>">
+       <%= label %>
+      </a>
+      </button>
     <% end %>
   </nav>
+  <span class="text-light pr-2">search: </span>
   <div class="navbar-control py-0">
     <form role="form" class="form-inline">
       <div class="input-group input-group-sm">

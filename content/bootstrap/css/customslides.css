@@ -8,6 +8,12 @@
     font-size: 2.5rem
 }
 
+.reveal h4 {
+	font-family: telex;
+	font-size: 1.5rem;
+	margin-top: 10px;
+}
+
 .reveal li {
     margin-bottom: 15px;
     font-size: 1.8rem

@@ -10,7 +10,7 @@ title: Weekly Homeworks
 
 <%= list_of(source: "homework",
             rows: ["page"],
-            cols: [:order,  :title, :homework, :lectref],
-            headers: {order: "wk", lectref: "Lecture Topics", homework: "Major work", reading: "Reading", title: "details"},
+            cols: [:order,  :title, :due, :lectref],
+            headers: {order: "wk", lectref: "Lecture Topics", reading: "Reading", title: "Assignment Summary", due: "Due"},
             items: @items) %>
         

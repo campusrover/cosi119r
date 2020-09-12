@@ -4,7 +4,7 @@
       <%= citem.title %>
       <span style="font-size: 1rem;">
         <% if citem.lecture? %>
-          (<%= citem.lecture_date_s %>, lect <%= citem.lecture_number.to_s %>, wk <%= ((citem.lecture_number)/2).to_s %>)
+          (<%= citem.lecture_date_s %>, lect <%= citem.lecture_number.to_s %>)
         <% end %>
         <span class="float-right">
           <% if citem.lecture? && citem.section != "root" %>
@@ -24,4 +24,11 @@
     </h1>
   </div>
 </div>
-<div class="subheader"><%= citem.desc %></div>
+<div class="subheader">
+  <% if citem.desc %>
+    <%= citem.desc %>
+  <% end %>
+  <% if citem.due %>
+    Due date: <%= citem.due %>
+  <% end %>
+</div>

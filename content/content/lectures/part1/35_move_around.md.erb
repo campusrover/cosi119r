@@ -1,21 +1,10 @@
 ---
 title: "How do mobile Robots move?"
-cat: fundamentals
 desc: Wheels, legs and other ways for robots to move around 3D space
-homework: 1) Read PRR Chapters 8, 9; 2) Do Roomba Roamer Homework Part 1
+homework: week4
+slides: true
 ---
 <%= include_topic :effect %>
-
-<%= homework_hdr %>
-
-1. <%= pdfbadge %> **Read and Code** Read Chapters 8 **PLEASE** remember to refer to these (<%= link_to_topic :teleop_bot %> in parallel and use the code I provided! Please respond to the following warmup questions:
-    1. What features are added to produce kes_to_twist_using_rate.py from the previous version, why would that be useful and what line in the program contains the key change?
-    1. This will take a little research: on page 114 you see `rospy.Subscriber('keys', String, keys_cb, twist_pub)`. What does each parameter do?
-    1. On page 124 you see `./keys_to_twist_with_ramps.py _linear_scale:=0.5 _angular_scale:=1.0 _linear_accel:=1.0 _angular_accel:=1.0`. What does the `:=` notation mean or do?
-    1. Please write one or two things that are still confusing to you; if it's all clear, then please write one or two major takeaways.
-    <%= deliverable "Your responses to the above questions, in brief, in a pdf with your name and homework number at the top." %>
- <%= deliverable "Respond to the questions, and submit in a pdf" %>
-1. <%= zipbadge %> **Roomba Roamer**: Implement part 1 of <%= link_to_topic :hw_ros_roomba %> <%= deliverable "See the homework specification for your deliverables." %>
 
 #### Steering Wheeled vehicles
 
@@ -74,7 +63,7 @@ homework: 1) Read PRR Chapters 8, 9; 2) Do Roomba Roamer Homework Part 1
 * cmd_vel: needs to convert from high level units to motor commands
 * odom: needs to convert from sensors (motor decoder and others) into coordinates
 * Big deal is being aware of known errors from the manufacturer
-* We wont go into the detailed geometry and math but it is very well studied and undertood
+* We wont go into the detailed geometry and math but it is very well studied and understood
 * Our motors are Robotis Dynamixel. These seem super common.
 * [Dynamixel Spec Sheet](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/)
 
@@ -98,7 +87,7 @@ homework: 1) Read PRR Chapters 8, 9; 2) Do Roomba Roamer Homework Part 1
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
 * Our Robotis TB3 Burger uses [HLS-LFCD2](https://dabit.industries/products/360-laser-distance-sensor-lds-01-lidar)
-* Review of dead reconning
+* Review of dead reckoning
 * Review of "real robots don't drive straight"
 
 ##### Work in groups

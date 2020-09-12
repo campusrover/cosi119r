@@ -1,30 +1,37 @@
 ---
-title: Template
-homework: template
-reading: template
-lectref: 
+title: Wall Following Paper, Intuition Question, Roomba Roamer PA Part 1
+lectref: rossims perception
+due: Sept 21, 2020 at 11:50pm
 ---
 
- 1. <%= partbadge %> <%= pdfbadge %> **Read and Code** Read Chapters 9 **PLEASE** remember to refer to this (<%= link_to_topic :building_maps %> in parallel and use the code I provided!) <%= deliverable "Respond to the questions, and submit in a pdf" %> Make sure you experiment with rqt_plot, that you run a Map Server, and that you try running the navigation stack. Respond to the following warmup questions:
-    1. Exactly what does this code do: `rate = rospy.Rate(10)`
-    1. What does `rqt_plot` do and why would you use it?
-    1. Precisely what does a Map Server do?
-    1. Examine what is in a rosbag file. What is in it?
-
- <%= deliverable "Respond to the questions, and respond to the post in the participation blog" %>
-
- 
- ## 1. Assignment 1
+## 1. Wall Following Paper <%= partbadge %>
+*(1 hour)*
 
 ### Purpose
+* Practice reading academic papers
+* Start seeing the subtlety of making robot do what is a trivial thing for a person to do
 
-* one or two sentence purpose of the Assignment
+### Steps
+* Read: [Wall Following Algorithms Paper](https://github.com/ssscassio/ros-wall-follower-2-wheeled-robot/blob/master/report/Wall-following-algorithm-for-reactive%20autonomous-mobile-robot-with-laser-scanner-sensor.pdf). Write up what your major takeaways are from this paper.
+* <%= deliverable "1 page max pdf writeup" %>
 
-### What you will learn 
+## 2. LIDAR - Use your intuition!
+*(0.5 hours)*
 
-* buletted list 
+I want you to use your intuition and your knowledge of geometry. Try to understand the data that comes from the LIDAR. You can think of them as "rays" that go in all directions. The data you get back is an array of distances to the first obstacle. Using words, diagrams and/or pseudo code, try and answer:
 
-### Tasks
+  * Given a single LIDAR sensor how would you detect that you are about the crash into a wall?
+  * How would you compute the angle at which you are approaching the wall?
+  * <%= deliverable "Submit your response as a pdf. Points off for a superficial answer." %>
 
-* Buletted list
+## 3. Implement ROS Roomba Part 1
+*(3 hours)*
+
+### Purpose
+* Deeper understanding of how to actually implement simple behaviors
+* Practice with getting your hands dirty with programming something a little more complicated
+
+### Steps
+* Implement part 1 of <%= link_to_topic :ros_roomba %> 
+* <%= deliverable "See the homework specification for your deliverables." %>
 

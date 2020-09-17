@@ -1,17 +1,17 @@
-Crashlog created at 2020-09-14 16:25:07 -0400
+Crashlog created at 2020-09-16 20:11:31 -0400
 
 ===== MESSAGE:
 
-ArgumentError: wrong number of arguments (given 1, expected 2..3)
+ArgumentError: wrong number of arguments (given 0, expected 1)
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/lectures/part1/22_rossims.md.erb (:default representation)
+Current item: /content/homework/05_week5.md.erb (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/helpers/link_to.rb:14:in `link_to'
-  1. item /content/lectures/part1/22_rossims.md.erb (rep default):5:in `get_binding'
+  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/helpers/navigation_helpers.rb:15:in `link_to_topic'
+  1. item /content/homework/05_week5.md.erb (rep default):2:in `get_binding'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `eval'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `result'
   4. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'

@@ -7,13 +7,14 @@ slides: true
 ## How does a robot perceive
 
 ### Logistics
-
-### Discussion
-* Lets talk over your answers to the homework questions
 * Discussion of the pace of the course so far. Fast? Slow? 
-* Show projects area being developed
+* Request special workshops
+* Vibe check
+
+<slide_break></slide_break>
 
 ### Review - how it works in ROS
+
 * All your code (almost) in ROS is a node
 * All information (almost) is transferred in the form of messages
 * Sensors
@@ -35,24 +36,22 @@ slides: true
   * Degree of "randomness"
   * Exact dimensions of robots, obstacles, etc.
 
+<slide_break></slide_break>
 
-<%= include_topic :wander_bot %>
+### Video Interlude
 
-### Example - Simple "Roomba" pattern
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4Y7zG48uHRo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Roomba is iRobot's robotic vacuum cleaner. It seems to just drive forward until it gets to a wall and then turn some amount and then continue. We want to think through a simplistic version of this pattern.
+<hr>
 
-### Design
-* Loop forever
-    * While there a wall ahead
-        * Rotate in place
-    * Move forward until there's a wall ahead 
+<slide_break></slide_break>
 
-##### Discussion about this approach
-* What questions need to be answered?
-* Will it work?
+<%= include_topic :pid_control %>
 
-##### Lets look at some code that uses sensors
+<slide_break></slide_break>
+
+## Lets look at some code that uses sensors
+
 * `prrexamples/pid_driver4.py`
 * `prrexamples/pid_range.py`
 

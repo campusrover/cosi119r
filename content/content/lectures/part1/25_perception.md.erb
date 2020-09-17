@@ -10,113 +10,147 @@ slides: true
 
 ## Logistics
 
-* Review of answers in previous idk's
-
-## How do Robots Perceive?
-
-* Sensors are essential
-   * What is a sensor? <span class="question">Is a sensor an input or output device?</span>
-   * What happens to the sensing information
-   * How is it stored and detected and acted upon?
+* Pop Quiz => "idk"
+* Part two of Roomba will be first assignment for next week.
 
 <slide_break></slide_break>
 
-* Example: Lidar
-   * What is a Lidar
-   * What does it look like and how does it work?
-   * "Time of travel" detector
-   * What does the data look like? 
-      * [Look here fore the message definition](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
-      * `rostopic echo --noarr -c /scan`
-      * `roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch`
+### Review of answers in previous idk's and participation submissions
+
+* Units of Odom/Orientation? Quaternions
+* If Odometry used only wheel rotation the results are inaccurate due to slippage, skidding, and so on.
+* How does roscore coordinate communication between nodes?
+* What does roslaunch do?
+* What does catkin do?
+* What is remapping? :=
+* What is the key difference between a topic and a service? And what are some examples of services?
+* How can I determine how many degrees of freedom something has?
+* Look at LaserScan data and talk about the bearing formula
 
 <slide_break></slide_break>
 
-* Show code example of Lidar data: 
-   * Jupyter Notebook: ScanData Logger
-   * Start roscore, gazebo and rviz
-      * `roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch`
-      * `roslaunch turtlebot3_gazebo turtlebot3_gazebo_world.launch`
-   * Also look at rqt_chart
+### How do Robots Perceive? Sensors
+
+* What is a sensor? <span class="question">Is a sensor an input or output device?</span>
+* What happens to the sensing information
+* How is it stored and detected and acted upon?
 
 <slide_break></slide_break>
 
-* Subtleties:
-   * What do the directions mean?
-   * Are the directions absolute or relative?
-   * What if the robot is not pointing to where you think?
-   * Do they go clockwise or counterclockwise?
-   * Lets look at the data!
-   * It's not clean! (This is typical for all sensors)
-   * It is not accurate!
-   * It's sometimes wildly inaccurate
-   * It is constantly flooding in
+#### Types of Sensors
+
+* Is a sensor an input or output device?
+* Proprioception
+* Is a keyboard a sensor?
+* Is a joystick a sensor?
+* Is a map a sensor?
+* Active Vs. Passive
+* Sensor Fusion
 
 <slide_break></slide_break>
 
-* Types of Sensors
-   * Is a sensor an input or output device?
-   * Is a keyboard a sensor?
-   * Is a joystick a sensor?
-   * Is a map a sensor?
-   * Active Vs. Passive
-   * Sensor Fusion
+## Lidar
+
+* What is a Lidar
+* What does it look like and how does it work?
+* "Time of travel" detector
+* What does the data look like? 
+   * [Look here fore the message definition](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
+   * `rostopic echo --noarr -c /scan`
+   * `roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch`
 
 <slide_break></slide_break>
 
-* Lidar
-   * History
-   * How it works
-   * Key characteristics or features
-   * What data it provides
+### Lidar Subtleties
+
+* What do the directions mean?
+* Are the directions absolute or relative?
+* What if the robot is not pointing to where you think?
+* Do they go clockwise or counterclockwise?
+* Lets look at the data!
+* It's not clean! (This is typical for all sensors)
+* It is not accurate!
+* It's sometimes wildly inaccurate
+* It is constantly flooding in
+
 
 <slide_break></slide_break>
 
-* Motor (encoder)
-   * How it works
-   * Key characteristics or features
-   * What data it provides
+### Video Break
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HM23sjhtk4Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <slide_break></slide_break>
 
-* Camera
-   * How it works
-   * Key Characteristics or features
-   * What Data it provides
+### Breakout
+* Documentation for [LaserScan Data](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
+* Given
+   1. angle_min = 0 # exactly forward
+   1. angle_max = 359
+   1. range_min = 0.12
+   1. range_max = 3.5
+* With your teammates write a few lines of python
+* Set the variable wall_ahead to true or false
 
 <slide_break></slide_break>
 
-* Depth Camera
-   * How it works
-   * Key Characteristics or features
-   * What data it provides
+### Other sensors
+
+#### Motor (encoder)
+
+* How it works
+* Key characteristics or features
+* What data it provides
 
 <slide_break></slide_break>
 
-* Sonar
-   * How it works
-   * Key Characteristics or features
-   * What data it provides
+#### Camera
+
+* How it works
+* Key Characteristics or features
+* What Data it provides
 
 <slide_break></slide_break>
 
-* Bump sensors
-   * How it works
-   * Key Characteristics or features
-   * What data it provides
+#### Depth Camera
+
+* How it works
+* Key Characteristics or features
+* What data it provides
 
 <slide_break></slide_break>
 
-* Magnetometer, barometer, accelerometer
-   * How it works
-   * Key Characteristics or features
-   * What data it provides
+#### Sonar
+
+* How it works
+* Key Characteristics or features
+* What data it provides
 
 <slide_break></slide_break>
 
-* GPS
-   * How it works
-   * Key Characteristics or features
-   * What data it provides
+#### Bump sensors
+
+* How it works
+* Key Characteristics or features
+* What data it provides
 
 <slide_break></slide_break>
+
+#### IMU - Inertial Measurement Unit
+
+* See [Accelerometer, Gyro, IMU buying guide](https://www.sparkfun.com/pages/accel_gyro_guide)
+* Acceleration: dynamic and static (as in gravity)
+* Gyro: Angular velocity - how fast spinning around an acciss
+* Can have them independently or combined into an IMU
+
+<slide_break></slide_break>
+
+#### GPS
+
+* How it works
+* Key Characteristics or features
+* What data it provides
+
+<slide_break></slide_break>
+
+## See you next week!

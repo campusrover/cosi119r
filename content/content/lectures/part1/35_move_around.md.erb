@@ -6,45 +6,75 @@ slides: true
 ---
 <%= include_topic :effect %>
 
+<slide_break></slide_break>
+
 ## Logistics
 
-# Steering Wheeled vehicles
+* Vibe check
 
-## Our goal
-* Focusing for now on autonomous, ground based mobile robots. But principles apply
+<slide_break></slide_break>
+
+## Steering and navigation
+
+* Focusing for now on autonomous, ground based mobile robots. 
 * Software needs to be able to command the robot
-* Consider micro and macro
-  * Steer from Waltham to Boston
-  * Steer from Shapiro to Usdan
-  * Stay in a lane
-  * Drive in a straight road
-  * Turn a corner
-  * Make a 90 degree turn
-  * Simply drive in a straight line
-<%= discussion_box "Lets take each of these in turn. "%>
-* At the micro level:
-  * Move at x Meters/second
-  * Turn at 10 degrees/second
- <%= discussion_box "Lets take each of these in turn. "%>
- 
-##### Steering for wheeled vehicles
-* Degrees of freedom
-    * Train? 
-    * Baseball?
-    * Drone?
-    * Car?
-    * Tank?
-* Holonomic vs. Non-
-    * Holonomic means able to move in all possible dimensions
-    * Non-holonomic means that it cannot do this
+* Given wheels with motors, or tracks, or casters, or legs
+* Electricity controlled through software makes them move
+* So consider this...
 
-##### Mobile Robots
+<slide_break></slide_break>
+
+## What is needed in terms of data + algorithms to
+  1. Steer from Shapiro to Usdan
+  2. Steer from Waltham to Boston
+  3. Stay in a lane
+  4. Drive in a straight road
+  5. Turn a corner
+  6. Make a 90 degree turn
+  7. Simply drive in a straight line
+  8. Move at x Meters/second
+  9. Turn at 10 degrees/second
+
+<hr/>
+
+* Break into break out rooms by team
+* Use this [jamboard](https://jamboard.google.com/d/1qq1H52BSNmU1744ittKyGUjwiLyi8kKuJIJt2sP02iM/edit?usp=sharing) to make notes during your breakout.
+* Indicate which one you're answering that have not been answered yet.
+
+<slide_break></slide_break>
+
+## Steering for wheeled vehicles
+
+* Degrees of freedom for different things
+  1. Train? 
+  1. Baseball?
+  1. Drone?
+  1. Car?
+  1. Tank?
+* Holonomic vs. Non-
+  1. Holonomic means able to move in all possible dimensions
+  1. Non-holonomic means that it cannot do this
+
+<slide_break></slide_break>
+
+## Types Mobile Robots
 * Motors drive Wheels
-  * Differential Drive
-  * Tri-cycle vehicle
-  * [Ackermann Steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
-  * Articulated Vehicle
-  * There are more
+* Differential Drive
+* Tri-cycle vehicle
+* [Ackermann Steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
+* Articulated Vehicle
+* Legged
+
+<slide_break></slide_break>
+
+### Video Interlude 1
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NIjodHA78UE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<slide_break></slide_break>
+
+### Different Configurations for wheeled
 
 * "Differential drive"
   * Steering is achieved by driving wheels at different speeds
@@ -56,26 +86,40 @@ slides: true
 * Ackerman Steering
   * Where the steering is achieved by actual rotation of the wheel mount
   * Note subtle difference from parallel steering
+* Four wheel drive
 * Articulated Vehicle
   * Where the vehicle itself has a pivot point
-* Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning (we won't get into the geometry calculations.)
+  * Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
 
-#### Firmware
+<slide_break></slide_break>
+
+### Firmware
+
 * Software and hardware architecture
 * cmd_vel: needs to convert from high level units to motor commands
 * odom: needs to convert from sensors (motor decoder and others) into coordinates
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
-* Our motors are Robotis Dynamixel. These seem super common.
-* [Dynamixel Spec Sheet](http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/)
 
-##### Other scenarios
+<slide_break></slide_break>
+
+## Another Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aE7RQNhwnPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<slide_break></slide_break>
+
+## Other scenarios
+* Legged Vehicles
 * Tracked vehicles (tanks)
 * Water surface vehicles
 * Under water vehicles
 * Aerial vehicles
 
-#### Terrain
+<slide_break></slide_break>
+
+## Terrain
+
 * Indoor vs. outdoor
   * Traction and slippage
   * Weather effects - wet, dry, light, dark
@@ -84,7 +128,9 @@ slides: true
   * Also affects levelness
   * Direction that cameras and sensors are pointed 
 
-#### Sensors
+<slide_break></slide_break>
+
+## Sensors
 * The role of sensors in controlling motion
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
@@ -92,8 +138,6 @@ slides: true
 * Review of dead reckoning
 * Review of "real robots don't drive straight"
 
-##### Work in groups
-* How would you get your robot to drive in a perfect 1 meter square?
+<slide_break></slide_break>
 
-#### Next Class
-* Look at homework: <%= link_to_next_lecture %>
+<%= include_image "/content/topics/images/thatsallfolks.jpg" %>

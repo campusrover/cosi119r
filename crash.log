@@ -1,4 +1,4 @@
-Crashlog created at 2020-09-16 20:11:31 -0400
+Crashlog created at 2020-09-23 21:17:41 -0400
 
 ===== MESSAGE:
 
@@ -6,12 +6,12 @@ ArgumentError: wrong number of arguments (given 0, expected 1)
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/homework/05_week5.md.erb (:default representation)
+Current item: /content/lectures/part1/35_move_around.md.erb (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/helpers/navigation_helpers.rb:15:in `link_to_topic'
-  1. item /content/homework/05_week5.md.erb (rep default):2:in `get_binding'
+  0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.0/lib/coursegen/course/helpers/content_helpers.rb:113:in `include_image'
+  1. item /content/lectures/part1/35_move_around.md.erb (rep default):137:in `get_binding'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `eval'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `result'
   4. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'

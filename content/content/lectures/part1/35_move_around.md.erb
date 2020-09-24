@@ -11,6 +11,7 @@ slides: true
 ## Logistics
 
 * Vibe check
+* Experiment using Jam Boards - have you?
 
 <slide_break></slide_break>
 
@@ -25,21 +26,18 @@ slides: true
 <slide_break></slide_break>
 
 ## What is needed in terms of data + algorithms to
+  1. Drive in a straight road
+  1. Turn a corner
+  1. Make a 90 degree turn
+  1. Stay in a lane
   1. Steer from Shapiro to Usdan
-  2. Steer from Waltham to Boston
-  3. Stay in a lane
-  4. Drive in a straight road
-  5. Turn a corner
-  6. Make a 90 degree turn
-  7. Simply drive in a straight line
-  8. Move at x Meters/second
-  9. Turn at 10 degrees/second
+  1. Move at x Meters/second
+  1. Turn at 10 degrees/second
 
 <hr/>
 
-* Break into break out rooms by team
-* Use this [jamboard](https://jamboard.google.com/d/1qq1H52BSNmU1744ittKyGUjwiLyi8kKuJIJt2sP02iM/edit?usp=sharing) to make notes during your breakout.
-* Indicate which one you're answering that have not been answered yet.
+* Break into break out rooms by team. Use this [jamboard](https://jamboard.google.com/d/1qq1H52BSNmU1744ittKyGUjwiLyi8kKuJIJt2sP02iM/edit?usp=sharing) to make notes during your breakout.
+* Answer in bullets, several per question. Indicate which one you're answering that have not been answered yet.
 
 <slide_break></slide_break>
 
@@ -51,19 +49,25 @@ slides: true
   1. Drone?
   1. Car?
   1. Tank?
-* Holonomic vs. Non-
-  1. Holonomic means able to move in all possible dimensions
-  1. Non-holonomic means that it cannot do this
 
 <slide_break></slide_break>
 
-## Types Mobile Robots
-* Motors drive Wheels
+## Holonomic vs. Non-Holonomic
+* Actual vs. Controllable degrees of freedom
+* If they are the same, then Holonomic
+* If they are different, then non-Holonomic
+
+<slide_break></slide_break>
+
+## Holonomic vs. Non-Holonomic
+
+* Car
+  1. Will never leave the ground
+  1. So it's actual DoF  is 3 (move forward and sideways, and yaw)
+  1. But its controllable DoF is 2 (wheel rotation and steering)
 * Differential Drive
-* Tri-cycle vehicle
-* [Ackermann Steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
-* Articulated Vehicle
-* Legged
+  1. Actual DoF is 3 also
+  1. Controllable DoF is 1 (wheel rotation)
 
 <slide_break></slide_break>
 
@@ -83,7 +87,7 @@ slides: true
 * Tri-cycle steering
   * Two fixed Wheels
   * A third wheel with a steerable mount
-* Ackerman Steering
+* [Ackermann Steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
   * Where the steering is achieved by actual rotation of the wheel mount
   * Note subtle difference from parallel steering
 * Four wheel drive
@@ -123,7 +127,8 @@ slides: true
 * Indoor vs. outdoor
   * Traction and slippage
   * Weather effects - wet, dry, light, dark
-* Inclines and declines
+  * Visibility of Sky
+* Inclines and declines and surface
   * Needs more force
   * Also affects levelness
   * Direction that cameras and sensors are pointed 
@@ -134,7 +139,8 @@ slides: true
 * The role of sensors in controlling motion
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
-* Our Robotis TB3 Burger uses [HLS-LFCD2](https://dabit.industries/products/360-laser-distance-sensor-lds-01-lidar)
+* TB3 Burger uses [HLS-LFCD2](https://dabit.industries/products/360-laser-distance-sensor-lds-01-lidar)
+* MiniRover uses [YDlidar X4](https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR%20X4%20Datasheet.pdf)
 * Review of dead reckoning
 * Review of "real robots don't drive straight"
 

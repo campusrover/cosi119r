@@ -31,3 +31,7 @@ Usdan
 Tri
 Dynamixel
 teleop
+rqt_plot
+cmd_vels
+rosbag
+gmapping

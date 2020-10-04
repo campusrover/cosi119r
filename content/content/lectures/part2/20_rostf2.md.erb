@@ -5,23 +5,21 @@ hwref: week6
 slides: yes
 ---
 ## Welcome!
+* Vibe Check
 
+<slide_break></slide_break>
 
-* "Post-it Note" exercise
-* List on the board the projects and teams that are in Discussion
-* Discuss what makes a good project and how many people is appropriate
-* Take a look at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713) for ideas. 
+## Review
 
-## Video Interlude
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PFjIAf_99CI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<hr/>
-
-#### Review
 * An x,y,z is always within a specific coordinate system
 * For example, is it relative to the bottom left corner of the room, or the center of the robot?
 * It is far easier to reason in an appropriate coordinate system
 * As long as there are easy ways to convert back and forth.
+
+<slide_break></slide_break>
+
+### Coordinate systems
+
 * Pose = position and orientation
 * Pose is always with respect of a specific coordinate frame or TF
 * Usually a coordinate begins as the "natural" way to think about It
@@ -34,12 +32,17 @@ slides: yes
   * What direction is the nearest door from me?
 * Compare starboard/port and driver vs. passenger side
 
-#### TF
+<slide_break></slide_break>
+
+## TF
 * TF package in ROS is central
 * It recently was rewritten and shows up as TF2 in many places
 * It is interesting and important to understand in some more detail
 
-##### TF framework in ROS
+<slide_break></slide_break>
+
+### TF framework in ROS
+
 * An API to make conversions of coordinates between systems easy and efficient
 * Coordinate systems are given names, e.g. "world" or "lidar-1"
 * They are organized into a tree
@@ -49,73 +52,103 @@ slides: yes
    * Generally this is a node who knows something about one or the other.
    * For example, the node that moved the arm, can report the new relative position
    * That is, to get from tf "a" to tf "b", add add 10 to the x or rotate 180 degrees around z.
-* TF Listeners
-   * If my node needs to interpret coordinates I might listen to tf messages
-   * Allowing to convert coordinates between any two coordinate frames.
 
-##### Lets look at some code
+<slide_break></slide_break>
+
+* TF Listeners
+* If my node needs to interpret coordinates I might listen to tf messages
+  * Allowing to convert coordinates between any two coordinate frames.
+
+<slide_break></slide_break>
+
+## Video Interlude
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PFjIAf_99CI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/>
+
+
+### Lets look at some code
+
 * If you want to follow along, we are going to look at [Introduction to tf2](http://wiki.ros.org/tf2/Tutorials/Introduction%20to%20tf2)
-<%= code_begin %>
-$ sudo apt-get install ros-melodic-turtle-tf2 ros-melodic-tf2-tools ros-melodic-tf
+
+<%= source_begin "language-bash" %>
+$ sudo apt-get install ros-melodic-turtle-tf2 \
+                       ros-melodic-tf2-tools ros-melodic-tf
 $ roslaunch turtle_tf2 turtle_tf2_demo.launch
-<%= code_end %>
+<%= source_end %>
+
 * Notice that as you use the cursor keys to teleop the orange turtle around, the grey one follows right on it's heels!
 
-##### High Level explanation
+<slide_break></slide_break>
+
+### High Level explanation
+
 * Code is using tf2 to create three coordinate frames: one for the "world", and one each for the two turtles
 * Realize that if we give turtle1's coordinates as x,y, we'd still need to say, in what coordinate frame those were.
 * In t1's coordinate frame, t1's coordinates are always 0,0!
 * Lets take a look!
-<%= code_begin %>
+
+<%= source_begin "language-bash" %>
 $ rosrun tf2_tools view_frames.py
 $ evince frames.pdf
-<%= code_end %>
+<%= source_end %>
+
 * See the three coordinate frames and their hierarchical relationship
 * The diagram doesn't display the actual transform just the relationships
 * To see those we need to echo the transform:
-<%= code_begin %>
+
+<%= source_begin "language-bash" %>
 $ rosrun tf tf_echo turtle1 turtle2
 $ rosrun tf tf_echo turtle1 world
-<%= code_end %>
+<%= source_end %>
 
 <%= discussion_box "You can see the transform needed to get from turtle1 to turtle2 is different from the one betweek turtle1 and world. Why is that?" %>
 
-##### Visualization
+<slide_break></slide_break>
 
-<%= code_begin %>
+## Visualization
+
+<%= source_begin "language-bash" %>
 $ rosrun rviz rviz -d `rospack find turtle_tf2`/rviz/turtle_rviz.rviz
-<%= code_end %>
+<%= source_end %>
 
 <%= discussion_box "You now visualize all three tfs. Why do two move and one stay still? " %>
 
-#####  Lets see how all this works: tf2_broadcaster
+<slide_break></slide_break>
+
+###  Lets see how all this works: tf2_broadcaster
 
 * Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_broadcaster.py`
 
-<%= code_begin %>
+<%= source_begin "language-bash"%>
 $ roslaunch learning_tf2 start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
-<%= code_end %>
+<%= source_end %>
 
 * Only one turtle so far!
 * Notice that it is publishing turtle1's `tf`s relative to world
 * Drive around and notice that it is updating turtle1's pose and also a transform
 
-#####  Lets see how all this works: tf2_listener
+<slide_break></slide_break>
+
+###  Lets see how all this works: tf2_listener
 
 * Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_listener.py`
-<%- code_begin %>
+<%= source_begin "language-bash"%>
 $ roslaunch learning_tf2 start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 $ rosrun tf tf_echo /world /turtle2
-<%= code_end %>
+<%= source_end %>
 
-##### tf2 frames are organized in a tree
+<slide_break></slide_break>
 
-<%= code_begin %>
+### tf2 frames are organized in a tree
+
+<%= source_begin "language-bash" %>
 $ rosrun tf2_tools view_frames.py
 $ evince frames.pdf
-<%= code_end %>
+<%= source_end %>
+
 * No cycles, one root
 * This ensures that there's only one path from one frame to another
 * Which ensure that we can compute the transform by following that path
@@ -123,8 +156,6 @@ $ evince frames.pdf
 * How to decide what the parent frame should be?
 * Its the one that has the most obvious and simple transform
 
-##### Adding a frame
+<slide_break></slide_break>
 
-
-#### Next Class
-* Look at homework: <%= link_to_next_lecture %>
+## That's All Folks!

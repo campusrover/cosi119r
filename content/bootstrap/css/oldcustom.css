@@ -90,35 +90,29 @@ h2 {
   margin-top: 20px;
   border-top: rgb(64, 56, 207) solid 2px;
   padding-top: 5px;
-  font-size: 1.25rem;
+  font-size: 1.30rem;
 }
 
 h3 {
-  border-top: grey dotted 1.5px;
-  font-size: 1.05rem;
-  margin-top: 1rem;
-  padding-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+h3.subheader {
+  /* border-bottom: rgb(64, 56, 207) solid 2px; */
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+
 }
 
 h4 {
-  font-size: 0.95rem;
-  margin-left: 10px;
-}
-
-div.subheader {
-  margin-top: -10px;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-
-h4+ol {
-  margin-left: 10px;
+  font-size: 1.0rem;
+  margin-left: 18px;
 }
 
 /* Table use only */
 h5 {
   margin-top: 15px;
-  font-weight: bold;
+  font-size: 0.8rem;
   font-variant: small-caps;
 }
 
@@ -182,20 +176,6 @@ footer {
 
 .helpful {
   visibility: hidden;
-}
-
-.jumbotron {
-  background-color: rgb(247, 231, 213);
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.iconbadge {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  color:#007bff;
-  width: 1.25rem; 
-  height: 1.25rem;
 }
 
 @media (max-width: 980px) {

@@ -6,54 +6,39 @@ slides: yes
 ---
 <%= include_topic :wheretheyare %>
 
-##### Hard because of Time Constraints
-* More papers to read
-* More demonstrations of "new" things, e.g. sensors, arm, etc
-* Show how to use other packages, e.g. pid
+<slide_break></slide_break>
 
-##### Will try to do
-* Let us form teams ourselves
-* More code walkthrough and explanations of code
-* Review code after submission so that we can learn and improve (2x)
-* More troubleshooting instructions
-* More relaxed in lecture
-* More diverse students
-* Strategies to solve problems in addition to examples.
+## Localization
 
-##### Need discussion
-* Clearer grading and rubrics - whats the difference between a 97 and 100? (2x)
-* More robot specific examples of actions and services early on
-* Less frequent, and harder assignments, slower pace for larger deliverables (2x)
-* More guided labs (there seem to be people falling behind)
-* More experimental, less theoretical
-* In class tutorials of all mathematical concepts
-
-#### Lab today
-* What (if any) guided lab topic?
-
-#### Localization
-
-##### What exactly is the problem with knowing where you are?
-
+* What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!
 * How would you do it with your eyes closed?
-* Recall `odometry` is like `dead reckoning`
+* Recall **odometry** is like **dead reckoning**
 * Lots of noise in the signal; accuracy varies; errors build up
 
-##### What kinds of landmarks can be used?
+<slide_break></slide_break>
+
+### What kinds of landmarks can be used?
+
 * Lidar detected fixed obstacles
 * Vision detected fixed obstacles
 * How can one obstacle be distinguished from another?
 
-##### Lidar detection
+<slide_break></slide_break>
+
+### Lidar detection
+
 * Robot has a 'map' of fixed obstacles
 * Robot compares that map with the apparent, transient, map from Lidar
 * Calculates a probability distribution of where it might be on that map
 * Process is called AMCL
 
-##### Visual Detection
+<slide_break></slide_break>
+
+### Visual Detection
+
 * Robot has a collection of scenes it can recognize.
-* Some requirements:
+* Needs to meet certain characteristics for it to work
   * CV (computer vision) algorithms need to be able to identify and differentiate it from other images
   * A coordinate in 3D space is required
   * It needs to stay put and not move
@@ -64,11 +49,21 @@ slides: yes
 * As soon as it identifies an image, it can use that to figure out where it is
 * Note! It has to also figure out where IT is relative to the image
 
-##### AMCL
+<slide_break></slide_break>
+
+## Video Interlude
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xaeUc1-r9rY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<slide_break></slide_break>
+
+<slide_break></slide_break>
+
+## AMCL
+
 * Adaptive Monte Carlo Localization
 * Very sophisticated (and standard) mathematical technique
 * Can be used with different kinds of sensors.
-* Example here is LIDAR.
+* How it work with Lidar
   * Requires a map of Lidar visible obstacles, with a coordinate system, and anchored in the real world
   * Given a stationary robot, and a lidar scan, what does it see?
   * Look for a match on the map
@@ -77,7 +72,10 @@ slides: yes
   * Compute what the lidar would see given what is known about the motion
   * Update the probabilities
 
-##### SLAM
+<slide_break></slide_break>
+
+### SLAM
+
 * What if there is no map yet?
 * Simultaneous localization and mapping
 * Create a theoretical map based on view of the LIDAR
@@ -85,5 +83,6 @@ slides: yes
 * Travel through the relevant region (using e.g. Teleop)
 * Use the map to localize, or where there is no map yet, extend the map.
 
-#### Next Class
-* Look at homework: <%= link_to_next_lecture %>
+<slide_break></slide_break>
+
+## That's all for today!

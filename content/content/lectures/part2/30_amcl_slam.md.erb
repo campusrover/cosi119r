@@ -1,5 +1,5 @@
 ---
-title: "AMCL: Localization in practice"
+title: "Localization in practice"
 desc: Look at the mechanics of SLAM and AMCL
 hwref: week7
 slides: true
@@ -11,30 +11,35 @@ slides: true
 * And a word from our sponsor (Arjun)
 * Discuss next homework assignments
 
+<slide_break></slide_break>
+
 <%= include_topic :localization %>
 
-#### Discuss projects
+<slide_break></slide_break>
 
-* Look at deliverables
-* Discuss status
+## AMCL in more detail
 
-#### AMCL in more detail
-
-* **AMCL: Advanced Monte Carlo Localization** (I've also seen "Augmented" and "Adaptive". Go figure.)
+* **AMCL**: Advanced Monte Carlo Localization** (I've also seen "Augmented" and "Adaptive". Go figure.)
 * You might be interested in these [Advanced Localization Slides](/content/topics/documents/localization.pdf).
 * I will be using these [Localization Slides](/content/topics/documents/f1slides.pdf) and information from [this very useful and in depth paper](https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume11/fox99a-html/jair-localize.html)
 * And another useful link: [Where am I](https://medium.com/@NickHortovanyi/where-am-i-6cc0f6608c4c)
 
-##### Monte Carlo
+<slide_break></slide_break>
+
+### Monte Carlo
 
 * That's where the Casinos are!
 * Algorithms that incorporate random guesses when a direct solution is hard or not feasible
 * Diagram on the board how you would calculate Pi using a Monte Carlo Algorithm
-* And here's a [Video of Monte Carlo Pi](https://youtu.be/ELetCV_wX_c)
 * Note for `PI` it's a very inefficient way to get an accurate result
 * But it illustrates the idea of Monte Carlo estimation
 
-##### Localization
+## Video Interlude
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ELetCV_wX_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/>
+
+### Localization
+
 * Markov localization
 * Markov means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 
 * Markov localization = state estimation from sensor data

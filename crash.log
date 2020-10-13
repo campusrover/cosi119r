@@ -1,17 +1,18 @@
-Crashlog created at 2020-10-06 09:16:08 -0400
+Crashlog created at 2020-10-12 18:20:05 -0400
 
 ===== MESSAGE:
 
-NameError: undefined local variable or method `slide_break' for #<Nanoc::Core::Context:0x00007fd1f0d9a278>
+NoMethodError: undefined method `inlcude_topic' for #<Nanoc::Core::Context:0x00007fcb9a864a58>
+Did you mean?  include_topic
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/lectures/part2/25_wheretheyare.md.erb (:default representation)
+Current item: /content/lectures/part2/40_control_body.md.erb (:default representation)
 
 ===== STACK TRACE:
 
   0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-core-4.11.16/lib/nanoc/core/context.rb:47:in `method_missing'
-  1. item /content/lectures/part2/25_wheretheyare.md.erb (rep default):3:in `get_binding'
+  1. item /content/lectures/part2/40_control_body.md.erb (rep default):4:in `get_binding'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `eval'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `result'
   4. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'

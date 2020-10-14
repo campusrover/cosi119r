@@ -39,3 +39,4 @@ rospack
 tf
 fiducials
 Aruco
+opencv

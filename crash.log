@@ -1,18 +1,20 @@
-Crashlog created at 2020-10-29 08:42:44 -0400
+Crashlog created at 2020-11-05 07:16:18 -0500
 
 ===== MESSAGE:
 
-NoMethodError: undefined method `source_code' for #<Nanoc::Core::Context:0x00007fb1580d3430>
-Did you mean?  source_end
+NoMethodError: undefined method `include_tpoic' for #<Nanoc::Core::Context:0x00007f8a4b6a40f0>
+Did you mean?  include_topic
+               include_code
+               include_page
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/topics/robotics_notes/joints_and_links.md.erb (:default representation)
+Current item: /content/lectures/part3/330_project3.md.erb (:default representation)
 
 ===== STACK TRACE:
 
   0. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-core-4.11.16/lib/nanoc/core/context.rb:47:in `method_missing'
-  1. item /content/topics/robotics_notes/joints_and_links.md.erb (rep default):52:in `get_binding'
+  1. item /content/lectures/part3/330_project3.md.erb (rep default):7:in `get_binding'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `eval'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `result'
   4. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'

@@ -1,12 +1,12 @@
-Crashlog created at 2020-11-06 09:54:38 -0500
+Crashlog created at 2020-11-17 09:23:24 -0500
 
 ===== MESSAGE:
 
-RuntimeError: 'kalman_filters': invalid reference in section "topics"
+RuntimeError: 'jimmy_briggs': invalid reference in section "topics"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/lectures/part3/340_kalman.md.erb (:default representation)
+Current item: /content/lectures/part3/370_project7.md.erb (:default representation)
 
 ===== STACK TRACE:
 
@@ -14,7 +14,7 @@ Current item: /content/lectures/part3/340_kalman.md.erb (:default representation
   1. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.1/lib/coursegen/course/data/toc.rb:52:in `lookup_citem'
   2. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.1/lib/coursegen/course/helpers/content_helpers.rb:30:in `lookup_nitem'
   3. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/coursegen-0.9.1/lib/coursegen/course/helpers/content_helpers.rb:4:in `include_topic'
-  4. item /content/lectures/part3/340_kalman.md.erb (rep default):9:in `get_binding'
+  4. item /content/lectures/part3/370_project7.md.erb (rep default):5:in `get_binding'
   5. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `eval'
   6. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/erb.rb:901:in `result'
   7. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/nanoc-4.11.16/lib/nanoc/filters/erb.rb:32:in `run'
@@ -39,7 +39,7 @@ Running ruby 2.6.6 (2020-03-31) on x86_64-darwin19 with RubyGems 3.0.3.
 
 ===== SYSTEM INFORMATION:
 
-Darwin iMac-2018.local 19.6.0 Darwin Kernel Version 19.6.0: Mon Aug 31 22:12:52 PDT 2020; root:xnu-6153.141.2~1/RELEASE_X86_64 x86_64
+Darwin iMac-2018.local 20.1.0 Darwin Kernel Version 20.1.0: Sat Oct 31 00:07:11 PDT 2020; root:xnu-7195.50.7~2/RELEASE_X86_64 x86_64
 
 ===== INSTALLED GEMS:
 
@@ -354,13 +354,11 @@ Darwin iMac-2018.local 19.6.0 Darwin Kernel Version 19.6.0: Mon Aug 31 22:12:52 
   48. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/i18n-1.8.3/lib
   49. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/thread_safe-0.3.6/lib
   50. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/tzinfo-1.2.7/lib
-  51. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/kramdown-2.2.1/lib
-  52. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/gems/2.6.0/gems/rexml-3.2.4/lib
-  53. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0
-  54. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0/x86_64-darwin19
-  55. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby
-  56. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0
-  57. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0/x86_64-darwin19
-  58. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby
-  59. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0
-  60. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/x86_64-darwin19
+  51. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0
+  52. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby/2.6.0/x86_64-darwin19
+  53. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/site_ruby
+  54. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0
+  55. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby/2.6.0/x86_64-darwin19
+  56. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/vendor_ruby
+  57. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0
+  58. /Users/pitosalas/.rbenv/versions/2.6.6/lib/ruby/2.6.0/x86_64-darwin19

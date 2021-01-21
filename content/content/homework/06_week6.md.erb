@@ -1,38 +1,26 @@
 ---
-title: Read Chapter 9, learn about DoF and do wall following PA
-lectref: rostf2 wheretheyare
-due: Oct 5, 2020 at 11:50pm
+title: Finish ROS PA3, Complete ROS PA4, Read and comment on Brooks Paper
+lectref: rossensors move_around
+due: Sept 29, 2020 at 10:00am (NOTE!)
 ---
-## 1. Read Chapter 9 of PRR <%= partbadge %>
+## 1. Do part 2 of ROS PA3: Ros Roomba
+* Implement part 2 of <%= link_to_topic :ros_roomba %> 
+* <%= deliverable "See the homework specification for your deliverables." %>
 
-* As usual, read and do the examples in Chapter 9. The chapter supplement can be found here: <%= link_to_topic :building_maps %>
-* <%= deliverable "Respond to the questions, and submit in a pdf" %> Make sure you experiment with rqt_plot, that you run a Map Server, and that you try running the navigation stack. Respond to the following warmup questions:
-    1. Exactly what does this code do: `rate = rospy.Rate(10)`
-    1. What does `rqt_plot` do and why would you use it?
-    1. Precisely what does a Map Server do?
-    1. Examine what is in a rosbag file. What is in it?
+## 2. ROS PA 4: Teach a Robot to Dance
+* Please read the instructions and deliverables closely for this assignment: <%= link_to_topic :teleop_plus %>
 
-## 2. Read (and actually code up) the examples in the [TF2 Tutorials Sequence](http://wiki.ros.org/tf2/Tutorials). <%= partbadge %>
+## 3. Read this seminal paper in Robotics
 
-There's not a lot of code to write, but I would like you to actually run all the examples and try to understand what is going on. With that, answer the following questions about TF2:
+### Purpose
+* Reading seminal papers in Robotics provides a great and broader view of robotics beyond engineering.
+* In general practicing how to read academic papers helps you find and read the best ones
 
-1. What is the TF tree? Where is it stored? (that may be a trick question!)
-1. In your own words, how does turtle_tf2_demo work?
-1. Please write one or two things that are still confusing to you; if it's all clear, then please write one or two major takeaways.
+### Activities
 
-<%= deliverable "Your responses to the above questions, in brief, in a pdf with your name and homework number at the top." %>
+* Read [Brooks - Robust Layered Control System for a Mobile Robot](https://www.semanticscholar.org/paper/A-robust-layered-control-system-for-a-mobile-robot-Brooks/dc66c15a005dd1a3a9f033769e7fbc3b943be188).
+* Highlight parts that are especially interesting or difficult to understand. 
+* Consider how this approach might have been used in a more advanced version of your Roomba script.
+* <%= deliverable "What is important in this paper for you? What is the key message? Can you make a connection between it and your roomba algorithm? Think about a maze solving robot or a wall following robot. Are there any ways in which this paper might apply?" %>
 
-
-## 3. Learn about Degrees of Freedom
-
-* The concept of DoF is intuitive, to an extent. A ground vehicle cannot move in the Z-direction and a differential drive robot can't move sideways. 
-* For valuable context of the full depth of the concept. watch this:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zI64DyaRUvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<%= deliverable "NONE"%>
-
-## 4. ROS PA 6: Following walls - not as easy as you think!
-
-* Please read the instructions and deliverables closely for this assignment: <%= link_to_topic :wall_follower%>
 

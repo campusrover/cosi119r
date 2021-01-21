@@ -7,9 +7,11 @@
 * Create final project groups at the start and use them in assignments
 * Slack is very useful
 * Make sure all assignments have the "stretch goals" section
+* Get the projects going more quickly (not sooner, just compress the startup phases)
+
+### Done
 * Reconsider how to use the MiniRovers
 * Keep the check-in quizzes
-* Get the projects going more quickly (not sooner, just compress the startup phases)
 
 ## "What is the course about"
 

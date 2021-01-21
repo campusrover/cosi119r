@@ -1,48 +1,24 @@
 ---
-title: Read Paper and comment, Read Ch 7, 8
-lectref: rosnodes
-due: Sept 14, 2020 at 11:50pm
+title: Write first ROS code, read PRR Chapter 4, 5 and 6
+lectref: rosfundamentals rosnodes
+due: Feb 15 2021 at 11:00pm
+slides: true
 ---
-## 1. PRR Chapters 7,8 <%= partbadge %>
+## 1. Read PRR Chapter 4, 5 and 6 <%= partbadge %>
+* (Follow along with (<%= link_to_topic :ros_services %>, <%= link_to_topic :actions %>, <%= link_to_topic :robots_simulators %>).
+* Once you've read and done the examples on your own computer, please answer these warmup questions. <%= deliverable "Your response to these questions"%>
+    * List the differences between an topic and a service. Which one is in your opinion the most important difference?
+    * Come up with your own original example of when you would use a service, and why you would not use a topic for that example.
+    * Topics, Topic Names, Messages: What are they, what are the differences between them?
+    * What one or two things are you still totally confused about in this reading? If its all clear, then what are your biggest takeaways from this reading?
+    * How many degrees of freedom does our TurtleBot3 have and what are they?
+    * If you wanted to have your TurtleBot3 drive one meter forwards and stop, take a guess at what you would publish
+    * What would be an example of a *holonomic* robot or vehicle? Can you say what you think it means?
+    * Please name any concepts, topics or words that you are still confused about, and what your major take-aways are from this reading.
+   
+   <%= deliverable "Write up your very brief answers to these questions and submit to the Participation blog! "%>
 
-### Purpose
-* We continue laying the foundations of learning ROS
-* We learn how to use sensors and motors to control the robots basic behaviors
-* I realize this is difficult and things don't always just work the way you expect.
 
-### Activities
-* Please read these chapters to try to really understand how things work
-* Remember to refer to the relevant links of Chapter Supplements as indicated below
-* And you really need to try to run some of the examples to see that you are starting to understand
-* Respond to the requested warmup questions for each chapter
-
-1. Read Chapter 7 of PRR and remember to refer to <%= link_to_topic :wander_bot %>. Consider the following warmup questions:
-    1. As we are talking about sensors, think about this: In the Red Light! Green Light! program what plays the role of a sensor?
-    1. This is tricky: the formula on page 104: `bearing = msg.angle_min + i * msg.angle_max / len(msg.ranges)` is incorrect (i.e. it's an error in the book!) What is the correct formula, or what is the error?
-    1. In Wander-bot, where is the code that assures that the robot doesn't run into a wall when it is wandering? What line(s).
-    1. Please write one or two things that are still confusing to you; if it's all clear, then please write one or two major takeaways.
-    1. <%= deliverable "Your responses to the above questions, in brief, as a post to the participation blog" %>
-
-1. Read Chapters 8 of PRR and remember to refer to (<%= link_to_topic :teleop_bot %> Please respond to the following warmup questions:
-    1. What features are added to produce key_to_twist_using_rate.py from the previous version, why would that be useful and what line in the program contains the key change?
-    1. This will take a little research: on page 114 you see `rospy.Subscriber('keys', String, keys_cb, twist_pub)`. What does each parameter do?
-    1. On page 124 you see `./keys_to_twist_with_ramps.py _linear_scale:=0.5 _angular_scale:=1.0 _linear_accel:=1.0 _angular_accel:=1.0`. What does the `:=` notation mean or do?
-    1. Please write one or two things that are still confusing to you; if it's all clear, then please write one or two major takeaways.
-    1. <%= deliverable "Respond to the questions, and respond to the post in the participation blog" %>
- 
-## 2. Read "Real Robots Don't Drive Straight" <%= partbadge %>
-
-### Purpose
-* Really understand and appreciate the importance of learning with a physical robot
-* Get a perspective on some of the challenges of teaching and learning robotics.
-
-### Activities
-Read [Real Robots Don't Drive Straight.](https://www.aaai.org/Papers/Symposia/Spring/2007/SS-07-09/SS07-09-020.pdf). After reading the article try and answer the following warmup questions:
-   1. In naval navigation there is a term *dead reckoning*. Explains what this means and how it relates if at all to the paper.
-   1. So why then do real robots not drive straight?
-   1. Please mention two concepts or topics or ideas that didn't make sense to you and your major take-away(s)
-<%= deliverable "Answer the warmups and submit to the participation blog" %>
-
-## 3. ROS PA2 - Odometry Out and Back
+## 2. ROS PA2 - Odometry Out and Back
 * Use the fundamental new topic: `/odom` in order to make your out and back more accurate
 * Follow link for details for this homework: <%= link_to_topic :odom_out_and_back %>

@@ -1,23 +1,40 @@
 ---
-title: Write first ROS code, read PRR Chapter 4, 5 and 6
-lectref: whattodo rosfundamentals
-due: Sept 7 2020 at 11:00pmv
-slides: true
+title: "Read PRR Chapters 1,2,3, write reflections"
+homework: Read Ch 1,2,3
+lectref: welcome whattodo
+due: "Feb 8 2021 at 11:00pm"
+slides: yes
 ---
-## 1. First ROS PA1: Basic motion, out and back
-* Follow link for details for this homework: <%= link_to_topic :timed_out_and_back %>
+## 1. Reading PRR - Chapters 1,2,3
 
-## 2. Read PRR Chapter 4, 5 and 6 <%= partbadge %>
-* (Follow along with (<%= link_to_topic :ros_services %>, <%= link_to_topic :actions %>, <%= link_to_topic :robots_simulators %>).
-* Once you've read and done the examples on your own computer, please answer these warmup questions. <%= deliverable "Your response to these questions"%>
-    * List the differences between an topic and a service. Which one is in your opinion the most important difference?
-    * Come up with your own original example of when you would use a service, and why you would not use a topic for that example.
-    * Topics, Topic Names, Messages: What are they, what are the differences between them?
+### Purpose 
+
+We will follow along the reading of the textbook pretty closely and in so learn all about how ROS works. The warmup questions will help guide your reading and experimenting. *Remember* you can get it free of charge from the library here: [Programming Robots with ROS](https://learning.oreilly.com/library/view/programming-robots-with/9781449325480/ch01.html)
+
+### What you will learn
+
+* What a topic is
+* What a Node is
+* What Odometry is
+* What a distributed operating system is
+
+### Tasks
+
+* Read PRR Chapters 1, 2 and 3 <%= partbadge %>. As you read, you will find the code for the examples all in the provided [prrexamples](https://github.com/campusrover/prrexamples) package. It is very important that you try to run some of them to get a feel for it. Use these chapter notes to add detail and make some corrections. Seriously there are details in these which are not in the book: <%= link_to_topic :ros_intro %>, <%= link_to_topic :ros_fundamentals %>, <%= link_to_topic :ros_topics %>
+
+* After doing this please answer the following warmup questions:
+    * It is said that ROS nodes communicate peer to peer. What does this mean?
+    * If a ROS node is running on a robot and another one is running on my laptop, how do they even talk to each other?
+    * In what way is a robot `pose` different from its `position`?
     * What one or two things are you still totally confused about in this reading? If its all clear, then what are your biggest takeaways from this reading?
-    * How many degrees of freedom does our TurtleBot3 have and what are they?
-    * If you wanted to have your TurtleBot3 drive one meter forwards and stop, take a guess at what you would publish
-    * What would be an example of a *holonomic* robot or vehicle? Can you say what you think it means?
-    * Please name any concepts, topics or words that you are still confused about, and what your major take-aways are from this reading.
-   
-   <%= deliverable "Write up your very brief answers to these questions and submit to the Participation blog! "%>
+    * <%= deliverable "Submit warmup questions to the participation blog" %>
 
+## 2. First ROS PA1: Basic motion, out and back
+
+Follow link for details for this homework: <%= link_to_topic :timed_out_and_back %>
+
+## 3. Why do I have to learn ROS podcast
+
+* Listen to Podcast "Why Do I Need to Learn ROS"?
+
+<iframe width="320" height="30" src="https://www.theconstructsim.com/?powerpress_embed=14348-podcast&amp;powerpress_player=mediaelement-audio" frameborder="0" scrolling="no"></iframe>

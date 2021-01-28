@@ -25,14 +25,14 @@ COURSE_ABBREV = 'AR'
 # and 2) figure out the ordering of classes on the sidebar.
 
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "aug-27-2020",
+  first_day: "feb-02-2021",
   weekdays: [:tuesday, :thursday],
-  start_times: ["15:30", "15:30"],
-  end_times: ["16:50", "16:50"],
+  start_times: ["16:00", "16:00"],
+  end_times: ["17:30", "17:30"],
   number: 28,
-  skips: ["sep-10-2020", "nov-24-2020", "nov-26-2020"],
-  start_time: "10:00",
-  end_time: "11:30"
+  skips: ["mar-09-2021", "apr-20-2021"],
+  start_time: "16:00",
+  end_time: "17:30"
 )
 
 # Section_config defines the structure of the course.
@@ -75,7 +75,8 @@ HOME_PAGE = "/content/intro/10_syllabus.md.erb"
 #   %w[TOC /content/course_toc.md]
 MENULINKS = [%w[lectures /content/intro/20_coursetoc.md/],
              %w[homeworks /content/intro/40_weeks.md/],
-             %w[latte https://moodle2.brandeis.edu/course/view.php?id=21653]].freeze
+             %w[latte https://moodle2.brandeis.edu/course/view.php?id=21653],
+             ["Big Ideas", "/content/intro/70_knowledge_map.md/"]].freeze
 
 # Helpful_box provides a feedback box on the sidebar.
 #

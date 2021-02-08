@@ -1,0 +1,16 @@
+---
+title: Cribsheets
+---
+A collection of cribsheets on all kinds of topics that you might be interested in. Feel free to use them and propose new ones that should be added.
+
+<%= list_of(source: "topics",
+            rows: ["page"],
+            subsections: ["/content/topics/cribsheets/"],
+            cols: [:title, :desc],
+            items: @items) %>
+
+
+* <%= link_to_topic :git %> - Review and refresher on git and github
+* <%= link_to_topic :unix_shell %> - Review and refresher on shell commands
+* <%= link_to_topic :shebang_line %> - What the heck is shebang again?
+* <%= link_to_topic :ros_cheatsheet %> - Key ROS commands

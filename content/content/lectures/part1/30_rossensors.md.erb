@@ -6,9 +6,24 @@ slides: true
 ---
 ## How does a robot perceive
 
-* Discussion of the pace of the course so far. Fast? Slow? 
+* Checkin Questions
+* Discussion of the pace of the course so far. Fast? Slow?
 * Request special workshops
-* Vibe check
+* Pop Quiz => "idk"
+
+<slide_break></slide_break>
+
+### Review of answers in previous idk's and participation submissions
+
+* Units of Odom/Orientation? Quaternions
+* If Odometry used only wheel rotation the results are inaccurate due to slippage, skidding, and so on.
+* How does roscore coordinate communication between nodes?
+* What does roslaunch do?
+* What does catkin do?
+* What is remapping? :=
+* What is the key difference between a topic and a service? And what are some examples of services?
+* How can I determine how many degrees of freedom something has?
+* Look at LaserScan data and talk about the bearing formula
 
 <slide_break></slide_break>
 
@@ -35,23 +50,18 @@ slides: true
   * Degree of "randomness"
   * Exact dimensions of robots, obstacles, etc.
 
-<slide_break></slide_break>
+### Real Robots Don't Drive Straight - short breakout
 
-
-<%= include_topic :pid_control %>
-
- 
-## Lets look at some code that uses sensors
-
-* [`prrexamples/pid_driver4.py`](https://github.com/campusrover/prrexamples/blob/master/scripts/pid_driver.py)
-* [`prrexamples/pid_range.py`](https://github.com/campusrover/prrexamples/blob/master/scripts/pid_range.py)
-
-## That's all!
-
-### Discussion about Real Robots Don't Drive Straight
-
-* What surprised you?
-* What is/or are your key takeaways
+* What was the "Real Robots Don't Drive Straight" about?
+* What is/or are your key takeaways What surprised you?
 * In breakout group - please nominate who will report out
 
 <slide_break></slide_break>
+
+<%= include_topic :pid_control %>
+
+### Lets look at some code that uses sensors
+
+* Coming Soon
+
+## That's All For Today!

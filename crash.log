@@ -1,24 +1,18 @@
-Crashlog created at 2021-02-16 15:47:58 -0500
+Crashlog created at 2021-02-18 20:13:10 -0500
 
 ===== MESSAGE:
 
-SyntaxError: item /content/lectures/part1/22_rosbasics3.md.erb (rep default):30: syntax error, unexpected '<', expecting ')'
-<slide_break></slide_break>
-^
-item /content/lectures/part1/22_rosbasics3.md.erb (rep default):32: unknown regexp options - ld
-...ut.<< "\n\n<slide_break></slide_break>\n\n## Thats all for t...
-...                         ^~~~~~
-item /content/lectures/part1/22_rosbasics3.md.erb (rep default):32: unmatched close parenthesis: /slide_break>
-
-<%= include_topic :prr_robot_hardware ).to_s); _erbout.<< "\n\n<slide_break></i
-item /content/lectures/part1/22_rosbasics3.md.erb (rep default):32: syntax error, unexpected local variable or method, expecting ')'
-..."\n\n<slide_break></slide_break>\n\n## Thats all for today!\...
-...                         ^~~~~~
-item /content/lectures/part1/22_rosbasics3.md.erb (rep default):37: syntax error, unexpected end-of-input, expecting ')'
+SyntaxError: item /content/topics/robotics_labs/03_lab_3.md.erb (rep default):13: syntax error, unexpected backslash, expecting ')'
+...e-python ).to_s); _erbout.<< "\n\ndef best_turn_direction(cu...
+...                              ^
+item /content/topics/robotics_labs/03_lab_3.md.erb (rep default):13: syntax error, unexpected ':', expecting ')'
+...urn_direction(current, target):\n  \"\"\"Given a current ori...
+...                              ^
+item /content/topics/robotics_labs/03_lab_3.md.erb (rep default):41: syntax error, unexpected end-of-input, expecting ')'
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/lectures/part1/22_rosbasics3.md.erb (:default representation)
+Current item: /content/topics/robotics_labs/03_lab_3.md.erb (:default representation)
 
 ===== STACK TRACE:
 

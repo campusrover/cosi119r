@@ -4,30 +4,15 @@ desc: How do we use sensor data to actually do something useful?
 hwref: week5
 slides: true
 ---
-## How does a robot perceive
+## How does a robot perceive (10 minutes)
 
 * Checkin Questions
 * Discussion of the pace of the course so far. Fast? Slow?
-* Request special workshops
-* Pop Quiz => "idk"
+* Quiz on Thursday on the first 8 chapters of PRR
 
 <slide_break></slide_break>
 
-### Review of answers in previous idk's and participation submissions
-
-* Units of Odom/Orientation? Quaternions
-* If Odometry used only wheel rotation the results are inaccurate due to slippage, skidding, and so on.
-* How does roscore coordinate communication between nodes?
-* What does roslaunch do?
-* What does catkin do?
-* What is remapping? :=
-* What is the key difference between a topic and a service? And what are some examples of services?
-* How can I determine how many degrees of freedom something has?
-* Look at LaserScan data and talk about the bearing formula
-
-<slide_break></slide_break>
-
-### Review - how it works in ROS
+### Review - how it works in ROS (5 minutes)
 
 * All your code (almost) in ROS is a node
 * All information (almost) is transferred in the form of messages
@@ -50,7 +35,7 @@ slides: true
   * Degree of "randomness"
   * Exact dimensions of robots, obstacles, etc.
 
-### Real Robots Don't Drive Straight - short breakout
+### Real Robots Don't Drive Straight - random 2 person breakout - 10 minutes
 
 * What was the "Real Robots Don't Drive Straight" about?
 * What is/or are your key takeaways What surprised you?
@@ -60,8 +45,9 @@ slides: true
 
 <%= include_topic :pid_control %>
 
-### Lets look at some code that uses sensors
+### Lets look at some code about sensors
 
-* Coming Soon
+* Demonstrate code from [RPSExamples](https://raw.githubusercontent.com/campusrover/rpsexamples/main/src/outbackstraight2.py?token=AAAK5CK2M32BIJ4SOJKU6EDAH6CK6)
+* Demonstrate Laser data quality by [looking at it in a spreadsheet](https://docs.google.com/spreadsheets/d/1FmGs7XlWe9YGtRFutOiiqSNj7i2DxvQIfJmmn1yMBvw/edit?usp=sharing)
 
 ## That's All For Today!

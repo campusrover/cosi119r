@@ -4,20 +4,24 @@ desc: Wheels, legs and other ways for robots to move around 3D space
 hwref: week5
 slides: true
 ---
-<%= include_topic :effect %>
+## Logistics (10 minutes)
+
+* Checkin Questions
+* Changes based on feedback:
+  1. <%= link_to_topic :wall_follower %>  **Due date pushed out to March 4**
+  1. Also we added starter code for wall Follower
+  1. We are designing a series on "ROS / Robotics patterns and best practices"
+  1. We are designing mini PAs to work on during lab
+* Discussion: Anything more?
+
+### Quiz: (30 minutes)
+
 
 <slide_break></slide_break>
 
-## Logistics
+### Steering and navigation 
 
-* Vibe check
-* Experiment using Jam Boards - have you?
-
-<slide_break></slide_break>
-
-## Steering and navigation
-
-* Focusing for now on autonomous, ground based mobile robots. 
+* Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
 * Given wheels with motors, or tracks, or casters, or legs
 * Electricity controlled through software makes them move
@@ -25,38 +29,35 @@ slides: true
 
 <slide_break></slide_break>
 
-## What is needed in terms of data + algorithms to
-  1. Drive in a straight road
-  1. Turn a corner
-  1. Make a 90 degree turn
-  1. Stay in a lane
-  1. Steer from Shapiro to Usdan
-  1. Move at x Meters/second
-  1. Turn at 10 degrees/second
+### What is needed in terms of data, sensors, algorithms etc? (15 minutes)
 
+* Discuss with teammate (breakout). Pick the one that matches your team number and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
+
+  1. Drive in a straight road: how do you detect the road? How do you stay on your side? What sensors are needed?
+  1. Turn a corner: How do you identify a corner? Left vs Right Corner? What about a hallway? What about a dead end?
+  1. Make a 90 degree turn: Without any landmarks, in an open field? Is left or right different?
+  1. Stay in a lane: How do you identify the lane? What about road conditions? What about night vs. day?
+  1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
+  1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
 
 <slide_break></slide_break>
 
-## Steering for wheeled vehicles
+## Steering for wheeled vehicles 
 
 * Degrees of freedom for different things
-  1. Train? 
-  1. Baseball?
-  1. Drone?
-  1. Car?
-  1. Tank?
+* Train?
+* Baseball?
+* Drone?
+* Car?
+* Tank?
 
 <slide_break></slide_break>
 
-## Holonomic vs. Non-Holonomic
+### Holonomic vs. Non-Holonomic
+
 * Actual vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
 * If they are different, then non-Holonomic
-
-<slide_break></slide_break>
-
-## Holonomic vs. Non-Holonomic
-
 * Car
   1. Will never leave the ground
   1. So it's actual DoF  is 3 (move forward and sideways, and yaw)
@@ -67,29 +68,24 @@ slides: true
 
 <slide_break></slide_break>
 
-### Video Interlude 1
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NIjodHA78UE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<slide_break></slide_break>
-
 ### Different Configurations for wheeled
 
 * "Differential drive"
-  * Steering is achieved by driving wheels at different speeds
-  * Geometry calculations to determine what delta rpm leads to what kind of turn
-  * Usually three wheels, two with motors, one "caster"
+  1. Steering is achieved by driving wheels at different speeds
+  1. Geometry calculations to determine what delta rpm leads to what kind of turn
+  1. Usually three wheels, two with motors, one "caster" (or two)
+  1. Different kinds of caster make a difference (I found this out)
+  
 * Tri-cycle steering
-  * Two fixed Wheels
-  * A third wheel with a steerable mount
+  1. Two fixed Wheels
+  1. A third wheel with a steerable mount
 * [Ackermann Steering](https://en.wikipedia.org/wiki/Ackermann_steering_geometry)
-  * Where the steering is achieved by actual rotation of the wheel mount
-  * Note subtle difference from parallel steering
+  1. Where the steering is achieved by actual rotation of the wheel mount
+  1. Note subtle difference from parallel steering
 * Four wheel drive
 * Articulated Vehicle
-  * Where the vehicle itself has a pivot point
-  * Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
+  1. Where the vehicle itself has a pivot point
+  1. Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
 
 <slide_break></slide_break>
 
@@ -103,13 +99,8 @@ slides: true
 
 <slide_break></slide_break>
 
-## Another Video
+### Other scenarios
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aE7RQNhwnPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<slide_break></slide_break>
-
-## Other scenarios
 * Legged Vehicles
 * Tracked vehicles (tanks)
 * Water surface vehicles
@@ -118,7 +109,7 @@ slides: true
 
 <slide_break></slide_break>
 
-## Terrain
+### Terrain
 
 * Indoor vs. outdoor
   * Traction and slippage
@@ -127,20 +118,19 @@ slides: true
 * Inclines and declines and surface
   * Needs more force
   * Also affects levelness
-  * Direction that cameras and sensors are pointed 
+  * Direction that cameras and sensors are pointed
 
 <slide_break></slide_break>
 
-## Sensors
-* The role of sensors in controlling motion
+### The role of sensors in controlling motion
+
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
 * TB3 Burger uses [HLS-LFCD2](https://dabit.industries/products/360-laser-distance-sensor-lds-01-lidar)
 * MiniRover uses [YDlidar X4](https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR%20X4%20Datasheet.pdf)
 * Review of dead reckoning
-* Review of "real robots don't drive straight"
 
 <slide_break></slide_break>
 
+<hr/>
 <%= include_image "/content/topics/images/thatsallfolks.jpg" %>
-

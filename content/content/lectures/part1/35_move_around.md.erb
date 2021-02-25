@@ -14,8 +14,9 @@ slides: true
   1. We are designing mini PAs to work on during lab
 * Discussion: Anything more?
 
-### Quiz: (30 minutes)
+<slide_break></slide_break>
 
+### Quiz: (30 minutes)
 
 <slide_break></slide_break>
 
@@ -24,10 +25,12 @@ slides: true
 * Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
 * Given wheels with motors, or tracks, or casters, or legs
+* See [Types of wheels used in robotics](https://roboticsshop.net/types-of-wheels-used-in-robotics/s)
 * Electricity controlled through software makes them move
 * So consider this...
 
 <slide_break></slide_break>
+
 ### What is needed in terms of data, sensors, algorithms etc? (15 minutes)
 
 * Discuss with teammate (breakout). Pick the one that matches your team number and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
@@ -43,7 +46,17 @@ slides: true
 
 ### Steering for wheeled vehicles 
 
-* Degrees of freedom for different things
+* Degrees of freedom:
+* Vehicles
+* But also grippers, arms, doors, anything that can move
+* Subtleties of you look for them...
+* Fixed attachments
+* Single instantaneous motion
+
+<slide_break></slide_break>
+
+#### How many does each one have?
+
 * Train?
 * Baseball?
 * Drone?
@@ -52,14 +65,14 @@ slides: true
 
 <slide_break></slide_break>
 
-### Holonomic vs. Non-Holonomic
+### Locomotion: Holonomic vs. Non-Holonomic
 
 * Actual vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
 * If they are different, then non-Holonomic
 * Car
   1. Will never leave the ground
-  1. So it's actual DoF  is 3 (move forward and sideways, and yaw)
+  1. So it's actual DoF is 3 (move forward and sideways, and yaw)
   1. But its controllable DoF is 2 (wheel rotation and steering)
 * Differential Drive
   1. Actual DoF is 3 also
@@ -95,6 +108,19 @@ slides: true
 * odom: needs to convert from sensors (motor decoder and others) into coordinates
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
+
+### Kinematics
+
+* In general: given a pose, and a series of `commands`, calculate the new pose (forward kinematics)
+* And, given a pose and a desired new pose, what are the series of commands that will get you there (inverse kinematics)
+* Note that the concept and terminology apply equally to vehicles and to other structures
+* Requirement:
+  1. An initial pose
+  1. A final pose
+  1. A series of `commands`
+  1. A way to calculate the relataioship
+* For a differential drive, the math is complex but well understood
+* Note the relationship to path planning
 
 <slide_break></slide_break>
 

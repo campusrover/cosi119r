@@ -1,5 +1,18 @@
 require './cg_config.rb'
 
+Nanoc::Filter.define(:handle_shortcodes) do |content, _params = {}|
+  result = ""
+  if content =~ /\$\$INCLUDE_TOPIC/
+    result = content.gsub(/^\$\$INCLUDE_TOPIC :(\w+)$/) { "<%= include_topic(#{$1}) %>" }
+  elsif content =~ /\$\$NEWSLIDE/
+    puts "1"
+    result = content.gsub(/^\$\$NEWSLIDE (\w+)$/) { "<slide_break></slide_break>\n\n####{$1}" }
+  else
+    result= content
+  end
+  result
+end
+
 preprocess do
   Toc.instance.prepare @items, SECTION_CONFIG
 end
@@ -26,6 +39,7 @@ end
 
 compile '/**/*.{md,ical}.erb' do
   if item[:status] != "hidden"
+    filter :handle_shortcodes
     filter :erb
     filter :kramdown, coderay_line_numbers: nil
     layout '/course.*'
@@ -36,6 +50,7 @@ end
 
 compile '/**/*.md.erb', rep: :slides do
   if item[:status] != "hidden"
+    filter :handle_shortcodes
     filter :erb
     layout '/slides.*'
     write item.identifier.without_ext + '/slides.html'

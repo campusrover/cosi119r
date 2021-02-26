@@ -4,7 +4,7 @@ desc: Wheels, legs and other ways for robots to move around 3D space
 hwref: week5
 slides: true
 ---
-## Logistics (10 minutes)
+## Logistics (10 minutes!)
 
 * Checkin Questions
 * Changes based on feedback:
@@ -14,11 +14,10 @@ slides: true
   1. We are designing mini PAs to work on during lab
 * Discussion: Anything more?
 
-<slide_break></slide_break>
-
+$$NEWSLIDE Quiz: (30 minutes)
 ### Quiz: (30 minutes)
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Steering and navigation 
 
@@ -29,7 +28,7 @@ slides: true
 * Electricity controlled through software makes them move
 * So consider this...
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### What is needed in terms of data, sensors, algorithms etc? (15 minutes)
 
@@ -42,9 +41,9 @@ slides: true
   1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
   1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
-### Steering for wheeled vehicles 
+### Steering for wheeled vehicles
 
 * Degrees of freedom:
 * Vehicles
@@ -53,7 +52,7 @@ slides: true
 * Fixed attachments
 * Single instantaneous motion
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 #### How many does each one have?
 
@@ -63,7 +62,7 @@ slides: true
 * Car?
 * Tank?
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Locomotion: Holonomic vs. Non-Holonomic
 
@@ -78,7 +77,7 @@ slides: true
   1. Actual DoF is 3 also
   1. Controllable DoF is 1 (wheel rotation)
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Different Configurations for wheeled
 
@@ -99,7 +98,7 @@ slides: true
   1. Where the vehicle itself has a pivot point
   1. Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Firmware
 
@@ -118,11 +117,11 @@ slides: true
   1. An initial pose
   1. A final pose
   1. A series of `commands`
-  1. A way to calculate the relataioship
+  1. A way to calculate the relationship
 * For a differential drive, the math is complex but well understood
 * Note the relationship to path planning
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Other scenarios
 
@@ -132,7 +131,7 @@ slides: true
 * Under water vehicles
 * Aerial vehicles
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### Terrain
 
@@ -145,7 +144,7 @@ slides: true
   * Also affects levelness
   * Direction that cameras and sensors are pointed
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
 ### The role of sensors in controlling motion
 
@@ -155,7 +154,6 @@ slides: true
 * MiniRover uses [YDlidar X4](https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR%20X4%20Datasheet.pdf)
 * Review of dead reckoning
 
-<slide_break></slide_break>
+$$NEWSLIDE
 
-<hr/>
-<%= include_image "/content/topics/images/thatsallfolks.jpg" %>
+<%= end_of_lecture %>

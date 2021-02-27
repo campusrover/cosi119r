@@ -1,23 +1,5 @@
 require './cg_config.rb'
 
-class CensorFilter < Nanoc::Filter
-  identifier :handle_shortcodes
-
-  def run(content, params = {})
-    c = content
-    if c =~ /\$\$INCLUDE_TOPIC :/
-      c = c.gsub(/^\$\$INCLUDE_TOPIC :(\w+)$/) {"<%= include_topic :#{$1} %>" }
-    end
-    if c =~ /\$\$SLIDE_TITLE .+$/
-      c = c.gsub(/^\$\$SLIDE_TITLE (.+)$/) {"<slide_break></slide_break>\n\n\### #{$1}"}
-    end
-    if c =~ /\$\$NEW_SLIDE$/
-      c = c.gsub(/^\$\$NEW_SLIDE$/) {"<slide_break></slide_break>"}
-    end
-    c
-  end
-end
-
 preprocess do
   Toc.instance.prepare @items, SECTION_CONFIG
 end

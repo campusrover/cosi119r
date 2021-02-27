@@ -1,35 +1,39 @@
-Crashlog created at 2021-02-26 21:36:22 -0500
+Crashlog created at 2021-02-27 13:35:51 -0500
 
 ===== MESSAGE:
 
-SyntaxError: /Users/pitosalas/mydev/cosi119r/Rules:14: unmatched close parenthesis: /\$\$NEW_SLIDE \w+)$/
+LoadError: cannot load such file -- course/lib/nanoc_filters.rb
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:26:in `instance_eval'
-  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:26:in `parse'
-  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:15:in `load'
-  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/action_provider.rb:20:in `for'
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compiler_loader.rb:18:in `load'
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compiler.rb:31:in `new_for'
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/commands/compile.rb:40:in `run_once'
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/commands/compile.rb:25:in `run'
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/command_runner.rb:15:in `block in call'
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
-  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/command_runner.rb:14:in `call'
-  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command_dsl.rb:294:in `block in runner'
-  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:362:in `run_this'
-  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:298:in `run'
-  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:316:in `run'
-  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli.rb:88:in `block in run'
-  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
-  19. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli.rb:86:in `run'
-  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/bin/nanoc:18:in `<top (required)>'
-  23. /Users/pitosalas/.rbenv/versions/2.7.2/bin/nanoc:23:in `load'
+  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:155:in `require'
+  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:155:in `require'
+  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/zeitwerk-2.4.2/lib/zeitwerk/kernel.rb:34:in `require'
+  3. /Users/pitosalas/mydev/cosi119r/Rules:2:in `parse'
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:26:in `instance_eval'
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:26:in `parse'
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/rules_loader.rb:15:in `load'
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/rule_dsl/action_provider.rb:20:in `for'
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compiler_loader.rb:18:in `load'
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compiler.rb:31:in `new_for'
+  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/commands/compile.rb:40:in `run_once'
+  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/commands/compile.rb:25:in `run'
+  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/command_runner.rb:15:in `block in call'
+  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
+  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/command_runner.rb:14:in `call'
+  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command_dsl.rb:294:in `block in runner'
+  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:362:in `run_this'
+  19. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:298:in `run'
+  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib/cri/command.rb:316:in `run'
+  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli.rb:88:in `block in run'
+  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `block in handle_while'
+  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib/nanoc/cli.rb:86:in `run'
+  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/bin/nanoc:18:in `<top (required)>'
+  27. /Users/pitosalas/.rbenv/versions/2.7.2/bin/nanoc:23:in `load'
 
 ===== VERSION INFORMATION:
 
@@ -74,7 +78,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   coderay 1.1.3
   colored 1.2
   concurrent-ruby 1.1.8
-  coursegen 0.9.7
+  coursegen 0.9.7, 0.9.8
   crass 1.0.6
   cri 2.15.11
   csv 3.1.2
@@ -303,7 +307,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   55. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/structured_warnings-0.4.0/lib
   56. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/rubytree-1.0.0/lib
   57. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tzinfo-2.0.4/lib
-  58. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.7/lib
+  58. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.8/lib
   59. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activesupport-6.1.3/lib
   60. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/i18n-1.8.9/lib
   61. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0

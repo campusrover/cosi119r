@@ -1,16 +1,8 @@
-Crashlog created at 2021-02-26 12:03:34 -0500
+Crashlog created at 2021-02-26 21:36:22 -0500
 
 ===== MESSAGE:
 
-SyntaxError: /Users/pitosalas/mydev/cosi119r/Rules:5: syntax error, unexpected '='
-  if content ~= /\$\$INCLUDE_TOPIC/
-              ^
-/Users/pitosalas/mydev/cosi119r/Rules:7: syntax error, unexpected `elsif', expecting `end'
-  elsif content ~= /\$\$NEWSLIDE/
-  ^~~~~
-/Users/pitosalas/mydev/cosi119r/Rules:11: syntax error, unexpected `else', expecting end-of-input
-  else
-  ^~~~
+SyntaxError: /Users/pitosalas/mydev/cosi119r/Rules:14: unmatched close parenthesis: /\$\$NEW_SLIDE \w+)$/
 
 ===== STACK TRACE:
 

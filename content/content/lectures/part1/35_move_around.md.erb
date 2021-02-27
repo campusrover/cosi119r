@@ -4,7 +4,7 @@ desc: Wheels, legs and other ways for robots to move around 3D space
 hwref: week5
 slides: true
 ---
-## Logistics (10 minutes!)
+### Logistics (10 minutes!)
 
 * Checkin Questions
 * Changes based on feedback:
@@ -14,23 +14,18 @@ slides: true
   1. We are designing mini PAs to work on during lab
 * Discussion: Anything more?
 
-$$NEWSLIDE Quiz: (30 minutes)
-### Quiz: (30 minutes)
+$$SLIDE_TITLE Quiz (30 Minutes)
 
-$$NEWSLIDE
-
-### Steering and navigation 
+$$SLIDE_TITLE Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
 * Given wheels with motors, or tracks, or casters, or legs
-* See [Types of wheels used in robotics](https://roboticsshop.net/types-of-wheels-used-in-robotics/s)
+* See [Types of wheels used in robotics](https://roboticsshop.net/types-of-wheels-used-in-robotics)
 * Electricity controlled through software makes them move
 * So consider this...
 
-$$NEWSLIDE
-
-### What is needed in terms of data, sensors, algorithms etc? (15 minutes)
+$$SLIDE_TITLE What is needed in terms of data, sensors, algorithms etc? (15 minutes)
 
 * Discuss with teammate (breakout). Pick the one that matches your team number and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
 
@@ -41,9 +36,7 @@ $$NEWSLIDE
   1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
   1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
 
-$$NEWSLIDE
-
-### Steering for wheeled vehicles
+$$SLIDE_TITLE Steering for wheeled vehicles
 
 * Degrees of freedom:
 * Vehicles
@@ -52,9 +45,7 @@ $$NEWSLIDE
 * Fixed attachments
 * Single instantaneous motion
 
-$$NEWSLIDE
-
-#### How many does each one have?
+$$SLIDE_TITLE  How many does each one have?
 
 * Train?
 * Baseball?
@@ -62,9 +53,7 @@ $$NEWSLIDE
 * Car?
 * Tank?
 
-$$NEWSLIDE
-
-### Locomotion: Holonomic vs. Non-Holonomic
+$$SLIDE_TITLE  Locomotion: Holonomic vs. Non-Holonomic
 
 * Actual vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
@@ -77,9 +66,7 @@ $$NEWSLIDE
   1. Actual DoF is 3 also
   1. Controllable DoF is 1 (wheel rotation)
 
-$$NEWSLIDE
-
-### Different Configurations for wheeled
+$$SLIDE_TITLE Different Configurations for wheeled
 
 * "Differential drive"
   1. Steering is achieved by driving wheels at different speeds
@@ -98,9 +85,7 @@ $$NEWSLIDE
   1. Where the vehicle itself has a pivot point
   1. Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
 
-$$NEWSLIDE
-
-### Firmware
+$$SLIDE_TITLE Firmware
 
 * Software and hardware architecture
 * cmd_vel: needs to convert from high level units to motor commands
@@ -108,7 +93,7 @@ $$NEWSLIDE
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
 
-### Kinematics
+$$SLIDE_TITLE Kinematics
 
 * In general: given a pose, and a series of `commands`, calculate the new pose (forward kinematics)
 * And, given a pose and a desired new pose, what are the series of commands that will get you there (inverse kinematics)
@@ -121,9 +106,7 @@ $$NEWSLIDE
 * For a differential drive, the math is complex but well understood
 * Note the relationship to path planning
 
-$$NEWSLIDE
-
-### Other scenarios
+$$SLIDE_TITLE  Other scenarios
 
 * Legged Vehicles
 * Tracked vehicles (tanks)
@@ -131,9 +114,7 @@ $$NEWSLIDE
 * Under water vehicles
 * Aerial vehicles
 
-$$NEWSLIDE
-
-### Terrain
+$$SLIDE_TITLE  Terrain
 
 * Indoor vs. outdoor
   * Traction and slippage
@@ -144,9 +125,7 @@ $$NEWSLIDE
   * Also affects levelness
   * Direction that cameras and sensors are pointed
 
-$$NEWSLIDE
-
-### The role of sensors in controlling motion
+$$SLIDE_TITLE  The role of sensors in controlling motion
 
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
@@ -154,6 +133,6 @@ $$NEWSLIDE
 * MiniRover uses [YDlidar X4](https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR%20X4%20Datasheet.pdf)
 * Review of dead reckoning
 
-$$NEWSLIDE
+$$NEW_SLIDE
 
 <%= end_of_lecture %>

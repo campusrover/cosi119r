@@ -9,7 +9,7 @@
 }
 
 .reveal h4 {
-	/* color: rgb(64, 56, 207); */
+  /* color: rgb(64, 56, 207); */
     font-family: telex;
     text-transform: none;
     margin-bottom: 20px;
@@ -17,33 +17,33 @@
 }
 
 .reveal li {
-    margin-bottom: 15px;
-    font-size: 1.8rem
+  margin-bottom: 15px;
+  font-size: 1.8rem
 }
 
 .callout { 
-    font-size: 1.0rem;
+  font-size: 1.0rem;
 }
 
 body {
-	font-family: Helvetica;
-	font-size: 13px;
+  font-family: Helvetica;
+  font-size: 13px;
 }
 
 
 .jumbotron {
-	/* background-color: rgb(203, 216, 250); */
-	border-radius: 10px;
-	border-style: solid;
-	border-width: 1px;
-	margin-top: 3rem;
-	margin-left: 7rem;
-	margin-right: 7rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	padding-top: 1.5rem;
+  /* background-color: rgb(203, 216, 250); */
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
 }
 
 .jumbotron h1 {
-	font-size: 3rem;
+  font-size: 3rem;
 }

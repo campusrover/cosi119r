@@ -4,16 +4,13 @@ desc: How does ROS handle coordinates, frames, transforms
 hwref: week6
 slides: true
 ---
-## Logistics
+:h2 Logistics
 
-* Vibe Check
+* Checkin Questions
 * Discuss what makes a good project and how many people is appropriate
-* Take a look at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713) for ideas. 
+* Take a look at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713) for ideas.
 
-
-<slide_break></slide_break>
-
-## Coordinate systems
+:slide_title Coordinate systems
 
 * Where is a robot? How do we designate the location?
 * If it's a surface moving mobile robot, then an x,y coordinate would seem to be sufficient
@@ -21,25 +18,19 @@ slides: true
 * We need to designate the origin
 * Anything else?
 
-<slide_break></slide_break>
-
-### What about the "real world"?
+:slide_title What about the "real world"?
 
 * Where is that 0,0?
 * Does it matter?
 
-<slide_break></slide_break>
-
-### What part of the robot?
+:slide_title What part of the robot?
 
 * What part of the robot are we talking about?
 * The "middle"?
 * Who says where the middle is?
 * Does it matter how high of the ground it is?
 
-<slide_break></slide_break>
-
-### Orientation
+:slide_title Orientation
 
 * What about where it is pointing?
 * Is that part of the orientation?
@@ -47,47 +38,30 @@ slides: true
 * Is that direction also part of the orientation in space?
 * When would that matter?
 
-<slide_break></slide_break>
+:slide_title Demo
 
-## Demo
-
-<slide_break></slide_break>
-
-### What else?
+:slide_title What else?
 
 * What other aspects of orientation in space?
 * If the Robot has a camera mounted on it?
 * If there is an arm?
 * Robot pushing an elevator button
 
-<slide_break></slide_break>
-
-### Actions
+:slide_title Actions
 
 * Taking action based on orientation. Think about:
 * Turn Right
 * Turn North
 * Point camera in the direction of the sound
 
-<slide_break></slide_break>
-
-## Video Interlude
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NNFkpnlwVtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<hr/>
-
-<slide_break></slide_break>
-
-### "Pose"
+:slide_title  "Pose"
 
 * The combination of the robot's position and orientation (direction it is pointing)
 * Each one has 3 dimensions: x,y,z and r,p,y
 * x,y,z are cartesian coordinates
 * r,p,y are Euler coordinates
 
-<slide_break></slide_break>
-
-### Multiple Coordinate systems
+:slide_title Multiple Coordinate systems
 
 * Each component of the robot potentially has a coordinate system
 * Many of them have a fixed relationship to each other
@@ -95,17 +69,13 @@ slides: true
 * There are coordinate systems attached to (each) robot
 * But also to the rest of the "world" the robot knows about
 
-<slide_break></slide_break>
-
-### Conversions
+:slide_title Conversions
 
 * Converting between coordinate systems
 * Very common calculation is to convert a certain actual point
 * From one coordinate system to another
 
-<slide_break></slide_break>
-
-### ROS Units and data types
+:slide_title ROS Units and data types
 
 * In ROS, we use the following units:
   1. Distance: Meter
@@ -113,34 +83,28 @@ slides: true
   3. Angles: Radians (sometimes degrees)
   4. Orientation: Euler angles (roll pitch yaw) or Quaternions
 
-<slide_break></slide_break>
-
-### Euler Angles
+:slide_title Euler Angles
 
 * Conventional way to represent orientation
 * Pitch, Roll, Yaw (from airplanes)
 * Can be radians or angles, but for ROS poses, it's radians
 * Reminder: Radians go from 0 (0 degrees) to 2 * PI (360 degrees == 0 degrees)
 
-<slide_break></slide_break>
-
-### Quaternions
+:slide_title  Quaternions
 
 * Quaternion represents the same, but with 4 numbers
 * There's an exact conversion between Euler angles and Quaternions
 * For subtle mathematical reasons, when combining a series of rotations, Quaternions work better
 * Don't try to interpret the x,y,z,r of a quaternion, it doesn't have an intuitive mapping to x,y and z euler angles.
 
-<slide_break></slide_break>
+:slide_break
 
-### Datatypes in ROS
+:h2 Datatypes in ROS
 
 * ROS "messages", also *.msg files
 * Really amount to a C `struct`
 
-<slide_break></slide_break>
-
-#### Point
+:slide_title Point
 
 * Point (geometry_msgs/Point.msg)
 * x,y,z: float64
@@ -148,40 +112,30 @@ slides: true
 * Right hand rule
 * positive x-forward, positive y-left, positive z-up
 
-<slide_break></slide_break>
-
-#### Vector3 
+:slide_title Vector3
 
 * Vector3 (geometry_msgs/Vector3.msg)
 * x, y, z: float64
 * Simple, generic representation of 3 float64
 
-<slide_break></slide_break>
-
-#### Quaternion
+:slide_title Quaternion
 
 * Orientation (geometry_msgs/Quaternion.msg)
 * x, y, z, w: float64
 * An orientation in space, in quaternion form
 * Quaternions are another way to express orientation
 
-<slide_break></slide_break>
-
-#### Pose
+:slide_title Pose
 
 * Pose (geometry_msgs/Pose.msg)
 * position: Point
 * orientation: Quaternion
 * A combination of "where" and "facing what way"
 
-<slide_break></slide_break>
-
-#### Twist
+:slide_title Twist
 
 * Velocity in free space, broken into linear and angular
 * Twist (geometry_msgs/Twist.msg)
 * linear, angular: Vector3
 
-<slide_break></slide_break>
-
-## That's all for today!
+:lecture_end

@@ -7,8 +7,6 @@ slides: yes
 :h2 Logistics
 
 * Warmup questions
-* Discussion about last homework
-* Who volunteers for us to look at your solution and discuss it?
 
 :slide_title Review
 
@@ -27,8 +25,9 @@ slides: yes
   * Angle to turn, from the point of view of the robot itself
   * So when you see phrases like "with respect to", and "from the point of view of" you know these refer to coordinate frames.
 * It is very common to want to see that same point or angle from another's point of view
-  * How bit a turn to I need to point directly away from the wall?
+  * How much do I have to turn to point directly away from the wall?
   * What direction is the nearest door from me?
+  * How do I drive in the direction of the fiducial?
 * Compare starboard/port and driver vs. passenger side
 
 :slide_title TF
@@ -58,8 +57,8 @@ slides: yes
 * If you want to follow along, we are going to look at [Introduction to tf2](http://wiki.ros.org/tf2/Tutorials/Introduction%20to%20tf2)
 
 :source_begin :language-bash
-$ sudo apt-get install ros-melodic-turtle-tf2 \
-                       ros-melodic-tf2-tools ros-melodic-tf
+$ sudo apt-get install ros-melodic-turtle-tf2 ros-melodic-tf2-tools ros-melodic-tf
+$ sudo apt install evince
 $ roslaunch turtle_tf2 turtle_tf2_demo.launch
 :source_end
 
@@ -86,7 +85,9 @@ $ rosrun tf tf_echo turtle1 turtle2
 $ rosrun tf tf_echo turtle1 world
 :source_end
 
-:discussion_box You can see the transform needed to get from turtle1 to turtle2 is different from the one between turtle1 and world. Why is that?
+:slide_break
+
+:h3 You can see the transform needed to get from turtle1 to turtle2 is different from the one between turtle1 and world. Why is that?
 
 :slide_title Visualization
 
@@ -94,14 +95,15 @@ $ rosrun tf tf_echo turtle1 world
 $ rosrun rviz rviz -d `rospack find turtle_tf2`/rviz/turtle_rviz.rviz
 :source_end
 
-:discussion_box You now visualize all three tfs. Why do two move and one stay still?
+
+:h3 You now visualize all three tfs. Why do two move and one stay still?
 
 :slide_title Lets see how all this works: tf2_broadcaster
 
 * Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_broadcaster.py`
 
 :source_begin :language-bash
-$ roslaunch learning_tf2 start_demo.launch
+$ roslaunch prrexamples start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 :source_end
 
@@ -114,7 +116,7 @@ $ rosrun tf tf_echo /world /turtle1
 * Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_listener.py`
 
 :source_begin :language-bash
-$ roslaunch learning_tf2 start_demo.launch
+$ roslaunch prrexamples start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 $ rosrun tf tf_echo /world /turtle2
 :source_end

@@ -4,8 +4,13 @@ desc: Using landmarks to determine location
 hwref: week8
 slides: yes
 ---
+:h2 logistics
 
-## Localization
+* Check-in Questions
+* "I am amazed" - Non responsiveness in slack. 
+* Participation mid-term grade coming up soon!
+
+:h2 Localization
 
 * What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!
@@ -13,26 +18,20 @@ slides: yes
 * Recall **odometry** is like **dead reckoning**
 * Lots of noise in the signal; accuracy varies; errors build up
 
-<slide_break></slide_break>
-
-### What kinds of landmarks can be used?
+:slide_title What kinds of landmarks can be used?
 
 * Lidar detected fixed obstacles
 * Vision detected fixed obstacles
 * How can one obstacle be distinguished from another?
 
-<slide_break></slide_break>
-
-### Lidar detection
+:slide_title Lidar detection
 
 * Robot has a 'map' of fixed obstacles
 * Robot compares that map with the apparent, transient, map from Lidar
 * Calculates a probability distribution of where it might be on that map
 * Process is called AMCL
 
-<slide_break></slide_break>
-
-### Visual Detection
+:slide_title Visual Detection
 
 * Robot has a collection of scenes it can recognize.
 * Needs to meet certain characteristics for it to work
@@ -46,32 +45,21 @@ slides: yes
 * As soon as it identifies an image, it can use that to figure out where it is
 * Note! It has to also figure out where IT is relative to the image
 
-<slide_break></slide_break>
-
-## Video Interlude
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xaeUc1-r9rY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<slide_break></slide_break>
-
-<slide_break></slide_break>
-
-## AMCL
+:slide_title AMCL
 
 * Adaptive Monte Carlo Localization
 * Very sophisticated (and standard) mathematical technique
 * Can be used with different kinds of sensors.
-* How it work with Lidar
-  * Requires a map of Lidar visible obstacles, with a coordinate system, and anchored in the real world
-  * Given a stationary robot, and a lidar scan, what does it see?
-  * Look for a match on the map
-  * Form a probability distribution of where the robot MIGHT be
-  * Move the robot a little.
-  * Compute what the lidar would see given what is known about the motion
-  * Update the probabilities
+* How it works with Lidar
+  1. Requires a map of Lidar visible obstacles, with a coordinate system, and anchored in the real world
+  1. Given a stationary robot, and a lidar scan, what does it see?
+  1. Look for a match on the map
+  1. Form a probability distribution of where the robot MIGHT be
+  1. Move the robot a little.
+  1. Compute what the lidar would see given what is known about the motion
+  1. Update the probabilities
 
-<slide_break></slide_break>
-
-### SLAM
+:slide_title SLAM
 
 * What if there is no map yet?
 * Simultaneous localization and mapping
@@ -80,6 +68,4 @@ slides: yes
 * Travel through the relevant region (using e.g. Teleop)
 * Use the map to localize, or where there is no map yet, extend the map.
 
-<slide_break></slide_break>
-
-## That's all for today!
+:lecture_end

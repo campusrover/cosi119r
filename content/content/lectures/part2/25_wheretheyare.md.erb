@@ -10,7 +10,7 @@ slides: yes
 * "I am amazed" - Non responsiveness in slack. 
 * Participation mid-term grade coming up soon!
 
-:h2 Localization
+:slide_title Localization
 
 * What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!
@@ -35,15 +35,24 @@ slides: yes
 
 * Robot has a collection of scenes it can recognize.
 * Needs to meet certain characteristics for it to work
-  * CV (computer vision) algorithms need to be able to identify and differentiate it from other images
-  * A coordinate in 3D space is required
-  * It needs to stay put and not move
-  * Examples: facade of a building, a particular tree, a wall, etc.
-  * Bad examples: a parked car; a person
+  1. CV (computer vision) algorithms need to be able to identify and differentiate it from other images
+  1. A coordinate in 3D space is required
+  1. It needs to stay put and not move
+  1. Examples: facade of a building, a particular tree, a wall, etc.
+  1. Bad examples: a parked car; a person
 * With each scene is the coordinates that correspond to the recognized scene
 * CV is constantly analyzing what is seen by the camera
 * As soon as it identifies an image, it can use that to figure out where it is
-* Note! It has to also figure out where IT is relative to the image
+* Note! It has to also figure out where it is relative to the image
+
+:slide_title Fiducials
+
+* Standardized image with known dimensions
+* Conceptually simple geometrical transformation
+* Perspective distortion is used to compute relative pose (orientation and distance)
+* Tricky business with TFs and POV!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y8WEGGbLWlA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 :slide_title AMCL
 

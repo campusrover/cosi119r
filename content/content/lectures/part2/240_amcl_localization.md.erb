@@ -1,28 +1,24 @@
 ---
 title: "Localization in practice"
 desc: Look at the mechanics of SLAM and AMCL
-hwref: week9
+hwref: week8
 slides: true
 ---
-## Logistics
+:h2 Logistics
 
-* Warmup questions
-* Any other discussion?
+* Checkin Questions
+* Roll of `ta partners`
 
-<%= include_topic :prr_localization %>
+:topic_include :prr_localization
 
-<slide_break></slide_break>
-
-## AMCL in more detail
+:slide_title AMCL in more detail
 
 * **AMCL**: Advanced Monte Carlo Localization** (I've also seen "Augmented" and "Adaptive". Go figure.)
 * You might be interested in these [Advanced Localization Slides](/content/topics/documents/localization.pdf).
 * I will be using these [Localization Slides](/content/topics/documents/f1slides.pdf) and information from [this very useful and in depth paper](https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume11/fox99a-html/jair-localize.html)
 * And another useful link: [Where am I](https://medium.com/@NickHortovanyi/where-am-i-6cc0f6608c4c)
 
-<slide_break></slide_break>
-
-### Monte Carlo
+:slide_title Monte Carlo
 
 * That's where the Casinos are!
 * Algorithms that incorporate random guesses when a direct solution is hard or not feasible
@@ -30,12 +26,7 @@ slides: true
 * Note for `PI` it's a very inefficient way to get an accurate result
 * But it illustrates the idea of Monte Carlo estimation
 
-## Video Interlude
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ELetCV_wX_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<hr/>
-
-### Localization
+:slide_title Localization
 
 * Markov localization
 * Markov means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 
@@ -45,11 +36,12 @@ slides: true
 * Belief, Sense, Update ... etc.
 * But how is the belief represented, and how is the update done efficiently
 
-##### Particle Filter
+:slide_title Particle Filter
+
 * Instead of "solving" the equation for all data and all points
 * Use a Monte-Carlo technique
 * Generate a random collection of candidate locations
 * Compute the motion
 * Adjust the probability of each particle
 
-## That's all for today
+:lecture_end

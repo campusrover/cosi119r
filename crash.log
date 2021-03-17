@@ -1,44 +1,51 @@
-Crashlog created at 2021-03-16 11:22:59 -0400
+Crashlog created at 2021-03-17 10:48:27 -0400
 
 ===== MESSAGE:
 
-NoMethodError: undefined method `strftime' for nil:NilClass
+RuntimeError: 'project6': invalid reference in section "lectures"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/intro/20_coursetoc.md.erb (:default representation)
+Current item: /content/intro/30_weeks.md.erb (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:100:in `cell_content_string'
-  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:69:in `block in generate_detail_row'
-  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:67:in `each'
-  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:67:in `generate_detail_row'
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:60:in `block in generate_rows'
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/data_adaptor.rb:17:in `block in rows'
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/data_adaptor.rb:16:in `rows'
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:54:in `generate_rows'
-  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:34:in `render'
-  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of_helpers.rb:24:in `list_of'
-  12. item /content/intro/20_coursetoc.md.erb (rep default):1:in `get_binding'
-  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `eval'
-  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `result'
-  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/filters/erb.rb:32:in `run'
-  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:22:in `filter'
-  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  19. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
-  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/section.rb:22:in `find_by_short_name'
+  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/toc.rb:52:in `lookup_citem'
+  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/content_helpers.rb:31:in `lookup_nitem'
+  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/navigation_helpers.rb:52:in `link_to_section'
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/navigation_helpers.rb:6:in `link_to_lecture'
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:96:in `block in cell_content_string'
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:96:in `map'
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:96:in `cell_content_string'
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:69:in `block in generate_detail_row'
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:67:in `each'
+  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:67:in `generate_detail_row'
+  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:60:in `block in generate_rows'
+  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/data_adaptor.rb:17:in `block in rows'
+  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
+  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
+  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/data/data_adaptor.rb:16:in `rows'
+  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:54:in `generate_rows'
+  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of.rb:34:in `render'
+  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib/coursegen/course/helpers/list_of_helpers.rb:24:in `list_of'
+  19. item /content/intro/30_weeks.md.erb (rep default):8:in `get_binding'
+  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `eval'
+  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `result'
+  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/filters/erb.rb:32:in `run'
+  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:22:in `filter'
+  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  29. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  30. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  31. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  32. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
+  33. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  34. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  35. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 

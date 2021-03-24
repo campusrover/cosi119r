@@ -24,6 +24,26 @@ compile '/**/*.ical.erb' do
   filter :erb
 end
 
+compile '/**/*/*.cg' do
+  if item[:status] != "hidden"
+    filter :handle_shortcodes
+    filter :kramdown, coderay_line_numbers: nil
+    layout '/course.*'
+  else
+    nil
+  end
+end
+
+compile '/**/*.cg', rep: :slides do
+  if item[:status] != "hidden"
+    filter :handle_shortcodes
+    layout '/slides.*'
+    write item.identifier.without_ext + '/slides.html'
+  else
+    nil
+  end
+end
+
 compile '/**/*.{md,ical}.erb' do
   if item[:status] != "hidden"
     filter :handle_shortcodes

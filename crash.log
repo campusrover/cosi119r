@@ -1,33 +1,28 @@
-Crashlog created at 2021-03-18 15:32:22 -0400
+Crashlog created at 2021-03-24 11:30:34 -0400
 
 ===== MESSAGE:
 
-SyntaxError: item /content/topics/ros_book/110_prr_navigating.md.erb (rep default):19: syntax error, unexpected ',', expecting ')'
-...incorrect or not resolvable!"), :small ).to_s); _erbout.<< "...
-...                              ^
+Nanoc::Core::Errors::CannotUseTextualFilter: The “#<Class:0x00007f9d9b15f7a8>” filter cannot be used to filter the “/content/topics/robotics_notes/ros_best_practices.cg” item (rep “default”), because textual filters cannot be used on binary items.
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/topics/ros_book/110_prr_navigating.md.erb (:default representation)
+Current item: /content/topics/robotics_notes/ros_best_practices.cg (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `eval'
-  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `result'
-  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/filters/erb.rb:32:in `run'
-  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:22:in `filter'
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:112:in `filter_for_filtering'
+  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:13:in `filter'
+  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
   10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
   11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
-  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 
@@ -63,7 +58,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   bindex 0.8.1
   binding_of_caller 1.0.0
   bond 0.5.1
-  bootsnap 1.4.6, 1.6.0, 1.7.2
+  bootsnap 1.4.6, 1.6.0, 1.7.2, 1.7.3
   builder 3.2.4
   bundler 2.1.4
   byebug 11.1.1, 11.1.3
@@ -73,7 +68,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   coderay 1.1.3
   colored 1.2
   concurrent-ruby 1.1.6, 1.1.8
-  coursegen 0.9.7, 0.9.8, 0.9.9, 0.9.10, 0.9.11
+  coursegen 0.9.7, 0.9.8, 0.9.9, 0.9.10, 0.9.11, 0.9.12
   crass 1.0.6
   cri 2.15.11
   csv 3.1.2
@@ -295,7 +290,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   45. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/kramdown-2.3.0/lib
   46. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/structured_warnings-0.4.0/lib
   47. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/rubytree-1.0.0/lib
-  48. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.11/lib
+  48. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib
   49. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nokogiri-1.11.2-x86_64-darwin/lib
   50. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/byebug-11.1.3/lib
   51. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/byebug-11.1.3

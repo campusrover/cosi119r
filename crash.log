@@ -1,28 +1,51 @@
-Crashlog created at 2021-03-24 11:30:34 -0400
+Crashlog created at 2021-03-30 11:28:58 -0400
 
 ===== MESSAGE:
 
-Nanoc::Core::Errors::CannotUseTextualFilter: The “#<Class:0x00007f9d9b15f7a8>” filter cannot be used to filter the “/content/topics/robotics_notes/ros_best_practices.cg” item (rep “default”), because textual filters cannot be used on binary items.
+RuntimeError: 'kalman_filter': invalid reference in section "lectures"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/topics/robotics_notes/ros_best_practices.cg (:default representation)
+Current item: /content/intro/30_weeks.md.erb (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:112:in `filter_for_filtering'
-  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:13:in `filter'
-  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
-  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/data/section.rb:22:in `find_by_short_name'
+  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/data/toc.rb:52:in `lookup_citem'
+  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/content_helpers.rb:31:in `lookup_nitem'
+  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/navigation_helpers.rb:52:in `link_to_section'
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/navigation_helpers.rb:6:in `link_to_lecture'
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:96:in `block in cell_content_string'
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:96:in `map'
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:96:in `cell_content_string'
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:69:in `block in generate_detail_row'
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:67:in `each'
+  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:67:in `generate_detail_row'
+  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:60:in `block in generate_rows'
+  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/data/data_adaptor.rb:17:in `block in rows'
+  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
+  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
+  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/data/data_adaptor.rb:16:in `rows'
+  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:54:in `generate_rows'
+  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of.rb:34:in `render'
+  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.12/lib/coursegen/course/helpers/list_of_helpers.rb:24:in `list_of'
+  19. item /content/intro/30_weeks.md.erb (rep default):8:in `get_binding'
+  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `eval'
+  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `result'
+  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/filters/erb.rb:32:in `run'
+  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:22:in `filter'
+  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
+  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
+  29. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  30. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  31. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  32. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
+  33. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  34. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  35. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 
@@ -35,21 +58,22 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
 
 ===== INSTALLED GEMS:
 
-  actioncable 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  actionmailbox 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  actionmailer 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  actionpack 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  actiontext 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  actionview 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  activejob 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  activemodel 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  activerecord 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  activestorage 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
-  activesupport 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3
+  actioncable 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  actionmailbox 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  actionmailer 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  actionpack 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  actiontext 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  actionview 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  activejob 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  activemodel 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  activerecord 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  activestorage 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
+  activesupport 6.0.2.1, 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
   addressable 2.7.0
   adsf 1.4.5
   ast 2.4.2
-  awesome_print 1.8.0
+  autoprefixer-rails 10.2.4.0
+  awesome_print 1.8.0, 1.9.2
   backport 1.1.2
   bcrypt 3.1.16
   benchmark 0.1.0
@@ -59,6 +83,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   binding_of_caller 1.0.0
   bond 0.5.1
   bootsnap 1.4.6, 1.6.0, 1.7.2, 1.7.3
+  bootstrap-sass 3.4.1
   builder 3.2.4
   bundler 2.1.4
   byebug 11.1.1, 11.1.3
@@ -85,6 +110,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   e2mmap 0.1.0
   erubi 1.9.0, 1.10.0
   etc 1.1.0, 1.2.0
+  execjs 2.7.0
   faker 2.16.0, 2.17.0
   fcntl 1.0.0
   ffi 1.12.2, 1.14.2, 1.15.0
@@ -117,16 +143,16 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   kramdown 2.3.0
   kramdown-parser-gfm 1.1.0
   kwalify 0.7.2
-  listen 3.1.5, 3.4.1
+  listen 3.1.5, 3.4.1, 3.5.0
   logger 1.4.2
   loofah 2.4.0, 2.9.0
   lumberjack 1.2.8
   mail 2.7.1
-  marcel 0.3.3
+  marcel 0.3.3, 1.0.0
   matrix 0.2.0
   method_source 1.0.0
   mimemagic 0.3.4, 0.3.5
-  mini_mime 1.0.2
+  mini_mime 1.0.2, 1.0.3
   mini_portile2 2.4.0, 2.5.0
   minitest 5.14.0, 5.14.3, 5.14.4
   msgpack 1.3.3, 1.4.1, 1.4.2
@@ -163,10 +189,10 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   rack-mini-profiler 2.3.1
   rack-proxy 0.6.5
   rack-test 1.1.0
-  rails 6.0.3.5, 6.1.1, 6.1.3
+  rails 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
   rails-dom-testing 2.0.3
   rails-html-sanitizer 1.3.0
-  railties 6.0.3.5, 6.1.1, 6.1.3
+  railties 6.0.3.5, 6.1.1, 6.1.3, 6.1.3.1
   rainbow 3.0.0
   rake 13.0.1, 13.0.3
   rb-fsevent 0.10.3, 0.10.4
@@ -234,6 +260,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   webrick 1.6.0
   websocket-driver 0.7.1, 0.7.3
   websocket-extensions 0.1.4, 0.1.5
+  xml-simple 1.1.8
   xpath 3.2.0
   yaml 0.1.0
   yard 0.9.26
@@ -295,7 +322,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   50. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/byebug-11.1.3/lib
   51. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/byebug-11.1.3
   52. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tzinfo-2.0.4/lib
-  53. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activesupport-6.1.3/lib
+  53. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activesupport-6.1.3.1/lib
   54. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/i18n-1.8.9/lib
   55. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0
   56. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0/x86_64-darwin20

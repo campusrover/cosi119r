@@ -7,5 +7,5 @@ guard :shell do
   # watch(/.erb/) {`cg compile` }
   # watch(/.rb/) { `cg compile` }
   # watch(/Rules/) { `cg compile` }
-  watch(%r{(Rules)|(.erb)|(.rb)|(.css)}) { `cg compile` }
+  watch(%r{(Rules)|(.erb)|(.cg)|(.rb)|(.css)}) { `cg compile` }
 end

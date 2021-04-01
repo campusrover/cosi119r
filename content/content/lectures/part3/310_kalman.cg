@@ -8,6 +8,6 @@ slides: true
 
 * Checkin Questions
 
-:topic_include include_topic :kalman_filters
+:topic_include :kalman_filters
 
 :lecture_end

@@ -1,7 +1,7 @@
 ---
-title: Speaker and Best Practices
+title: Speaker - Peter Grossman
 hwref: week10
-desc: About manipulation, joints and links
+desc: Robotics in Biotech and Drug Discovery
 slides: true
 ---
 ## Logistics
@@ -17,9 +17,5 @@ slides: true
   <source src="/content/topics/images/peter_robot.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-
-:slide_title ROS Best Practices
-* :topic_link :ros_best_practices
-
 
 :lecture_end 

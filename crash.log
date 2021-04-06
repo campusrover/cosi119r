@@ -1,55 +1,37 @@
-Crashlog created at 2021-04-05 15:08:40 -0400
+Crashlog created at 2021-04-06 14:14:20 -0400
 
 ===== MESSAGE:
 
-RuntimeError: 'tbd2': invalid reference in section "lectures"
+Errno::ENOENT: No such file or directory @ rb_sysopen - /Users/pitosalas/mydev/cosi119r/content/content/topics/images/joint.jpg
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/intro/30_weeks.md.erb (:default representation)
+Current item: /content/topics/images/joint.jpg (:default representation)
 
 ===== STACK TRACE:
 
-  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/data/section.rb:22:in `find_by_short_name'
-  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/data/toc.rb:52:in `lookup_citem'
-  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/content_helpers.rb:31:in `lookup_nitem'
-  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/navigation_helpers.rb:52:in `link_to_section'
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/navigation_helpers.rb:6:in `link_to_lecture'
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:96:in `block in cell_content_string'
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:96:in `map'
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:96:in `cell_content_string'
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:69:in `block in generate_detail_row'
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:67:in `each'
-  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:67:in `generate_detail_row'
-  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:60:in `block in generate_rows'
-  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/data/data_adaptor.rb:17:in `block in rows'
-  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
-  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/forwardable.rb:235:in `each'
-  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/data/data_adaptor.rb:16:in `rows'
-  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:54:in `generate_rows'
-  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of.rb:34:in `render'
-  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib/coursegen/course/helpers/list_of_helpers.rb:24:in `list_of'
-  19. item /content/intro/30_weeks.md.erb (rep default):8:in `get_binding'
-  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `eval'
-  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/erb.rb:905:in `result'
-  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib/nanoc/filters/erb.rb:32:in `run'
-  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/executor.rb:22:in `filter'
-  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `block in each'
-  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/action_sequence.rb:49:in `each'
-  29. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  30. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  31. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  32. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/cache.rb:25:in `run'
-  33. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  34. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  35. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
+  0. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1414:in `initialize'
+  1. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1414:in `open'
+  2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1414:in `copy_file'
+  3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:511:in `copy_file'
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:430:in `block in cp'
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1589:in `block in fu_each_src_dest'
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1605:in `fu_each_src_dest0'
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:1587:in `fu_each_src_dest'
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/fileutils.rb:429:in `cp'
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/binary_compiled_content_cache.rb:145:in `smart_cp'
+  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/binary_compiled_content_cache.rb:66:in `block in []='
+  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/binary_compiled_content_cache.rb:51:in `each'
+  12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/binary_compiled_content_cache.rb:51:in `[]='
+  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/compiled_content_cache.rb:46:in `[]='
+  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/cache.rb:29:in `run'
+  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib/nanoc/core/compilation_phases/resume.rb:14:in `block in run'
 
 ===== VERSION INFORMATION:
 
-Nanoc 4.11.23 © 2007–2021 Denis Defreyne.
+Nanoc 4.12.1 © 2007–2021 Denis Defreyne.
 Running ruby 2.7.2 (2020-10-01) on x86_64-darwin20 with RubyGems 3.1.4.
 
 ===== SYSTEM INFORMATION:
@@ -93,7 +75,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   coderay 1.1.3
   colored 1.2
   concurrent-ruby 1.1.6, 1.1.8
-  coursegen 0.9.7, 0.9.8, 0.9.9, 0.9.10, 0.9.11, 0.9.12, 0.9.13
+  coursegen 0.9.7, 0.9.8, 0.9.9, 0.9.10, 0.9.11, 0.9.12, 0.9.13, 0.9.14
   crass 1.0.6
   cri 2.15.11
   csv 3.1.2
@@ -130,7 +112,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   hirb 0.7.3
   hotwire-rails 0.1.3
   i18n 1.8.2, 1.8.7, 1.8.9, 1.8.10
-  icalendar 2.7.0
+  icalendar 2.7.0, 2.7.1
   ice_cube 0.16.3
   io-console 0.5.6
   ipaddr 1.2.2
@@ -138,9 +120,9 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   iruby 0.4.0
   jaro_winkler 1.5.4
   jbuilder 2.10.0, 2.11.2
-  json 2.3.0
-  json_schema 0.20.9
-  kramdown 2.3.0
+  json 2.3.0, 2.5.1
+  json_schema 0.20.9, 0.21.0
+  kramdown 2.3.0, 2.3.1
   kramdown-parser-gfm 1.1.0
   kwalify 0.7.2
   listen 3.1.5, 3.4.1, 3.5.0, 3.5.1
@@ -148,20 +130,20 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   loofah 2.4.0, 2.5.0, 2.9.0
   lumberjack 1.2.8
   mail 2.7.1
-  marcel 0.3.3, 1.0.0
+  marcel 0.3.3, 1.0.0, 1.0.1
   matrix 0.2.0
   method_source 1.0.0
   mimemagic 0.3.4, 0.3.5
-  mini_mime 1.0.2, 1.0.3
+  mini_mime 1.0.2, 1.0.3, 1.1.0
   mini_portile2 2.4.0, 2.5.0
-  minitest 5.13.0, 5.14.0, 5.14.3, 5.14.4
+  minitest 5.14.3, 5.14.4
   msgpack 1.3.3, 1.4.1, 1.4.2
   multi_json 1.15.0
   mutex_m 0.1.0
-  nanoc 4.11.23
+  nanoc 4.11.23, 4.12.1
   nanoc-checking 1.0.1
-  nanoc-cli 4.11.23
-  nanoc-core 4.11.23
+  nanoc-cli 4.11.23, 4.12.1
+  nanoc-core 4.11.23, 4.12.1
   nanoc-deploying 1.0.1
   nenv 0.3.0
   net-pop 0.1.0
@@ -180,7 +162,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   pg 1.2.3
   power_assert 1.1.7
   prime 0.1.1
-  pry 0.13.1
+  pry 0.13.1, 0.14.0
   pry-byebug 3.9.0
   pstore 0.1.0
   psych 3.1.0
@@ -208,7 +190,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   regexp_parser 1.7.0, 2.0.3, 2.1.1
   reline 0.1.5
   reverse_markdown 2.0.0
-  rexml 3.2.3
+  rexml 3.2.3, 3.2.5
   rspec 3.10.0
   rspec-core 3.10.1
   rspec-expectations 3.10.1
@@ -248,7 +230,7 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   tomlrb 1.3.0
   tracer 0.1.0
   tty-color 0.6.0
-  tty-command 0.10.0
+  tty-command 0.10.0, 0.10.1
   tty-platform 0.3.0
   tty-which 0.4.2
   turbo-rails 0.5.8
@@ -277,62 +259,59 @@ Darwin iMac-2018.local 20.3.0 Darwin Kernel Version 20.3.0: Thu Jan 21 00:07:06 
   1. /usr/local/Cellar/rbenv/1.1.2/rbenv.d/exec/gem-rehash
   2. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/addressable-2.7.0/lib
   3. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/colored-1.2/lib
-  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib
-  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/diff-lcs-1.4.4/lib
-  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddmetrics-1.0.1/lib
-  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ref-2.0.0/lib
-  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddmemoize-1.0.0/lib
-  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddplugin-1.0.3/lib
-  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/hamster-3.0.0/lib
-  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/json_schema-0.20.9/lib
+  4. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-checking-1.0.1/lib
+  5. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/cri-2.15.11/lib
+  6. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/diff-lcs-1.4.4/lib
+  7. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddmetrics-1.0.1/lib
+  8. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ref-2.0.0/lib
+  9. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddmemoize-1.0.0/lib
+  10. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ddplugin-1.0.3/lib
+  11. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/hamster-3.0.0/lib
   12. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/slow_enumerator_tools-1.1.0/lib
-  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tomlrb-1.3.0/lib
-  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-platform-0.3.0/lib
-  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.11.23/lib
-  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.11.23/lib
-  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-checking-1.0.1/lib
-  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-deploying-1.0.1/lib
-  19. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/parallel-1.20.1/lib
-  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-color-0.6.0/lib
-  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/pastel-0.8.0/lib
-  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-command-0.10.0/lib
-  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-which-0.4.2/lib
-  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.11.23/lib
-  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/public_suffix-4.0.6/lib
-  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/concurrent-ruby-1.1.8/lib/concurrent-ruby
-  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/zeitwerk-2.4.2/lib
-  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/racc-1.5.2/lib
-  29. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/racc-1.5.2
-  30. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/adsf-1.4.5/lib
-  31. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib
-  32. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coderay-1.1.3/lib
-  33. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/method_source-1.0.0/lib
-  34. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/pry-0.13.1/lib
-  35. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/lumberjack-1.2.8/lib
-  36. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/formatador-0.2.5/lib
-  37. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nenv-0.3.0/lib
-  38. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/shellany-0.0.1/lib
-  39. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/notiffany-0.1.3/lib
-  40. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-2.16.2/lib
-  41. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-compat-1.2.1/lib
-  42. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-shell-0.7.1/lib
-  43. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ice_cube-0.16.3/lib
-  44. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/icalendar-2.7.0/lib
-  45. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/kramdown-2.3.0/lib
-  46. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/structured_warnings-0.4.0/lib
-  47. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/rubytree-1.0.0/lib
-  48. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.13/lib
-  49. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nokogiri-1.11.2-x86_64-darwin/lib
-  50. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/byebug-11.1.3/lib
-  51. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/byebug-11.1.3
-  52. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tzinfo-2.0.4/lib
-  53. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activesupport-6.1.3.1/lib
-  54. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/i18n-1.8.10/lib
-  55. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0
-  56. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0/x86_64-darwin20
-  57. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby
-  58. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby/2.7.0
-  59. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby/2.7.0/x86_64-darwin20
-  60. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby
-  61. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0
-  62. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/x86_64-darwin20
+  13. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-platform-0.3.0/lib
+  14. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-core-4.12.1/lib
+  15. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-cli-4.12.1/lib
+  16. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-deploying-1.0.1/lib
+  17. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/parallel-1.20.1/lib
+  18. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-which-0.4.2/lib
+  19. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nanoc-4.12.1/lib
+  20. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/public_suffix-4.0.6/lib
+  21. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/concurrent-ruby-1.1.8/lib/concurrent-ruby
+  22. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/json_schema-0.21.0/lib
+  23. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/zeitwerk-2.4.2/lib
+  24. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-color-0.6.0/lib
+  25. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/pastel-0.8.0/lib
+  26. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tty-command-0.10.1/lib
+  27. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/json-2.5.1/lib
+  28. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/json-2.5.1
+  29. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/adsf-1.4.5/lib
+  30. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/thor-1.1.0/lib
+  31. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/lumberjack-1.2.8/lib
+  32. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/formatador-0.2.5/lib
+  33. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nenv-0.3.0/lib
+  34. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/shellany-0.0.1/lib
+  35. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/notiffany-0.1.3/lib
+  36. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-2.16.2/lib
+  37. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-compat-1.2.1/lib
+  38. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/guard-shell-0.7.1/lib
+  39. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/structured_warnings-0.4.0/lib
+  40. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/rubytree-1.0.0/lib
+  41. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/coursegen-0.9.14/lib
+  42. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/nokogiri-1.11.2-x86_64-darwin/lib
+  43. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/racc-1.5.2/lib
+  44. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/racc-1.5.2
+  45. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/byebug-11.1.3/lib
+  46. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/extensions/x86_64-darwin-20/2.7.0/byebug-11.1.3
+  47. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/tzinfo-2.0.4/lib
+  48. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/activesupport-6.1.3.1/lib
+  49. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/i18n-1.8.10/lib
+  50. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/ice_cube-0.16.3/lib
+  51. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/icalendar-2.7.1/lib
+  52. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0
+  53. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby/2.7.0/x86_64-darwin20
+  54. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/site_ruby
+  55. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby/2.7.0
+  56. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby/2.7.0/x86_64-darwin20
+  57. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/vendor_ruby
+  58. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0
+  59. /Users/pitosalas/.rbenv/versions/2.7.2/lib/ruby/2.7.0/x86_64-darwin20

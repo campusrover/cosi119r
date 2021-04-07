@@ -76,7 +76,8 @@ HOME_PAGE = "/content/intro/10_syllabus.md.erb"
 MENULINKS = [%w[lectures /content/intro/20_coursetoc.md/],
              %w[homeworks /content/intro/30_weeks.md/],
              %w[latte https://moodle2.brandeis.edu/course/view.php?id=21653],
-             ["Big Ideas", "/content/intro/70_knowledge_map.md/"]].freeze
+             ["Big Ideas", "/content/background/70_knowledge_map.md/"]].freeze
+             
 # Helpful_box provides a feedback box on the sidebar.
 #
 # DO NOT USE. This is currently not functional.

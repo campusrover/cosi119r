@@ -70,3 +70,7 @@ urdf
 linemission.launch
 aws
 Robomaker
+pathplanning
+teambadge
+kalman
+bigtitle

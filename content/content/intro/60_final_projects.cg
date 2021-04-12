@@ -24,7 +24,7 @@ slides: true
 1. Video demonstration
 1. Contributions to Lab Notebook
 
-**Note: All the deliverables are in the GitHub repo, and the repo is part of the Campus Rover GitHub organization**
+**Note:** Your source code, project report, and video demonstration will be in a ROS package in a single repository that you will create in (or move to) the [Campus Rover GitHub organization](https://github.com/campusrover) and your lab contributions should be put in the [campusrover/labnotebook repo in the FAQ section](https://campus-rover.gitbook.io/lab-notebook/faq)
 
 :slide_title Source Code
 

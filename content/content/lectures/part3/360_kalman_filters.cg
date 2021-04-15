@@ -10,4 +10,10 @@ slides: true
 
 :topic_include :kalman_filters
 
+:slide_title
+
+1. Discussion about SLAM and move_base
+1. Discussion about what capabilities required for a robotic service dog
+1. Discussion about Independent studies and jobs
+
 :lecture_end

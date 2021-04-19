@@ -1,0 +1,25 @@
+---
+title: Behaviors
+desc: Standups and how to give robots intelligent behavior
+slides: true
+hwref: week12
+---
+:h2 Logistics
+
+* Checkin Questions
+* Standups
+
+:slide_bigtitle Robot Behavior
+
+:topic_include :complexprobs
+
+:slide_title What do we mean by Complex Behavior?
+
+* Obey a high level goal by creating subgoals, and responding to real time events
+* `move_base` behaviors are pretty complex
+* A lot can be learned from Computer Games and the behavior of "Non Player Characters"
+* Obviously an open ended question with many different approaches
+
+:discussion_box "Which teams have an example of requiring "complex behavior", or of apparent 'inteligence'. What were you planning to do?"
+
+:slide_title Behavior Trees

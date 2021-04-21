@@ -9,7 +9,7 @@ hwref: week12
 * Checkin Questions
 * Standups
 
-:slide_bigtitle Robot Behavior
+:slide_bigtitle Robot Behavior - Big Idea
 
 :topic_include :complexprobs
 
@@ -22,4 +22,57 @@ hwref: week12
 
 :discussion_box "Which teams have an example of requiring "complex behavior", or of apparent 'inteligence'. What were you planning to do?"
 
-:slide_title Behavior Trees
+:slide_title Example scenario
+
+* Lets say we want to implement the following "complex behavior":
+
+:callout :small, "behavior", " If the robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation."
+
+:discussion_box "How would you imlement that?"
+
+:slide_title Introduction to Finite State Machines
+
+* Basic and very useful way to control behaviors
+* And with lots of other applications! (See Regular Expressions and Cosi 130A)
+* You have seen it before, whether you identified it as an FSM or not`
+* Essential features:
+  1. Named nodes, corresponding to states
+  1. Edges connecting nodes, corresponding to "inputs"
+  1. Initial, Final and current states
+* Notice that depending on the scenario, the states, transitions and inputs can be very different.
+
+:slide_title Example of a real world FSM used in ROS
+
+:image :recovery_behaviors
+
+:slide_title Implementations
+
+* So simple that you don't really need a package 
+* But one part of the diagram can't be implemented as a basic FSM
+* We can either modify it or use a more fancy kind of finite state machine
+
+:discussion_box "Can you tell what the error is in the diagram (I didn't notice it before I actually went to implement it)"
+
+:slide_title Using `transitions` python package
+
+* You can decide whether you want to use a package or not
+* [pytransitions](https://github.com/pytransitions/transitions)
+
+:discussion_box "What are the tradeoffs in using a package or not?"
+
+:slide_title Introduction to Behavior Trees
+
+* Some similarity to FSM, however...
+* BTs are specifically trees, with one root and leaves
+* BTs have different `kinds` of nodes with very different semantics
+* The `leaves` represent the actual control actions
+* All the other nodes are part of the control logic
+
+:slide_title Examples
+
+
+:slide_title References used for this lecture
+* [Behavior Trees for AI: How They Work](https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php)
+* Recommended library: [py_trees](https://py-trees.readthedocs.io/en/devel/)
+* [Finite State Machine in Python](https://www.python-course.eu/finite_state_machine.php)
+

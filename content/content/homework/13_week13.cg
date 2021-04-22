@@ -1,15 +1,17 @@
 ---
-title: Work on Term Project
+title: Prepare to present a paper
 lectref: behavior project9
 due: April 26, 2021 at 11:50pm
 ---
-:h2 1. Weekly Updates :teambadge
+:h2 1. Read and present academic papers :teambadge
 
-:topic_include :hw_119_weekly_updates
+* Working with your teammate, read and present a seminal or super interesting paper in Robotics
+* Choose a paper from this specific list: :section_link :background :key_papers
+* No two teams should present the same paper! Coordinate in Slack
+* Prepare a 7 minute max presentation with 3 minutes for questions, and submit it
+* Live presentation on April 29, organized as follows: :topic_link :roundrobin_papers
 
-:h2 2. Full attention on your term project :teambadge
-
-* All of your time should be devoted to the term project now
-* Remember to use all the resources we provide!
-* Prepare to give a standup summary PLUS demo on Tuesday!
+:team_deliverable "Presentation as a pdf and prepare for live presentation"
+<break/>
+:team_deliverable "Preparation and delivery of live presentation"
 

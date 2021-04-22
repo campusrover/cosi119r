@@ -2,7 +2,7 @@
 title: Behaviors
 desc: Standups and how to give robots intelligent behavior
 slides: true
-hwref: week12
+hwref: week13
 ---
 :h2 Logistics
 
@@ -39,6 +39,11 @@ hwref: week12
   1. Named nodes, corresponding to states
   1. Edges connecting nodes, corresponding to "inputs"
   1. Initial, Final and current states
+* Algorithm
+  1. Start in the initial state
+  1. Receive an input
+  1. Follow the one edge out of that state, given that input
+  1. Repeat until you get to final state
 * Notice that depending on the scenario, the states, transitions and inputs can be very different.
 
 :slide_title Example of a real world FSM used in ROS
@@ -56,7 +61,8 @@ hwref: week12
 :slide_title Using `transitions` python package
 
 * You can decide whether you want to use a package or not
-* [pytransitions](https://github.com/pytransitions/transitions)
+* My favorite package is: [pytransitions](https://github.com/pytransitions/transitions)
+* And [implementation of the above FSM with pytransitions](https://github.com/campusrover/prrexamples/blob/master/src/fsm_example.py)
 
 :discussion_box "What are the tradeoffs in using a package or not?"
 

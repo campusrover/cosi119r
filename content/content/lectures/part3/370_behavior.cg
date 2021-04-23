@@ -9,8 +9,6 @@ hwref: week13
 * Checkin Questions
 * Standups
 
-:slide_bigtitle Robot Behavior - Big Idea
-
 :topic_include :complexprobs
 
 :slide_title What do we mean by Complex Behavior?
@@ -26,7 +24,7 @@ hwref: week13
 
 * Lets say we want to implement the following "complex behavior":
 
-:callout :small, "behavior", " If the robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation."
+:callout :small, "IF", " Robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation."
 
 :discussion_box "How would you imlement that?"
 

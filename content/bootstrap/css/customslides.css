@@ -16,6 +16,14 @@
     font-size: 1.8rem
 }
 
+.reveal h5 {
+  /* color: rgb(64, 56, 207); */
+    font-family: telex;
+    text-transform: none;
+    margin-bottom: 20px;
+    font-size: 1.8rem
+}
+
 .reveal li {
   margin-bottom: 15px;
   font-size: 1.8rem
@@ -28,6 +36,18 @@
 body {
   font-family: Helvetica;
   font-size: 13px;
+}
+
+div.discussionbox {
+  border: 2px dotted rgba(206, 19, 19, 0.877);
+  margin-top: 40px;
+  margin-bottom: 5px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 10px;
+  font-size: 1.7rem;
+  position: fixed;
+  bottom: 20px;
 }
 
 
@@ -46,4 +66,8 @@ body {
 
 .jumbotron h1 {
   font-size: 3rem;
+}
+
+.callout {
+  font-size: 1.8rem;
 }

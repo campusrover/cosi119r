@@ -7,7 +7,6 @@ hwref: week13
 :h2 Logistics
 
 * Checkin Questions
-* Standups
 
 :topic_include :complexprobs
 
@@ -63,16 +62,6 @@ hwref: week13
 * And [implementation of the above FSM with pytransitions](https://github.com/campusrover/prrexamples/blob/master/src/fsm_example.py)
 
 :discussion_box "What are the tradeoffs in using a package or not?"
-
-:slide_title Introduction to Behavior Trees
-
-* Some similarity to FSM, however...
-* BTs are specifically trees, with one root and leaves
-* BTs have different `kinds` of nodes with very different semantics
-* The `leaves` represent the actual control actions
-* All the other nodes are part of the control logic
-
-:slide_title Examples
 
 
 :slide_title References used for this lecture

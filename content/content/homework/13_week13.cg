@@ -1,6 +1,6 @@
 ---
 title: Prepare to present a paper
-lectref: behavior project9
+lectref: behavior behavior2
 due: April 26, 2021 at 11:50pm
 ---
 :h2 1. Read and present academic papers :teambadge
@@ -11,7 +11,11 @@ due: April 26, 2021 at 11:50pm
 * Prepare a 7 minute max presentation with 3 minutes for questions, and submit it
 * Live presentation on April 29, organized as follows: :topic_link :roundrobin_papers
 
-:team_deliverable "Presentation as a pdf and prepare for live presentation"
+:team_deliverable "April 26: Presentation as a pdf and prepare for live presentation"
 <break/>
-:team_deliverable "Preparation and delivery of live presentation"
+:team_deliverable "April 29: Preparation and delivery of live presentation"
+
+:h2 2. Self and Peer Assessments  (Due April 29 2021) :partbadge :pdfbadge
+
+:topic_include :hw_self_peer_assess_v3
 

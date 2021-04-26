@@ -1,0 +1,22 @@
+---
+title: Behavior Trees Continued
+desc: Behavior trees are a better way to create interesting Robot behavior
+slides: true
+hwref: week13
+---
+:h2 Logistics
+
+* Standups
+* Paper selections
+
+:slide_title Introduction to Behavior Trees
+
+* Some similarity to FSM, however...
+* BTs are specifically trees, with one root and leaves
+* BTs have different `kinds` of nodes with very different semantics
+* The `leaves` represent the actual control actions
+* All the other nodes are part of the control logic
+
+:slide_title Examples
+
+:lecture_end

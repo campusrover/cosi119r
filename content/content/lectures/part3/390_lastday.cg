@@ -16,9 +16,7 @@ hwref: week14
 
 :slide_title Today!
 
-* Review of <%= link_to_section :intro, :final_projects %>
-* Survey for us: https://forms.gle/a2Kxzv8zdzNgBizy9
-* Review of <%= link_to_topic :se_rules_of_thumb %>
+* Survey for us: [Very Brief Survey](https://forms.gle/a2Kxzv8zdzNgBizy9)
 * Please do your course evals now. Go to Latte
 
 <slide_break></slide_break>

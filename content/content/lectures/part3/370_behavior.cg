@@ -63,9 +63,10 @@ hwref: week13
 
 :discussion_box "What are the tradeoffs in using a package or not?"
 
+:slide_title Move Base as a Finite State Machine
+
+:image :fsm_example
 
 :slide_title References used for this lecture
-* [Behavior Trees for AI: How They Work](https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php)
-* Recommended library: [py_trees](https://py-trees.readthedocs.io/en/devel/)
 * [Finite State Machine in Python](https://www.python-course.eu/finite_state_machine.php)
 

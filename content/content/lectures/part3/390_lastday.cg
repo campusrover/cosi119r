@@ -6,18 +6,29 @@ hwref: week14
 ---
 :h2 Today
 
+1. Final (Presentations)
 1. Feedback on course content and structure
+1. Independent Studies and Roboticds Lab
 1. Discussion about "real world" Jobs, Interviews, Internships, etc.
 1. Quick Survey responses
 1. Special Visitor Jordan Pollack to talk about early work in Robotics
 
-:slide_bigtitle Improving the course
+:slide_title Final Presentations - May 11, 7 to 8:30pm ET
+
+* Finals Demos and Presentations
+* Your presence is required
+* Prepare a 5-10 minute demo + presentation
+* You can invite and I will invite guests
+* Questions?
+
+:slide_title Improving the course
 
 * Open Discussion: How to make the course better?
 * Term project organization. Does it need more structure, less structure?
 * How to get the most out of the book readings. How to structure assignments for the book.
+* Discuss...
 
-:slide_bigtitle Robotics Lab opportunities
+:slide_title Robotics Lab opportunities
 
 * Cosi119a Autonomous Robotics will not be taught in the fall, just in the spring
 * Robotics Lab will be open
@@ -26,7 +37,7 @@ hwref: week14
 * What my plans are for the lab
 * What is available to work with
 
-:slide_bigtitle Future of Bullet Robot
+:slide_title Future of Bullet Robot
 
 :image :250, :bullet
 
@@ -36,7 +47,7 @@ hwref: week14
 :image :100, :arm2
 :image :100, :arm3
 
-:slide_bigtitle Jobs and Carreers
+:slide_title Jobs and Carreers
 
 * :topic_link :real_world
 

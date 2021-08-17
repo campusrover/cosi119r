@@ -1,0 +1,21 @@
+---
+title: Speaker - Peter Grossman
+hwref: week10
+desc: Robotics in Biotech and Drug Discovery
+slides: true
+---
+## Logistics
+
+* Checkin Questions: and discussion
+* Discussion about Racetrack and Term Project
+
+:slide_title Speaker: Peter Grossman
+
+:topic_include :peter_grossman
+
+<video width="520" controls>
+  <source src="/content/topics/images/peter_robot.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+:lecture_end 

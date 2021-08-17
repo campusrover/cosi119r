@@ -1,0 +1,16 @@
+---
+title: Manipulators
+desc: More about links and joints and arms
+hwref: week11
+slides: true
+---
+:h2 Logistics
+
+* Checkin Questions
+* Arjun and August: about responsiveness, using slack for questions, not direct messaging
+* Review  :section_link :intro :final_projects
+* Standups
+
+:topic_include :joints_and_links
+
+:lecture_end

@@ -1,0 +1,18 @@
+---
+title: Joints and Links
+desc: Robots can have their own body parts that have to be controlled
+hwref: week10
+slides: true
+---
+
+:h2 Logistics
+
+* Checkin Questions
+* **[Computer Vision and Image Processing, concluded](https://docs.google.com/presentation/d/1UPT8QZegA0MgU3NzDlMMW84SkGGnVBXyo94MweP-CDw/edit#slide=id.gc508101b4a_0_5)**
+* Handy resource: [Learning OpenCV with Python](https://learning.oreilly.com/library/view/learning-opencv-4/9781789531619/cover.xhtml)
+* Review :topic_link :race_track
+
+:topic_include :joints_and_links
+
+
+:lecture_end

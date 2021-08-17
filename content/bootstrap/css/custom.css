@@ -180,6 +180,16 @@ footer {
   font-weight: bold;
 }
 
+div.discussionbox {
+  background-color:rgb(248, 240, 231);
+  border: 1px dotted black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+}
+
 .helpful {
   visibility: hidden;
 }

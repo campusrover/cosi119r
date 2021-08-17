@@ -1,0 +1,21 @@
+---
+title: Kalman Filters
+desc: About Kalman Filters and Sensor Fusion
+hwref:  week12
+slides: true
+---
+:h2 Logistics
+
+* Checkin Questions
+* Lab status
+
+:topic_include :kalman_filters
+
+:slide_title Discussions
+
+1. Discussion about Pupper localization
+1. Discussion about SLAM and move_base
+1. Discussion about what capabilities required for a robotic service dog
+1. Discussion about Independent studies and jobs
+
+:lecture_end

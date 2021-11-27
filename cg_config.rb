@@ -8,7 +8,7 @@ require 'coursegen'
 
 # AUTHOR
 AUTHOR_NAME = 'R. Pito Salas'
-AUTHOR_EMAIL = 'pitosalas@brandeis.edu'
+AUTHOR_EMAIL = 'rpsalas@brandeis.edu'
 COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}"
 
 # Bucket Deployment of the course
@@ -26,13 +26,13 @@ COURSE_ABBREV = 'AR'
 
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
   first_day: "feb-02-2021",
-  weekdays: [:tuesday, :thursday],
-  start_times: ["16:00", "16:00"],
-  end_times: ["17:30", "17:30"],
-  number: 25,
-  skips: ["mar-09-2021", "apr-20-2021"],
-  start_time: "16:00",
-  end_time: "17:30"
+  weekdays: [:tuesday, :friday],
+  start_times: ["12:30", "12:30"],
+  end_times: ["14:00", "14:00"],
+  number: 26,
+  skips: [],
+  start_time: "12:30",
+  end_time: "14:00~"
 )
 
 # Section_config defines the structure of the course.

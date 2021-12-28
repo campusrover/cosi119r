@@ -2,22 +2,16 @@
 title: "How is ROS organized?"
 desc: "Big Themes: How do Robots know what to do?"
 slides: true
-hwref: week2
 ---
-## Welcome
+:h3 Welcome
 
-* Checkin questions
 * Any outstanding questions?
-* <%= link_to_topic :cosi119a_grading %>
+* :topic_link :cosi119a_grading
 * Python Quiz (20 minutes)
 
-<slide_break></slide_break>
+:topic_include :social_contract
 
-<%= include_topic :social_contract %>
-
-<slide_break></slide_break>
-
-<%= include_topic :prr_ros_fundamentals %>
+:topic_include :prr_ros_fundamentals
 
 ### Review Topics
 
@@ -28,6 +22,4 @@ hwref: week2
 * Distributed nature of behavior
 * ROS nodes, topics and messages
 
-<slide_break></slide_break>
-
-## That's all for today!
+:lecture_end

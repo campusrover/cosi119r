@@ -1,0 +1,35 @@
+---
+title: Welcome
+desc: First day of class
+slides: true
+---
+:topic_include :slogan
+
+:slide_title Introduction
+
+* Robotics is fun!
+* Computer Science meets Software Engineering meets Math
+* You don't have to be an expert in all (or any)
+* Very few Cosi courses involve hardware!
+* History of this course
+
+:slide_title Overall Course Structure
+
+* Two lectures + 1 Lab
+* Lots of out-of-classroom work
+* Latte vs. This web site
+* :section_link :intro, :syllabus
+* Tour of this web site
+* Final Project
+
+:slide_title Group Icebreaker
+:topic_include :group_icebreaker
+
+:slide_title Course Materials
+:topic_include :cosi119a_course_materials
+
+:slide_title Demo
+
+* Using the web based environment
+
+:lecture_end

@@ -3,6 +3,7 @@ title: List of Lectures
 ---
 <%= list_of(source: "lectures",
             rows: ["subsection","page"],
-            cols: [:number, :date, :title, :desc, :hwref],
+            cols: [:number, :date, :title, :desc],
             items: @items,
             headers: {}) %>
+    

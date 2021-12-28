@@ -1,12 +1,11 @@
 ---
 title: Kalman Filters
 desc: About Kalman Filters and Sensor Fusion
-hwref:  week12
 slides: true
 ---
 :h2 Logistics
 
-* Checkin Questions
+* Check-in Questions
 * Lab status
 
 :topic_include :kalman_filters

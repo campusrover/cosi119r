@@ -24,7 +24,7 @@ slides: true
 
 :callout :small, "IF", " Robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation."
 
-:discussion_box "How would you imlement that?"
+:discussion_box "How would you implement that?"
 
 :slide_title Introduction to Finite State Machines
 

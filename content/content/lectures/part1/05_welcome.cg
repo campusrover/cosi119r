@@ -22,14 +22,10 @@ slides: true
 * Tour of this web site
 * Final Project
 
-:slide_title Group Icebreaker
-:topic_include :group_icebreaker
-
 :slide_title Course Materials
 :topic_include :cosi119a_course_materials
 
 :slide_title Demo
-
 * Using the web based environment
 
 :lecture_end

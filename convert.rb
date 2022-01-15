@@ -11,6 +11,10 @@ ARGV.each do |arg|
     s.sub!(/<%= link_to_topic :(.+?)%>/, ':topic_link :\1')
     s.sub!(/<%= include_topic :(.+?)%>/, ':topic_include :\1')
     s.sub!(/\* Look at homework: <%= link_to_next_lecture %>/, ':lecture_end')
+    s.sub!(/<%= source_end %>/, ':source_end')
+    s.sub!(/<%= source_begin "(.+?)" %>/, ':source_begin :\1')
+    s.sub!(/<slide_break><\/slide_break>/, "")
+    s.sub!(/\#\#\# (.+)$/, ':slide_title \1')
     outfile.puts(s)
   end
 end

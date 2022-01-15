@@ -24,8 +24,13 @@
         "Odometry",
         "Pito",
         "Prework",
+        "prrexamples",
         "roomba",
         "rosbooktoc",
+        "roscd",
+        "roscore",
+        "rospy",
+        "rosrun",
         "Rosserial",
         "teleop"
     ]

@@ -1,0 +1,13 @@
+---
+title: ROS Topics
+desc: Introducing ROS Fundamentals
+slides: true
+---
+:h3 Welcome!
+
+* Python Quiz (20 minutes)
+* Our [Autonomous Robotics Lab Notebook](https://campus-rover.gitbook.io/lab-notebook/)
+
+:topic_include :prr_ros_topics
+
+:lecture_end

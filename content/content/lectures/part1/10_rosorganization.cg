@@ -1,0 +1,13 @@
+---
+title: "How is ROS organized?"
+desc: Looking at the key building blocks that we will be using
+slides: true
+---
+:h3 Welcome
+
+* Any outstanding questions?
+* :topic_link :cosi119a_grading
+
+:topic_include :prr_ros_fundamentals
+
+:lecture_end

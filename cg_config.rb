@@ -9,7 +9,7 @@ require 'coursegen'
 # AUTHOR
 AUTHOR_NAME = 'R. Pito Salas'
 AUTHOR_EMAIL = 'rpsalas@brandeis.edu'
-COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}"
+COPYRIGHT_STRING = "Copyright (2013-#{Time.now.year}) #{AUTHOR_NAME}, #{AUTHOR_EMAIL}".freeze
 
 # Bucket Deployment of the course
 AWS_BUCKET = "cosi119r"
@@ -74,10 +74,9 @@ HOME_PAGE = "/content/intro/10_syllabus.md.erb"
 #   %w[HOME /content/index.md]
 #   %w[TOC /content/course_toc.md]
 MENULINKS = [%w[lectures /content/intro/20_coursetoc.md/],
-             %w[homeworks /content/intro/30_weeks.md/],
-             %w[latte https://moodle2.brandeis.edu/course/view.php?id=21653],
-             ["Big Ideas", "/content/background/70_knowledge_map.md/"]].freeze
-             
+             %w[homeworks /content/intro/22_homeworks.md/],
+             ["lab notebook", "https://campus-rover.gitbook.io/lab-notebook/"]]
+
 # Helpful_box provides a feedback box on the sidebar.
 #
 # DO NOT USE. This is currently not functional.

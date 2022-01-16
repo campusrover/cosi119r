@@ -1,5 +1,5 @@
 ---
-title: ROS Basics 2
+title: ROS Services
 desc: Continuing with different ROS Nodes, visualizers and simulators
 slides: true
 ---
@@ -11,11 +11,11 @@ slides: true
 
 ## ROS Services
 
-:topic_include :prr_ros_services 
+:topic_include :prr_ros_services
 
 :slide_title Breakout
 
 * Make sure you understand services
 * Come up with two examples where services would make sense
 
-## That's all for today
+:lecture_end

@@ -11,21 +11,32 @@ slides: true
 * Computer Science meets Software Engineering meets Math
 * You don't have to be an expert in all (or any)
 * Very few Cosi courses involve hardware!
-* History of this course
 
 :slide_title Overall Course Structure
 
 * Two lectures + 1 Lab
 * Lots of out-of-classroom work
-* Latte vs. This web site
-* :section_link :intro, :syllabus
-* Tour of this web site
 * Final Project
 
-:slide_title Course Materials
-:topic_include :cosi119a_course_materials
+:slide_title Course Resources
+
+* [Cosi119 Slack Channels](https://campusrover.slack.com)
+* Meet the TAs: 
+    * Kelly Duan
+    * August Soderberg
+    * Adam Ring
+* Ad-hoc Office Hours
+* Latte vs. This web site + Gradescope
+* Robotics Lab
+
+:slide_title Course Content
+
+* Tour of this web site
+* :section_link :intro, :syllabus
+* :topic_link :cosi119a_course_materials
 
 :slide_title Demo
+
 * Using the web based environment
 
 :lecture_end

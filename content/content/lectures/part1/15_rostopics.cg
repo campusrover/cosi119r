@@ -1,5 +1,5 @@
 ---
-title: ROS Topics
+title: ROS Nodes and Topics
 desc: Introducing ROS Fundamentals
 slides: true
 ---
@@ -8,6 +8,6 @@ slides: true
 * Python Quiz (20 minutes)
 * Our [Autonomous Robotics Lab Notebook](https://campus-rover.gitbook.io/lab-notebook/)
 
-:topic_include :prr_ros_topics
+:topic_include :intro_nodes_topics
 
 :lecture_end

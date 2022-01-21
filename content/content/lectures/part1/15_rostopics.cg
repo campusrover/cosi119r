@@ -10,4 +10,4 @@ slides: true
 
 :topic_include :intro_nodes_topics
 
-:lecture_end
+:image_rnd :xx, "800", "100"

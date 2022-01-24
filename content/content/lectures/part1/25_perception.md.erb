@@ -1,19 +1,14 @@
 ---
-title: How do robots perceive
+title: Perception and Sensors
 desc: Sensors of various kinds are essential to robotics
 slides: true
 ---
-## Logistics
 
-* Checkin Questions
+:slide_title Real Robots Don't Drive Straight - random 2 person breakout - 10 minutes
 
-
-
-:slide_title Breakout (5 minutes)
-
-* Building on :topic_link :prr_robot_hardware 
-* Under what circumstances would (raw) odom not match up with cmd_vel?
-
+* What was the "Real Robots Don't Drive Straight" about?
+* What is/or are your key takeaways What surprised you?
+* In breakout group - please nominate who will report out
 
 
 :slide_title How do Robots Perceive? Sensors
@@ -22,9 +17,7 @@ slides: true
 * What happens to the sensing information
 * How is it stored and detected and acted upon?
 
-
-
-#:slide_title Types of Sensors
+:slide_title Types of Sensors
 
 * Is a sensor an input or output device?
 * Proprioception
@@ -33,8 +26,6 @@ slides: true
 * Is a map a sensor?
 * Active Vs. Passive
 * Sensor Fusion
-
-
 
 :slide_title Lidar
 
@@ -46,8 +37,6 @@ slides: true
   * `roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch`
   * `roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch`
   * `rostopic echo --noarr -c /scan`
-
-
 
 :slide_title Subtleties
 
@@ -61,8 +50,6 @@ slides: true
 * It's sometimes wildly inaccurate
 * It is constantly flooding in
 
-
-
 :slide_title Breakout (15 Minutes)
 
 * Documentation for [LaserScan Data](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
@@ -74,15 +61,11 @@ slides: true
 * With your teammates write a few lines of python
 * Set the variable wall_ahead to true or false
 
-
-
 :slide_title Motor (encoder)
 
 * How it works
 * Key characteristics or features
 * What data it provides
-
-
 
 :slide_title Camera
 
@@ -90,15 +73,11 @@ slides: true
 * Key Characteristics or features
 * What Data it provides
 
-
-
 :slide_title Depth Camera
 
 * How it works
 * Key Characteristics or features
 * What data it provides
-
-
 
 :slide_title Sonar
 
@@ -106,15 +85,11 @@ slides: true
 * Key Characteristics or features
 * What data it provides
 
-
-
 :slide_title Bump sensors
 
 * How it works
 * Key Characteristics or features
 * What data it provides
-
-
 
 :slide_title IMU - Inertial Measurement Unit
 
@@ -123,14 +98,10 @@ slides: true
 * Gyro: Angular velocity - how fast spinning around an acciss
 * Can have them independently or combined into an IMU
 
-
-
 :slide_title GPS
 
 * How it works
 * Key Characteristics or features
 * What data it provides
 
-
-
-## See you next week!
+:lecture_end

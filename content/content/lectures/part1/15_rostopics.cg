@@ -5,9 +5,10 @@ slides: true
 ---
 :h3 Welcome!
 
-* Python Quiz (20 minutes)
+* Any questions at the start?
 * Our [Autonomous Robotics Lab Notebook](https://campus-rover.gitbook.io/lab-notebook/)
+* Review first programming assignment: :topic_link :out_and_back
 
 :topic_include :intro_nodes_topics
 
-:image_rnd :xx, "800", "100"
+:lecture_end

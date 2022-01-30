@@ -14,17 +14,16 @@ Teams Are formed!
 * Still help each other out
 
 
-* Checkin Questions
+* Check-in Questions
 * Changes based on feedback:
-  1. :topic_link :wall_follower   **Due date pushed out to March 4**
   1. Also we added starter code for wall Follower
   1. We are designing a series on "ROS / Robotics patterns and best practices"
   1. We are designing mini PAs to work on during lab
 * Discussion: Anything more?
 
-$$SLIDE_TITLE Quiz (30 Minutes)
+:slide_title Quiz (30 Minutes)
 
-$$SLIDE_TITLE Steering and navigation
+$:slide_title Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
@@ -33,7 +32,7 @@ $$SLIDE_TITLE Steering and navigation
 * Electricity controlled through software makes them move
 * So consider this...
 
-$$SLIDE_TITLE What is needed in terms of data, sensors, algorithms etc? (15 minutes)
+:slide_title What is needed in terms of data, sensors, algorithms etc? (15 minutes)
 
 * Discuss with teammate (breakout). Pick the one that matches your team number and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
 
@@ -44,7 +43,7 @@ $$SLIDE_TITLE What is needed in terms of data, sensors, algorithms etc? (15 minu
   1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
   1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
 
-$$SLIDE_TITLE Steering for wheeled vehicles
+:slide_title  Steering for wheeled vehicles
 
 * Degrees of freedom:
 * Vehicles
@@ -53,7 +52,7 @@ $$SLIDE_TITLE Steering for wheeled vehicles
 * Fixed attachments
 * Single instantaneous motion
 
-$$SLIDE_TITLE  How many does each one have?
+:slide_title How many does each one have?
 
 * Train?
 * Baseball?
@@ -61,7 +60,9 @@ $$SLIDE_TITLE  How many does each one have?
 * Car?
 * Tank?
 
-$$SLIDE_TITLE  Locomotion: Holonomic vs. Non-Holonomic
+:topic_include :pid_control
+
+:slide_title Locomotion: Holonomic vs. Non-Holonomic
 
 * Actual vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
@@ -74,7 +75,7 @@ $$SLIDE_TITLE  Locomotion: Holonomic vs. Non-Holonomic
   1. Actual DoF is 3 also
   1. Controllable DoF is 1 (wheel rotation)
 
-$$SLIDE_TITLE Different Configurations for wheeled
+:slide_title Different Configurations for wheeled
 
 * "Differential drive"
   1. Steering is achieved by driving wheels at different speeds
@@ -93,7 +94,7 @@ $$SLIDE_TITLE Different Configurations for wheeled
   1. Where the vehicle itself has a pivot point
   1. Notice that to steer the vehicle an algorithm needs to convert the desired rotation to proportional wheel spinning
 
-$$SLIDE_TITLE Firmware
+:slide_title Firmware
 
 * Software and hardware architecture
 * cmd_vel: needs to convert from high level units to motor commands
@@ -101,7 +102,7 @@ $$SLIDE_TITLE Firmware
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
 
-$$SLIDE_TITLE Kinematics
+:slide_title Kinematics
 
 * In general: given a pose, and a series of `commands`, calculate the new pose (forward kinematics)
 * And, given a pose and a desired new pose, what are the series of commands that will get you there (inverse kinematics)
@@ -114,7 +115,7 @@ $$SLIDE_TITLE Kinematics
 * For a differential drive, the math is complex but well understood
 * Note the relationship to path planning
 
-$$SLIDE_TITLE  Other scenarios
+:slide_title Other scenarios
 
 * Legged Vehicles
 * Tracked vehicles (tanks)
@@ -122,7 +123,7 @@ $$SLIDE_TITLE  Other scenarios
 * Under water vehicles
 * Aerial vehicles
 
-$$SLIDE_TITLE  Terrain
+:slide_title Terrain
 
 * Indoor vs. outdoor
   * Traction and slippage
@@ -133,7 +134,7 @@ $$SLIDE_TITLE  Terrain
   * Also affects levelness
   * Direction that cameras and sensors are pointed
 
-$$SLIDE_TITLE  The role of sensors in controlling motion
+:slide_title The role of sensors in controlling motion
 
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
@@ -141,4 +142,4 @@ $$SLIDE_TITLE  The role of sensors in controlling motion
 * MiniRover uses [YDlidar X4](https://www.ydlidar.com/Public/upload/files/2020-04-13/YDLIDAR%20X4%20Datasheet.pdf)
 * Review of dead reckoning
 
-$$END_OF_LECTURE
+:lecture_end

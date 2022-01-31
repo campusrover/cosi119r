@@ -1,6 +1,6 @@
 ---
-title: Using Sensors via ROS
-desc: How do we use sensor data to actually do something useful?
+title: Lidar
+desc: How do we work with the LIDAR?
 slides: true
 ---
 :h3 Logistics
@@ -12,28 +12,34 @@ slides: true
 
 * All your code (almost) in ROS is a node
 * All information (almost) is transferred in the form of messages
-* Sensors
-  * Are electronic devices
-  * Wired to the built in computer
-  * In the case of the TB3, wired to the Arduino
-  * Code on the Arduino read the i/o and participate as a node in ROS
-  * Publishing information
-* ROS info required
-  * What is the "topic" that the device publishes to
-  * How frequently does it publish (e.g. 10 times per second, once every second)
-  * And what is the message type
-* Acting on the sensor data
-  * A node subscribes to that topic
-  * Writes a "handler" which is invoked each time the sensor node publishes
-* Simulation and IRL are different
-  * Sensor's specifications are different (subtly)
-  * Ranges and what happens when out of range
-  * Degree of "randomness"
-  * Exact dimensions of robots, obstacles, etc.
+
+:slide_title Sensors
+* Are electronic devices
+* Wired to the built in computer
+* In the case of the TB3, wired to the Arduino
+* Code on the Arduino read the i/o and participate as a node in ROS
+* Publishing information
+
+:slide_title ROS info required
+* What is the "topic" that the device publishes to
+* How frequently does it publish (e.g. 10 times per second, once every second)
+* And what is the message type
+
+:slide_title Acting on the sensor data
+* A node subscribes to that topic
+* Writes a "handler" which is invoked each time the sensor node publishes
+
+:slide_title Simulation and IRL are different
+* Sensor's specifications are different (subtly)
+* Ranges and what happens when out of range
+* Degree of "randomness"
+* Exact dimensions of robots, obstacles, etc.
 
 :slide_title Lets look at some code about sensors
 
 * Demonstrate code from [RPSExamples](https://raw.githubusercontent.com/campusrover/rpsexamples/main/src/outbackstraight2.py?token=AAAK5CK2M32BIJ4SOJKU6EDAH6CK6)
 * Demonstrate Laser data quality by [looking at it in a spreadsheet](https://docs.google.com/spreadsheets/d/1FmGs7XlWe9YGtRFutOiiqSNj7i2DxvQIfJmmn1yMBvw/edit?usp=sharing)
+
+:topic_include :lidar_sensor
 
 :lecture_end

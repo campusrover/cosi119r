@@ -1,12 +1,12 @@
-Crashlog created at 2022-01-24 20:09:54 -0500
+Crashlog created at 2022-01-30 09:55:07 -0500
 
 ===== MESSAGE:
 
-RuntimeError: 'timed_out_and_back': invalid reference in section "topics"
+RuntimeError: 'lidar_sensor': invalid reference in section "topics"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/topics/hw-active-119/20_hw_119_pa1.cg (:default representation)
+Current item: /content/lectures/part1/23_rossensors.md.erb (:default representation)
 
 ===== STACK TRACE:
 
@@ -40,7 +40,7 @@ Running ruby 3.1.0 (2021-12-25) on x86_64-darwin21 with RubyGems 3.3.3.
 
 ===== SYSTEM INFORMATION:
 
-Darwin iMac-2018.local 21.2.0 Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:54 PST 2021; root:xnu-8019.61.5~1/RELEASE_X86_64 x86_64
+Darwin iMac-2018.local 21.3.0 Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_X86_64 x86_64
 
 ===== INSTALLED GEMS:
 
@@ -142,7 +142,7 @@ Darwin iMac-2018.local 21.2.0 Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:54 
   parser 3.1.0.0
   pastel 0.8.0
   pathname 0.2.0
-  pg 1.2.3
+  pg 1.2.3, 1.3.0
   power_assert 2.0.1
   pp 0.3.0
   prettyprint 0.1.1

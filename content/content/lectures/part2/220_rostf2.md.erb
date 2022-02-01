@@ -94,7 +94,6 @@ $ rosrun tf tf_echo turtle1 world
 $ rosrun rviz rviz -d `rospack find turtle_tf2`/rviz/turtle_rviz.rviz
 :source_end
 
-
 :h3 You now visualize all three tfs. Why do two move and one stay still?
 
 :slide_title Lets see how all this works: tf2_broadcaster
@@ -133,5 +132,26 @@ $ evince frames.pdf
 * New frame would be added as a child of an existing frame
 * How to decide what the parent frame should be?
 * Its the one that has the most obvious and simple transform
+
+
+h3 Defining TFs (transforms)
+
+* TFs have names which help you understand what physical component it is tied to
+* TFs for mobile robots follow a typical hierarchy as follows: map -> odom -> base_link
+* `base_link` for the “center” of the robot. You get to pick it but it should make some intuitive sense. All other parts of the robot are below base_link hierarchically in the tf tree
+* Sometimes it’s useful to have another TF which is the center of the footprint of the robot, meaning, a TF projected straight down from base_link and intersecting with the ground plane wherever that is. 
+* `odom` for the odometry created TF
+* `map `for the TF of a map built by hand or through slam
+* Conventional names and standards for TFs can be found here: (https://www.ros.org/reps/rep-0105.html) 
+
+:h3 Transforms (TFs)
+
+* TFs are fundamental to understanding anything relating to positions in ROS.
+* TFs are built on a hierarchical system of relative positions between different parts of a robot or different objects in the world.
+* The base_link is the “center” of the robot. You get to pick it but it should make some intuitive sense.
+* TFs allow all other parts of the robot to be described as a relative position to either the base_link directly or to other parts on the robot. For example a robots arm could be defined as a relative position to the base_link and a claw attached to the arm could be defined as a relative position to the arm. This hierarchy forms the TF tree of relative transforms between objects in the world.
+* Odometry is simply measuring the transform between the base_link and the origin point of your map (usually the position at which the robot started).
+* Continuing the example from before, lets say I need to know the relative positions of the hand on our robot and an lever in the world. The TF tree allow us to calculate this automatically, the hand position relative to the arm is know, the arm position relative to the base_link is known, the base_link position relative to the world or map is known through odometry, and the lever position relative to the world/map is know, problem solved.
+
 
 :lecture_end

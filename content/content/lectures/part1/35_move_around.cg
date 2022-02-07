@@ -3,30 +3,23 @@ title: "How do mobile Robots move?"
 desc: Wheels, legs and other ways for robots to move around 3D space
 slides: true
 ---
-:slide_title Logistics (10 minutes!)
+:h3 Logistics (10 minutes!)
 
-:topic_link :ros_best_practices
+* Lets discuss Chapter 7
+* I will ask in slack:
+  1. Did you get red light/green light to run in sim?
+  1. Do you realize that I provide addenda to the code in the book?
+  1. Did you get WanderBot to run?
+  1. What simulated environment did you use?
 
-
-Teams Are formed!
+:slide_title Teams Are formed!
 
 * Teams are basically study groups
-* How to be an effective team mate
-* We designed the teams to be balanced in their composition
-* Everyone is still fully responsible for their own work (see :topic_link :academic_integrity )
-* Still help each other out
+* You remain responsible for own work (see :topic_link :academic_integrity )
+* Help each other out
+* Teams of 1, 2 or 3 students
 
-
-* Check-in Questions
-* Changes based on feedback:
-  1. Also we added starter code for wall Follower
-  1. We are designing a series on "ROS / Robotics patterns and best practices"
-  1. We are designing mini PAs to work on during lab
-* Discussion: Anything more?
-
-:slide_title Quiz (30 Minutes)
-
-$:slide_title Steering and navigation
+:slide_bigtitle Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
@@ -35,9 +28,9 @@ $:slide_title Steering and navigation
 * Electricity controlled through software makes them move
 * So consider this...
 
-:slide_title What is needed in terms of data, sensors, algorithms etc? (15 minutes)
+:slide_title What is needed (data, sensors, algorithms) 
 
-* Discuss with teammate (breakout). Pick the one that matches your team number and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
+* Discuss in groups and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
 
   1. Drive in a straight road: how do you detect the road? How do you stay on your side? What sensors are needed?
   1. Turn a corner: How do you identify a corner? Left vs Right Corner? What about a hallway? What about a dead end?
@@ -46,16 +39,9 @@ $:slide_title Steering and navigation
   1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
   1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
 
-:slide_title  Steering for wheeled vehicles
+:slide_bigtitle Concept: Degrees of Freedom
 
-* Degrees of freedom:
-* Vehicles
-* But also grippers, arms, doors, anything that can move
-* Subtleties of you look for them...
-* Fixed attachments
-* Single instantaneous motion
-
-:slide_title How many does each one have?
+:slide_title DOF: How many does each one have?
 
 * Train?
 * Baseball?
@@ -63,9 +49,19 @@ $:slide_title Steering and navigation
 * Car?
 * Tank?
 
+:slide_title DOF: Considerations
+
+* Degrees of freedom:
+  1. Vehicles
+  1. But also grippers, arms, doors, anything that can move
+* Subtleties of you look for them...
+  1. Consider which coordinate system
+  1. Fixed attachments
+  1. Single instantaneous motion
+
 :topic_include :pid_control
 
-:slide_title Locomotion: Holonomic vs. Non-Holonomic
+:slide_bigtitle Locomotion: Holonomic vs. Non-Holonomic
 
 * Actual vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
@@ -105,7 +101,7 @@ $:slide_title Steering and navigation
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
 
-:slide_title Kinematics
+:slide_bigtitle Introducing Kinematics
 
 * In general: given a pose, and a series of `commands`, calculate the new pose (forward kinematics)
 * And, given a pose and a desired new pose, what are the series of commands that will get you there (inverse kinematics)

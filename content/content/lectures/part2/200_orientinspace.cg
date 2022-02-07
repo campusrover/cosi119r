@@ -1,0 +1,8 @@
+---
+title: Robot Orientation
+desc: The role of Maps in orientation and localization
+slides: true
+---
+:topic_include :prr_building_maps
+
+:lecture_end

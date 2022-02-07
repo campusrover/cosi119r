@@ -46,6 +46,7 @@
         "Rosserial",
         "samplesolutions",
         "teleop",
+        "teleoperation",
         "Turltebot",
         "turtlebot",
         "Udacity"

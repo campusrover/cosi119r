@@ -30,7 +30,7 @@ slides: true
 
 :slide_title What is needed (data, sensors, algorithms) 
 
-* Discuss in groups and prepare a 3 slide, 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
+* Discuss in groups. Pick one of these problems and your approach to them. Create a 3 slide (either real or on paper), 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
 
   1. Drive in a straight road: how do you detect the road? How do you stay on your side? What sensors are needed?
   1. Turn a corner: How do you identify a corner? Left vs Right Corner? What about a hallway? What about a dead end?

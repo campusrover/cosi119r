@@ -2,5 +2,9 @@
 title: ROS Programming Best Practices
 desc: How to write nice code in ROS
 ---
+:h3 Logistics
+
+* Lab today in person in our Lab
+* Continue with last class' material
 
 :topic_include :ros_best_practices

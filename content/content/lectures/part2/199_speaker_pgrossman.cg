@@ -4,12 +4,13 @@ desc: Robotics in Biotech and Drug Discovery
 slides: true
 ---
 ## Logistics
+* Questions in Slack
+  * What does SLAM stand for?
+  * (Difficult) Under what circumstances would the odom coordinate system not match the map coordinate system?
+  * What does "localization" mean (and say more than "to localize")
 
-* Checkin Questions: and discussion
-* Discussion about Racetrack and Term Project
 
 :slide_title Speaker: Peter Grossman
-
 :topic_include :peter_grossman
 
 <video width="520" controls>

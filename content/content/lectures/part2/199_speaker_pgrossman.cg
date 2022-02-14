@@ -4,6 +4,7 @@ desc: Robotics in Biotech and Drug Discovery
 slides: true
 ---
 ## Logistics
+* Homework that's due after break is hard. Start early. That's why nothing assigned for Friday!
 * Questions in Slack
   * What does SLAM stand for?
   * (Difficult) Under what circumstances would the odom coordinate system not match the map coordinate system?

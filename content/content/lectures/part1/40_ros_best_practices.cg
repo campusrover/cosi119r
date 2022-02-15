@@ -1,6 +1,7 @@
 ---
 title: ROS Programming Best Practices
 desc: How to write nice code in ROS
+slides: true
 ---
 :h3 Logistics
 

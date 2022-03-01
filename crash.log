@@ -1,12 +1,12 @@
-Crashlog created at 2022-02-12 17:50:05 -0500
+Crashlog created at 2022-02-28 09:14:18 -0500
 
 ===== MESSAGE:
 
-RuntimeError: 'hw_digital_ocean_1': invalid reference in section "topics"
+RuntimeError: 'hw_119a_term_project_proposal': invalid reference in section "topics"
 
 ===== ITEM BEING COMPILED:
 
-Current item: /content/topics/homeworks/hw_105_digital_ocean_0.cg (:default representation)
+Current item: /content/topics/robotics_logistics/60_final_projects.cg (:default representation)
 
 ===== STACK TRACE:
 
@@ -184,7 +184,7 @@ Darwin iMac-2018.local 21.3.0 Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 
   rspec-mocks 3.10.2
   rspec-support 3.10.2, 3.10.3
   rss 0.2.9
-  rubocop 1.24.1
+  rubocop 1.24.1, 1.25.1
   rubocop-ast 1.15.1
   ruby-progressbar 1.11.0
   ruby2_keywords 0.0.5

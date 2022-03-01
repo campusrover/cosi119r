@@ -5,10 +5,12 @@ slides: true
 ---
 ## Logistics
 * Homework that's due after break is hard. Start early. That's why nothing assigned for Friday!
+* Who has not had a private sesh in the lab or have one scheduled for today or tomorrow? Please remember Gradescope
+"Small Group Lab Session"
 * Questions in Slack
-  * What does SLAM stand for?
-  * (Difficult) Under what circumstances would the odom coordinate system not match the map coordinate system?
+  * What does SLAM stand for? 
   * What does "localization" mean (and say more than "to localize")
+  * (Difficult) Under what circumstances would the odom coordinate system not match the map coordinate system?
 
 
 :slide_title Speaker: Peter Grossman

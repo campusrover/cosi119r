@@ -27,7 +27,7 @@ slides: true
 * What part of the robot are we talking about?
 * The "middle"?
 * Who says where the middle is?
-* Does it matter how high of the ground it is?
+* Does it matter how high off the ground it is?
 
 :slide_title Orientation
 
@@ -57,8 +57,8 @@ slides: true
 
 * The combination of the robot's position and orientation (direction it is pointing)
 * Each one has 3 dimensions: x,y,z and r,p,y
-* x,y,z are cartesian coordinates
-* r,p,y are Euler coordinates
+* x,y,z are cartesian coordinates (position)
+* r,p,y are Euler coordinates (orientation)
 
 :slide_title Multiple Coordinate systems
 
@@ -95,6 +95,30 @@ slides: true
 * There's an exact conversion between Euler angles and Quaternions
 * For subtle mathematical reasons, when combining a series of rotations, Quaternions work better
 * Don't try to interpret the x,y,z,r of a quaternion, it doesn't have an intuitive mapping to x,y and z euler angles.
+
+:source_begin :python
+# type(pose) = geometry_msgs.msg.Pose
+# convert from euler to quaternion
+
+quaternion = tf.transformations.quaternion_from_euler(roll, pitch, yaw)
+pose.orientation.x = quaternion[0]
+pose.orientation.y = quaternion[1]
+pose.orientation.z = quaternion[2]
+pose.orientation.w = quaternion[3]
+
+# type(pose) = geometry_msgs.msg.Pose
+# convert from quaternion to euler
+
+quaternion = (
+    pose.orientation.x,
+    pose.orientation.y,
+    pose.orientation.z,
+    pose.orientation.w)
+euler = tf.transformations.euler_from_quaternion(quaternion)
+roll = euler[0]
+pitch = euler[1]
+yaw = euler[2]
+:source_end
 
 :slide_break
 

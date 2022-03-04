@@ -6,7 +6,8 @@ slides: yes
 :h2 Logistics
 
 * Secret attendance code is: 
-* Please do this quick survey:
+* Please do this [quick survey](https://forms.gle/BERorhsinHkNVNLy7)
+* Each team "presents" their project idea
 
 :slide_title Review
 
@@ -135,7 +136,7 @@ $ evince frames.pdf
 * Its the one that has the most obvious and simple transform
 
 
-h3 Defining TFs (transforms)
+:slide_title Defining TFs (transforms)
 
 * TFs have names which help you understand what physical component it is tied to
 * TFs for mobile robots follow a typical hierarchy as follows: map -> odom -> base_link
@@ -145,7 +146,7 @@ h3 Defining TFs (transforms)
 * `map `for the TF of a map built by hand or through slam
 * Conventional names and standards for TFs can be found here: (https://www.ros.org/reps/rep-0105.html) 
 
-:h3 Transforms (TFs)
+:slide_title  Transforms (TFs)
 
 * TFs are fundamental to understanding anything relating to positions in ROS.
 * TFs are built on a hierarchical system of relative positions between different parts of a robot or different objects in the world.

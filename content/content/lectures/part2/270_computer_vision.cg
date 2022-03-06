@@ -1,17 +1,10 @@
 ---
 title: Intro to computer Vision
-desc: Guest lecture about Computer Vision
+desc: Some basics about CV to get you started
 slides: true
 ---
 :h2 Logistics
-
-* Checkin Questions
-* Finish Tuesday's stuff
-
-:slide_title Tuesday's stuff
-
-* :topic_link :prr_localization
-* :topic_link :prr_navigating
+* Secret code:
 
 :slide_title Computer Vision
 

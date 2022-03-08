@@ -5,8 +5,17 @@ slides: yes
 ---
 :h2 logistics
 * Secret attendance code is: 
+* Key Dates for Project:
+  1. March 10: 1 page summary of project (:topic_link :hw_119_projectdesc)
+  1. March 17: Hello Robot demo
+  1. March 31: Pito meeting checkpoint
+  1. April 7: Core elements demo
+  1. April 28: Dress Rehearsal Video
+  1. May 6: Submit Final Deliverables
+  1. May 12: Open House/Showcase
 
-:slide_title Localization
+
+:slide_bigtitle Localization
 
 * What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!

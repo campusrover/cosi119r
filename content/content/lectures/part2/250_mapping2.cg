@@ -4,18 +4,13 @@ slides: true
 desc: Deeper dive into Mapping and Navigating
 ---
 :h2 Logistics
-
 * Secret attendance code is: 
-* Checkin Questions: and discussion
-* Standups - Each Team
-* Commentary on PAs
-
-:topic_include :prr_localization
 
 :topic_include :prr_navigating
+:topic_include :prr_move_base
+
 
 :slide_title Demo with MiniRover
-
 1. Show track
 1. Show urdf
 1. Show launch files and explain

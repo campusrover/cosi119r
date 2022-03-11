@@ -31,7 +31,6 @@ slides: true
 :slide_title Localization
 
 * [Video About Localization](https://youtu.be/aUkBa1zMKv4)
-
 * Markov localization
 * Markov means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 
 * Markov localization = state estimation from sensor data
@@ -41,15 +40,13 @@ slides: true
 * But how is the belief represented, and how is the update done efficiently
 
 :slide_title AMCL Particles Display
-<%= include_image "/content/topics/images/montecarlo.png" %>
+:image :montecarlo
 
 :slide_title Particle Filter
-
 * Instead of "solving" the equation for all data and all points
 * Use a Monte-Carlo technique
 * Generate a random collection of candidate locations
 * Compute the motion
 * Adjust the probability of each particle
-
 
 :lecture_end

@@ -6,6 +6,10 @@ slides: true
 :h2 Logistics
 
 * Secret attendance code is: 
+* Review of Projects Description Submissions
+    1. You have until tonight
+    1. Take it seriously because you will be demoing a hello world in 1 week
+    1. We will be pairing you up with a TA partner who will be checking with you at least once a week
 
 :topic_include :prr_localization
 
@@ -17,7 +21,7 @@ slides: true
 * And another useful link: [Where am I](https://medium.com/@NickHortovanyi/where-am-i-6cc0f6608c4c)
 
 :slide_title Monte Carlo
-
+* [Video about Monte Carlo](https://youtu.be/ELetCV_wX_c)
 * That's where the Casinos are!
 * Algorithms that incorporate random guesses when a direct solution is hard or not feasible
 * Diagram on the board how you would calculate Pi using a Monte Carlo Algorithm
@@ -25,6 +29,8 @@ slides: true
 * But it illustrates the idea of Monte Carlo estimation
 
 :slide_title Localization
+
+* [Video About Localization](https://youtu.be/aUkBa1zMKv4)
 
 * Markov localization
 * Markov means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 

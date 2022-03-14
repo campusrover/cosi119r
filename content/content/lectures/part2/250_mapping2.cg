@@ -1,17 +1,66 @@
 ---
-title: Mapping and Navigating
+title: Navigating
 slides: true
-desc: Deeper dive into Mapping and Navigating
+desc: Deeper dive into Navigating
 ---
 :h2 Logistics
 
 * Secret attendance code is: 
 * Midterm 'grades'
+* In general what do I expect to see in a readme file?
 * Please keep Slack running all the time. We have important and interesting messages there all the time.
-* 
 
-:topic_include :prr_navigating
-:topic_include :prr_move_base
+:slide_bigtitle Review
+:slide_title Map
+1. Consists of a grid of "costs" (costmap) and a coordinate system
+1. Map server "publishes" the map on the /map topic
+:slide_title SLAM
+1. An algorithm that builds up a map while collecting sensor and analyzing it statistically
+1. The map as it is being built is published by the map_server
+1. You can save the map to a file so that it remembers it to the next run
+:slide_title Navigation
+1. AMCL: Given lidar sensor data and a map, estimates the true location of the robot
+1. Calculation is reset when amcl receives a new pose_estimate
+1. This estimate is different from /odom (why?)
+1. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
+
+:slide_title move_base
+* A sophisticated, pluggable architecture
+* Allows for new algorithms to be designed and tested
+* Parameterized for configuration
+* Uses ROS "actions" to initiate, monitor, and report success
+* Initial goal is: /MoveBaseActionGoal
+
+:slide_title Components of move_base
+
+* Global Planner: Creates a plan from the current position (AMCL) to the goal position with respect to a map. May use any of a number of algorithms (including A*)
+* Local Planner: Given the local map (built in real time from sensors), considers location and velocity and computes the near part of the plan.
+* costmap-2d: General package to build, maintain, update and access a multi-layer 2d map. Used for both local and global maps and for other things
+* Recovery behaviors: either map clearing or rotation recovery heuristics used when robot appears to be stuck.
+
+:slide_title FLows
+:image :move_base
+
+:slide_title How move_base works - global planner
+1. Uses base_global planner to comnpute a path from current position to goal
+1. This plan is with respect to the global costmap (from /map topic and `map_server`)
+1. Look at [ROS global planner](http://wiki.ros.org/global_planner) for visuals
+1. Interesting parameters:
+
+:source_begin :bash
+/use_dijkstra (bool, default: true) # If true, use dijkstra's algorithm. Otherwise, A*.
+/use_quadratic (bool, default: true) # If true, use the quadratic approximation of the potential. Otherwise, use a simpler calculation.
+/use_grid_path (bool, default: false) # If true, create a path that follows the grid boundaries. Otherwise, use a gradient descent method.
+:source_end
+
+:slide_title How move_base works - local planner
+1. Create a local map grid from the local costmap) with costs representing distances to the final goal
+1. Uses base_local_planner to determine the next motion in the immediate future
+
+:slide_title The two book chapters
+
+* :topic_link :prr_navigating
+* :topic_link :prr_move_base
 
 :slide_title Demo with MiniRover
 1. Show track

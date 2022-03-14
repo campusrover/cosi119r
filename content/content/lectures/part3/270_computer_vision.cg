@@ -1,0 +1,152 @@
+---
+title: Intro to computer Vision
+desc: Some basics about CV to get you started
+slides: true
+---
+:h2 Logistics
+* Secret code:
+
+:slide_bigtitle Computer Vision
+
+:slide_title Seeing ==? Vision
+
+* We focus here on cameras
+* Ignore other kinds of "seeing" such as touch sensors or LIDAR.
+* A lot more than taking pictures
+* Can be used for:
+  1. Mapping
+  2. Localization
+  3. Object recognition
+  4. Trajectory Estimation
+  5. Driver Distraction
+  6. Redundancy
+
+:slide_title Fiducials (review)
+
+* How do we get the transform between a camera and fiducials?
+* Compare the orientation, size and transfor betwen the obsrved image and the known features of the fiducial
+* Two types of Fiducial Localization
+
+:slide_title Fiducial SLAM
+* Detect fideucials in image
+* Compute transform between fiducial(s) and camera (and robot)
+* Orient a coordinate system corresponding to the real world
+
+:slide_title Fiducial Localization with an existing map
+* Predefine a map with fiducials marked on it
+* Detect fiducials in camera image
+* Find transforms between fiducials and camera
+* Localize robot on that map
+
+:slide_title What kinds of cameras are available
+
+* Regular (webcam-like) cameras
+  * RGB images
+  * Video is basically a stream of images
+  * Usually it is treated just that way
+  * Each image is analyzed individually
+* Other bandwidth cameras
+  * infrared, etc.
+  * Not common
+* Depth cameras
+  * Mobile phone facial recognition
+  * Microsoft Kinnect
+  * In addition to R,G and B, each pixel has a number saying how far away that surface is
+
+:slide_title Considerations
+
+* Resolution of image
+* Power requirements
+* Fixed direction or sometimes a swivel
+* ROS needs to know how the cameras position and direction relates to the overall robot base
+* Another job for TFs
+* What would happen if this information is incorrect?
+* Where do the images have to be "sent" to?
+
+:slide_title Connections
+
+* USB or other Connections
+* Image needs to be viewed through unix utility
+* Which is not always easy
+* Bandwidth and speed of connection
+
+:slide_title Computer Vision (CV)
+
+* Recognizing: faces, locations, fiducials, gestures
+* Image processing: filtering colors, isolating shapes etc.
+* Machine Learning (ML): Statistical analysis of tagged images
+
+:slide_bigtitle Hands On
+:source_begin :bash
+$ roslaunch prrexamples linemission.launch model:=waffle
+
+# Template for CV  algorithms in ROS
+#
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
+
+rospy.init_node('cv_test')
+BRIDGE = CvBridge()
+
+def cv_callback(msg):
+   cv_image = BRIDGE.compressed_imgmsg_to_cv2(msg)
+   do_stuff(cv_image)
+cam_sub = rospy.Subscriber('/camera/rgb/image_raw’, Image, cv_callback)
+:source_end
+
+:slide_title Image Properties
+
+:image :cv_image_properties
+
+:source_begin :bash
+# Simple manipulations
+
+tl_pixel = image[0][0] 				# top left pixel
+r_channel = image[0][0][0] 			# 'R' channel of top left pixel
+cropped_img = image[120:240, 0:320]	# crops the image to be only the bottom half
+:source_end
+
+:slide_title Countour Detection Functions
+
+:source_begin :python
+grayed_image = cv2.cvtColor(image, cv.COLOR_RGB2GRAY) 	# convert image to grayscale
+
+blurred_image = cv2.GaussianBlur(image,(5,5)) 			# blur image with a 5x5 kernel
+
+ret, threshold = cv2.threshold(imgray, 127, 255, 0) 	# create an threshold
+
+# detect contours by specifying a threshold, method, and mode
+contours, hierarchy = cv2.findContours(threshold, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+
+# contours are iterable
+for contour in contours:
+        ...
+
+# use drawContours() function for testing
+cv2.drawContours() 
+:source_end
+
+:image :cv_countour_detection
+
+:slide_title Line Detection Examples
+:image :cv_line_detection
+
+:source_begin :python
+img = image[120:240, 0:320]                     # crops the image     
+
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)     # convert image to grayscale
+
+# specify image, min threshold, max threshold, and aperture (kernel size)
+edges = cv2.Canny(gray,50,150,apertureSize = 3) # convert grayscale to edge highlighted image
+
+# specify edge image, distance resolution, angular resolution, and minimum threshold
+lines = cv2.HoughLines(edges,1,np.pi/180,200)   # get lines from edges
+
+# lines are iterable
+for line in lines:
+        ...
+
+# draw a single line on a image for testing
+cv2.drawLine() 
+:source_end

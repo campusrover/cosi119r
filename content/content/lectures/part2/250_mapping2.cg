@@ -5,10 +5,11 @@ desc: Deeper dive into Mapping and Navigating
 ---
 :h2 Logistics
 * Secret attendance code is: 
+* Midterm 'grades'
+* 
 
 :topic_include :prr_navigating
 :topic_include :prr_move_base
-
 
 :slide_title Demo with MiniRover
 1. Show track

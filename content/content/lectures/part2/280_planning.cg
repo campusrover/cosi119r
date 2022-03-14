@@ -1,20 +1,11 @@
 ---
-title: Kinematics 
+title: Path Planning 
 desc: Look a little deeper at how its done
 slides: true
 ---
 :h2 Logistics
-
+ 
 * Checkin Questions
-
-:slide_break
-
-:youtube "https://www.youtube.com/embed/IKOGwoJ2HLk"
-
-:slide_bigtitle PythonRobotics Learning Samples
-
-* Let's skim some code: [Arm Navigation](https://pythonrobotics.readthedocs.io/en/latest/modules/arm_navigation.html#inverse-kinematics-for-a-planar-two-link-robotic-arm)
-* Lets run that code too
 
 :slide_bigtitle Path Planning
 
@@ -22,7 +13,7 @@ slides: true
 * Goal of path planning: get the robot from where it is to a destination
 * Beyond that there are many variations
   1. What kind of map is present?
-  2. Are the obstacles encountered known ahead of time, and can they move?
+  2.  Are the obstacles encountered known ahead of time, and can they move?
 
 :slide_title Types of maps - Graphs
 

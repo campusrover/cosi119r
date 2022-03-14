@@ -11,5 +11,12 @@ slides: true
 * Standups
 
 :topic_include :joints_and_links
+:youtube "https://www.youtube.com/embed/IKOGwoJ2HLk"
+
+:slide_bigtitle PythonRobotics Learning Samples
+
+* Let's skim some code: [Arm Navigation](https://pythonrobotics.readthedocs.io/en/latest/modules/arm_navigation.html#inverse-kinematics-for-a-planar-two-link-robotic-arm)
+* Lets run that code too
+
 
 :lecture_end

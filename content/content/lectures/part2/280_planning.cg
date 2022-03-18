@@ -76,6 +76,15 @@ slides: true
 * More specifically we are computing a transform betwen a `map` tf and a `robot_base` tf
 * Even more specifically what is the transform between the `pose` of the fiducial and the `pose` of the camera.
 
+:slide_title Lab Notebook Entries
+
+* A coming homework asks that you write a "howto" for our lab notebook
+* Here's one about [Localization with Fiducials](https://campus-rover.gitbook.io/lab-notebook/cr-package/navigation/fiducials) from another semester
+
+:slide_title Other Resources
+
+
+
 * Two types of Fiducial Localization
 
 :slide_title Fiducial SLAM

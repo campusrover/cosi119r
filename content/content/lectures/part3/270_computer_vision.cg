@@ -21,23 +21,6 @@ slides: true
   5. Driver Distraction
   6. Redundancy
 
-:slide_title Fiducials (review)
-
-* How do we get the transform between a camera and fiducials?
-* Compare the orientation, size and transfor betwen the obsrved image and the known features of the fiducial
-* Two types of Fiducial Localization
-
-:slide_title Fiducial SLAM
-* Detect fideucials in image
-* Compute transform between fiducial(s) and camera (and robot)
-* Orient a coordinate system corresponding to the real world
-
-:slide_title Fiducial Localization with an existing map
-* Predefine a map with fiducials marked on it
-* Detect fiducials in camera image
-* Find transforms between fiducials and camera
-* Localize robot on that map
-
 :slide_title What kinds of cameras are available
 
 * Regular (webcam-like) cameras

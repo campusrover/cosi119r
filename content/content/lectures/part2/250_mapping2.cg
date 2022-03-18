@@ -11,6 +11,7 @@ desc: Deeper dive into Navigating
 * Please keep Slack running all the time. We have important and interesting messages there all the time.
 
 :slide_bigtitle Review
+
 :slide_title Map
 1. Consists of a grid of "costs" (costmap) and a coordinate system
 1. Map server "publishes" the map on the /map topic
@@ -25,6 +26,7 @@ desc: Deeper dive into Navigating
 1. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
 
 :slide_title move_base
+
 * A sophisticated, pluggable architecture
 * Allows for new algorithms to be designed and tested
 * Parameterized for configuration

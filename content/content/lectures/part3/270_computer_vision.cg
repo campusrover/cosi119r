@@ -24,17 +24,17 @@ slides: true
 :slide_title What kinds of cameras are available
 
 * Regular (webcam-like) cameras
-  * RGB images
-  * Video is basically a stream of images
-  * Usually it is treated just that way
-  * Each image is analyzed individually
-* Other bandwidth cameras
-  * infrared, etc.
-  * Not common
+  1. RGB images
+  1. Video is basically a stream of images
+  1. Usually it is treated just that way
+  1. Each image is analyzed individually
+* Other light bandwidth cameras
+  1. infrared, etc.
+  1. Not common
 * Depth cameras
-  * Mobile phone facial recognition
-  * Microsoft Kinnect
-  * In addition to R,G and B, each pixel has a number saying how far away that surface is
+  1. Mobile phone facial recognition
+  1. Microsoft Kinnect
+  1. In addition to R,G and B, each pixel has a number saying how far away that surface is
 
 :slide_title Considerations
 
@@ -59,28 +59,42 @@ slides: true
 * Image processing: filtering colors, isolating shapes etc.
 * Machine Learning (ML): Statistical analysis of tagged images
 
-:slide_bigtitle Hands On
-:source_begin :bash
-$ roslaunch prrexamples linemission.launch model:=waffle
+:slide_title Code
 
-# Template for CV  algorithms in ROS
-#
-from sensor_msgs.msg import Image
-from cv_bridge import CvBridge
-import cv2
-
-rospy.init_node('cv_test')
-BRIDGE = CvBridge()
-
-def cv_callback(msg):
-   cv_image = BRIDGE.compressed_imgmsg_to_cv2(msg)
-   do_stuff(cv_image)
-cam_sub = rospy.Subscriber('/camera/rgb/image_raw’, Image, cv_callback)
-:source_end
+:callout :small, "Note", "Burger TB3 in Gazebo does not have a camera! Must use Waffle"
+* `roslaunch prrexamples linemission.launch model:=waffle`
+* Look at [cvexample.py](https://github.com/campusrover/prrexamples/blob/master/src/cvexample.py)
 
 :slide_title Image Properties
 
+* Images are stored in arrays
+* Top left pixel is 0,0
+* Bottom right pixel is m,n
+* Each element of this array is another array, with the values for that pixel
+* And that depends on the image encoding.
+
 :image :cv_image_properties
+
+:slide_title Image Encodings
+
+* Usually each component is an integer from 0-255
+* Zero means none of that component; 255 means the maximum of that component
+* The first three components determine the color
+* There can be more components, e.g. distance, or transparency, or others.
+* Generally you can freely convert between encodings
+
+:slide_title Encoding for color: RGB
+
+* RGB - Red, Green, Blue
+* Like mixing colored lights. 100% of Red + Blue + Green gives white
+
+:slide_title Encoding for color: HSV
+* HSV - Hue, Saturation, Value
+* A little more subtle. You have to practice your eye
+* Hue is the color where all colors are arranged in a rainbow from 0 to 255
+* Saturation is how "pure" or "saturated" that color is
+* Value is how "bright" the color is
+* Sometimes its easier to think in terms of HSV
 
 :source_begin :bash
 # Simple manipulations
@@ -90,46 +104,34 @@ r_channel = image[0][0][0] 			# 'R' channel of top left pixel
 cropped_img = image[120:240, 0:320]	# crops the image to be only the bottom half
 :source_end
 
-:slide_title Countour Detection Functions
 
-:source_begin :python
-grayed_image = cv2.cvtColor(image, cv.COLOR_RGB2GRAY) 	# convert image to grayscale
+:slide_title Image processing with OpenCV
 
-blurred_image = cv2.GaussianBlur(image,(5,5)) 			# blur image with a 5x5 kernel
+* OpenCV is the key library used for image procesing in ROS
+* It is totally distinct from ROS but great bridging functions exist
+* The current version is OpenCV2
 
-ret, threshold = cv2.threshold(imgray, 127, 255, 0) 	# create an threshold
+:slide_title Basics to understand
 
-# detect contours by specifying a threshold, method, and mode
-contours, hierarchy = cv2.findContours(threshold, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+* Understand representations of images as 2+ dimensional arrays
+* Understand that a given image "array" will have image information encoded
+* There are different encodings which change what is stored at the innermost array
+* Monochrome, Depth, RGB, HSV, and more
+* Different OpenCV functions expect and generate images of specific types
 
-# contours are iterable
-for contour in contours:
-        ...
+:slide_title Connecting OpenCV to ROS ...
 
-# use drawContours() function for testing
-cv2.drawContours() 
-:source_end
+:image :cvbridge3
 
-:image :cv_countour_detection
+* CvBridge() provides a series of methods that convert from ROS messages to OpenCV2() formats
+* And vice versa
+* e.g. `CvBridge().imgmsg_to_cv2(msg, desired_encoding='bgr8')`
 
-:slide_title Line Detection Examples
-:image :cv_line_detection
+:slide_title How to think about algorithms
 
-:source_begin :python
-img = image[120:240, 0:320]                     # crops the image     
+* They are a series of distinct steps (e.g. a `pipeline`)
+* Often, given an image, transform it, to a different image
+* The order really matters
+* Sometimes, given an image, analyze it, generate data (a number, an array, a list, etc)
 
-gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)     # convert image to grayscale
-
-# specify image, min threshold, max threshold, and aperture (kernel size)
-edges = cv2.Canny(gray,50,150,apertureSize = 3) # convert grayscale to edge highlighted image
-
-# specify edge image, distance resolution, angular resolution, and minimum threshold
-lines = cv2.HoughLines(edges,1,np.pi/180,200)   # get lines from edges
-
-# lines are iterable
-for line in lines:
-        ...
-
-# draw a single line on a image for testing
-cv2.drawLine() 
-:source_end
+:lecture_end

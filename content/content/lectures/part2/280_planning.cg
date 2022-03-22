@@ -82,8 +82,7 @@ slides: true
 * Here's one about [Localization with Fiducials](https://campus-rover.gitbook.io/lab-notebook/cr-package/navigation/fiducials) from another semester
 
 :slide_title Other Resources
-
-
+* Example: [fiducial_follow](https://github.com/UbiquityRobotics/demos/tree/master/fiducial_follow)
 
 * Two types of Fiducial Localization
 

@@ -3,15 +3,19 @@ title: Joints and Links
 desc: Robots can have their own body parts that have to be controlled
 slides: true
 ---
-
 :h2 Logistics
+* Secret code
 
-* Checkin Questions
-* **[Computer Vision and Image Processing, concluded](https://docs.google.com/presentation/d/1UPT8QZegA0MgU3NzDlMMW84SkGGnVBXyo94MweP-CDw/edit#slide=id.gc508101b4a_0_5)**
-* Handy resource: [Learning OpenCV with Python](https://learning.oreilly.com/library/view/learning-opencv-4/9781789531619/cover.xhtml)
-* Review :topic_link :race_track
+:slide_title Review and Reinforce
+
+* Robotics is not simple and there are no a-b-c recipes
+* You don't need to understand all of it but you do need to understand much of it
+* Final Project progress is important!
+
+:slide_title Supplemental Ideas about Fiducials
+
+* [Lab Notebook Working With Fiducials](https://campus-rover.gitbook.io/lab-notebook/faq/fiducial_follows)
 
 :topic_include :joints_and_links
-
 
 :lecture_end

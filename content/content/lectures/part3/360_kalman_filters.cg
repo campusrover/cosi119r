@@ -6,15 +6,11 @@ slides: true
 :h2 Logistics
 
 * Check-in Questions
-* Lab status
+* Final Project Dates
+  1. April 29: Final Demos in Lab of all projects
+  1. May 6: Submit Final Deliverables (except that code can still be updated until day of demo)
+  1. May 12: Open House/Showcase
 
 :topic_include :kalman_filters
-
-:slide_title Discussions
-
-1. Discussion about Pupper localization
-1. Discussion about SLAM and move_base
-1. Discussion about what capabilities required for a robotic service dog
-1. Discussion about Independent studies and jobs
 
 :lecture_end

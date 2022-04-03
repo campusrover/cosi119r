@@ -4,10 +4,7 @@ desc: How to give robots intelligent behavior
 slides: true
 ---
 :h2 Logistics
-
-* Check-in Questions
-
-:topic_include :complexprobs
+* Secret code:
 
 :slide_title What do we mean by Complex Behavior?
 

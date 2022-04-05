@@ -13,31 +13,35 @@ slides: true
 * A lot can be learned from Computer Games and the behavior of "Non Player Characters"
 * Obviously an open ended question with many different approaches
 
-:discussion_box "Which teams have an example of requiring "complex behavior", or of apparent 'inteligence'. What were you planning to do?"
+:discussion "Which teams have an example of requiring "complex behavior", or of apparent 'inteligence'. What were you planning to do?"
 
 :slide_title Example scenario
 
 * Lets say we want to implement the following "complex behavior":
 
-:callout :small, "IF", " Robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation."
+If Robot is stuck, then try the following, one after the other until the robot is unstuck: a) Conservative reset; b) clearing rotation; c) aggressive reset; d) clearing rotation. If after all of those the robot is still stuck, then abort the navigation
 
-:discussion_box "How would you implement that?"
+:discussion "How would you implement that?"
 
 :slide_title Introduction to Finite State Machines
 
 * Basic and very useful way to control behaviors
 * And with lots of other applications! (See Regular Expressions and Cosi 130A)
 * You have seen it before, whether you identified it as an FSM or not`
-* Essential features:
-  1. Named nodes, corresponding to states
-  1. Edges connecting nodes, corresponding to "inputs"
-  1. Initial, Final and current states
-* Algorithm
-  1. Start in the initial state
-  1. Receive an input
-  1. Follow the one edge out of that state, given that input
-  1. Repeat until you get to final state
-* Notice that depending on the scenario, the states, transitions and inputs can be very different.
+
+:slide_title Essential features:
+
+1. Named nodes, corresponding to states
+1. Edges connecting nodes, corresponding to "inputs"
+1. Initial, Final and current states
+
+:slide_title Algorithm
+1. Start in the initial state
+1. Receive an input
+1. Follow the one edge out of that state, given that input
+1. Repeat until you get to final state
+
+:callout :small, "Notice", "Depending on the scenario, the states, transitions and inputs can be very different."
 
 :slide_title Example of a real world FSM used in ROS
 
@@ -49,7 +53,7 @@ slides: true
 * But one part of the diagram can't be implemented as a basic FSM
 * We can either modify it or use a more fancy kind of finite state machine
 
-:discussion_box "Can you tell what the error is in the diagram (I didn't notice it before I actually went to implement it)"
+:discussion "Can you tell what the error is in the diagram (I didn't notice it before I actually went to implement it)"
 
 :slide_title Using `transitions` python package
 
@@ -57,12 +61,13 @@ slides: true
 * My favorite package is: [pytransitions](https://github.com/pytransitions/transitions)
 * And [implementation of the above FSM with pytransitions](https://github.com/campusrover/prrexamples/blob/master/src/fsm_example.py)
 
-:discussion_box "What are the tradeoffs in using a package or not?"
+:discussion "What are the tradeoffs in using a package or not?"
 
 :slide_title Move Base as a Finite State Machine
 
 :image :fsm_example
 
 :slide_title References used for this lecture
+
 * [Finite State Machine in Python](https://www.python-course.eu/finite_state_machine.php)
 

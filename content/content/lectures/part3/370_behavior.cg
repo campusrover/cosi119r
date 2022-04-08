@@ -67,7 +67,11 @@ If Robot is stuck, then try the following, one after the other until the robot i
 
 :image :fsm_example
 
-:slide_title References used for this lecture
+:slide_title For further study
 
 * [Finite State Machine in Python](https://www.python-course.eu/finite_state_machine.php)
+
+:topic_include :sample_robotics_challenges
+
+
 

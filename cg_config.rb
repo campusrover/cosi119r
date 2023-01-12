@@ -25,14 +25,14 @@ COURSE_ABBREV = 'AR'
 # and 2) figure out the ordering of classes on the sidebar.
 
 LECTURES_SCHEDULE_CONFIG = ScheduleDef.new(
-  first_day: "jan-18-2022",
-  weekdays: [:tuesday, :friday],
-  start_times: ["12:30", "12:30"],
-  end_times: ["13:50", "13:50"],
+  first_day: "jan-18-2023",
+  weekdays: [:monday, :wednesday],
+  start_times: ["16:05", "16:05"],
+  end_times: ["17:25", "17:25"],
   number: 26,
-  skips: ["feb-22-2022", "feb-25-2022", "mar-25-2022", "apr-15-2022", "apr-19-2022", "apr-22-2022"],
-  start_time: "12:30",
-  end_time: "14:00~"
+  skips: ["feb-20-2023", "feb-22-2023", "apr-05-2023", "apr-10-2023", "apr-12-2023", "apr-17-2023"],
+  start_time: "16:05",
+  end_time: "17:25"
 )
 
 # Section_config defines the structure of the course.

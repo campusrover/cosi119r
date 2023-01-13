@@ -5,12 +5,6 @@ slides: true
 ---
 :h2 Logistics
 
-* Secret attendance code is: 
-* Review of Projects Description Submissions
-    1. You have until tonight
-    1. Take it seriously because you will be demoing a hello world in 1 week
-    1. We will be pairing you up with a TA partner who will be checking with you at least once a week
-
 :topic_include :prr_localization
 
 :slide_title AMCL in more detail
@@ -22,6 +16,7 @@ slides: true
 * And another great explanation: [Hector Mapping](https://youtu.be/Q4qM-Uzj1SI)
 
 :slide_title Monte Carlo
+
 * [Video about Monte Carlo](https://youtu.be/ELetCV_wX_c)
 * That's where the Casinos are!
 * Algorithms that incorporate random guesses when a direct solution is hard or not feasible
@@ -44,6 +39,7 @@ slides: true
 :image :montecarlo
 
 :slide_title Particle Filter
+
 * Instead of "solving" the equation for all data and all points
 * Use a Monte-Carlo technique
 * Generate a random collection of candidate locations

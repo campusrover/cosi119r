@@ -5,6 +5,16 @@ slides: true
 ---
 :h3 Logistics (10 minutes!)
 
+<<<<<<< HEAD
+=======
+* Lets discuss Chapter 7
+* I will ask in slack:
+  1. Did you get red light/green light to run in sim?
+  1. Do you realize that I provide addenda to the code in the book?
+  1. Did you get WanderBot to run?
+  1. What simulated environment did you use?
+
+>>>>>>> a4f673ca81dcfbd70641b4f7beb3ac9c9dd6ad74
 :slide_bigtitle Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.

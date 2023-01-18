@@ -1,0 +1,16 @@
+---
+title: Kalman Filters
+desc: About Kalman Filters and Sensor Fusion
+slides: true
+---
+:h2 Logistics
+
+:slide_title ROS
+
+1. cvexample.py
+1. dynamic_reconfigure
+1. ROS "actions"
+
+:topic_include :kalman_filters
+
+:lecture_end

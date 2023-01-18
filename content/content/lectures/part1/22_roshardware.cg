@@ -3,13 +3,7 @@ title: Robot Hardware
 desc: How do our autonomous robots work?
 slides: true
 ---
-## Logistics (15 minutes)
-
-* What to do if you are unable to submit an assignment (hint: don't email pito with your assignment)
-* What to do if you need an excused absence (`adamring@brandeis.edu`)
-* In person next Tuesday! Volen 119!
-* roslaunch vs. rosrun vs. packages
-
+:h3  Logistics (15 minutes)
 
 :topic_include :prr_robot_hardware
 

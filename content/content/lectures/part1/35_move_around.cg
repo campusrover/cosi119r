@@ -5,20 +5,6 @@ slides: true
 ---
 :h3 Logistics (10 minutes!)
 
-* Lets discuss Chapter 7
-* I will ask in slack:
-  1. Did you get red light/green light to run in sim?
-  1. Do you realize that I provide addenda to the code in the book?
-  1. Did you get WanderBot to run?
-  1. What simulated environment did you use?
-
-:slide_title Teams Are formed!
-
-* Teams are basically study groups
-* You remain responsible for own work (see :topic_link :academic_integrity )
-* Help each other out
-* Teams of 1, 2 or 3 students
-
 :slide_bigtitle Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.

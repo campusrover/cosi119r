@@ -16,15 +16,12 @@ slides: true
 
 * Two lectures + 1 Lab
 * Lots of out-of-classroom work
-* Final Project
+* Final Project - work alone or in a team
 
 :slide_title Course Resources
 
 * [Cosi119 Slack Channels](https://campusrover.slack.com)
-* Meet the TAs: 
-    * Adam Ring <adamring@brandeis.edu>
-    * Veronika Belkina <vbelkina@brandeis.edu>
-* Ad-hoc Office Hours
+* Ad-hoc [Office Hours with Pito](http://calendly.com/pitosalas/)
 * Latte vs. This web site + Gradescope
 * Robotics Lab - Abelson Basement (Room 24)
 
@@ -34,8 +31,12 @@ slides: true
 * :section_link :intro, :syllabus
 * :topic_link :cosi119a_course_materials
 
-:slide_title Demo
+:slide_title Lab
 
-* Using the web based environment
+* Let's walk down to the lab
+* Meet the TAs: 
+    * Adam Ring <adamring@brandeis.edu>
+    * Veronika Belkina <vbelkina@brandeis.edu>
+* See some robots!
 
 :lecture_end

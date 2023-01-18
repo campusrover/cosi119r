@@ -31,6 +31,8 @@ slides: true
 * :section_link :intro, :syllabus
 * :topic_link :cosi119a_course_materials
 
+:callout :small, "NOTE", " Monday there will be a quiz on Python, Wednesday there will one for Shell"
+
 :slide_title Lab
 
 * Let's walk down to the lab
@@ -39,4 +41,6 @@ slides: true
     * Veronika Belkina <vbelkina@brandeis.edu>
 * See some robots!
 
-:lecture_end
+:slide_title WHy We Do This
+
+:image :thoughtitwouldbe

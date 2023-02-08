@@ -135,7 +135,7 @@ slides: true
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
 
-:slide Links for further study
+:slide_title Links for further study
 
 * Learning Quaternions: [Quaternions Online](https://quaternions.online/)
 * TB3 Burger uses [HLS-LFCD2](https://dabit.industries/products/360-laser-distance-sensor-lds-01-lidar)

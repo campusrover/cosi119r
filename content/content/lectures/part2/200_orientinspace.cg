@@ -3,6 +3,11 @@ title: Robot Orientation
 desc: The role of Maps in orientation and localization
 slides: true
 ---
+:h3 Logistics
+
+* Quick google form to get your feedback on the course
+* Quick review of the structure of the course: :section_link :background, :knowledge_map
+
 :topic_include :prr_building_maps
 
 :slide_title References for further study

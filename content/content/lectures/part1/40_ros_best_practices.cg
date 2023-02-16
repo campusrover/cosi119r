@@ -5,12 +5,8 @@ slides: true
 ---
 :h3 Logistics
 
-* Lab today in person in our Lab
-* Continue with last class' material
-* Answer Questions on Slack
-    * What topic is published to tell the robot to move
-    * Is there a difference between rospy.sleep(1) and time.sleep(1)?
-    * Where are parameters stored so that your robot can look them up?
-    * What do you use to monitor a real robot rviz or gazebo?
-    
+* Quick review of :topic_link :pid_control
+
 :topic_include :ros_best_practices
+
+:lecture_end

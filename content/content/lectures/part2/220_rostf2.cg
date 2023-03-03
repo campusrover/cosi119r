@@ -5,9 +5,10 @@ slides: yes
 ---
 :h2 Logistics
 
-* Secret attendance code is: 
-* Please do this [quick survey](https://forms.gle/BERorhsinHkNVNLy7)
-* Each team "presents" their project idea
+* Discuss what is expected in the video
+* SUbmbit the url not the whole file please
+* Please send video of "real robot" if you did that too.
+* Sometimes your code would work as is for an extra challenge, but you need to show it in the video
 
 :slide_title Review
 
@@ -20,15 +21,21 @@ slides: yes
 
 * Pose = position and orientation
 * Pose is always with respect of a specific coordinate frame or TF
+
+:slide_title Natural Coordinate system
+
 * Usually a coordinate begins as the "natural" way to think about It
-  * Angle of obstacle, with respect to the LIDAR
-  * Position a corner, with respect to the whole room
-  * Angle to turn, from the point of view of the robot itself
-  * So when you see phrases like "with respect to", and "from the point of view of" you know these refer to coordinate frames.
+* Angle of obstacle, with respect to the LIDAR
+* Position a corner, with respect to the whole room
+* Angle to turn, from the point of view of the robot itself
+* So when you see phrases like "with respect to", and "from the point of view of" you know these refer to coordinate frames.
+
+:slide_title What is the natural TF hierachy?
+
 * It is very common to want to see that same point or angle from another's point of view
-  * How much do I have to turn to point directly away from the wall?
-  * What direction is the nearest door from me?
-  * How do I drive in the direction of the fiducial?
+* How much do I have to turn to point directly away from the wall?
+* What direction is the nearest door from me?
+* How do I drive in the direction of the fiducial?
 * Compare starboard/port and driver vs. passenger side
 
 :slide_title TF
@@ -43,22 +50,24 @@ slides: yes
 * Coordinate systems are given names, e.g. "world" or "lidar-1"
 * They are organized into a tree
 * Every named tf has just one parent, and unlimited number of children
-* TF broadcasts
-  * Any node can report on the relationship between two coordinate system
-  * Generally this is a node who knows something about one or the other.
-  * For example, the node that moved the arm, can report the new relative position
-  * That is, to get from tf "a" to tf "b", add add 10 to the x or rotate 180 degrees around z.
+
+:slide_title TF broadcasts
+
+* Any node can report on the relationship between two coordinate system
+* Generally this is a node who knows something about one or the other.
+* For example, the node that moved the arm, can report the new relative position
+* That is, to get from tf "a" to tf "b", add add 10 to the x or rotate 180 degrees around z.
 * TF Listeners
 * If my node needs to interpret coordinates I might listen to tf messages
-  * Allowing to convert coordinates between any two coordinate frames.
-
+* Allowing to convert coordinates between any two coordinate frames.
 
 :slide_title Lets look at some code
 
 * If you want to follow along, we are going to look at [Introduction to tf2](http://wiki.ros.org/tf2/Tutorials/Introduction%20to%20tf2)
 
-:source_begin :language-bash
-$ sudo apt-get install ros-melodic-turtle-tf2 ros-melodic-tf2-tools ros-melodic-tf
+:source_begin :shell
+$ sudo apt-get update
+$ sudo apt-get install ros-noetic-turtle-tf2 ros-noetic-tf2-tools ros-noetic-tf
 $ sudo apt install evince
 $ roslaunch turtle_tf2 turtle_tf2_demo.launch
 :source_end
@@ -70,39 +79,54 @@ $ roslaunch turtle_tf2 turtle_tf2_demo.launch
 * Code is using tf2 to create three coordinate frames: one for the "world", and one each for the two turtles
 * Realize that if we give turtle1's coordinates as x,y, we'd still need to say, in what coordinate frame those were.
 * In t1's coordinate frame, t1's coordinates are always 0,0!
-* Lets take a look!
 
-:source_begin :language-bash
+:source_begin :shell
 $ rosrun tf2_tools view_frames.py
 $ evince frames.pdf
 :source_end
+
+:image :tf_view_frames
 
 * See the three coordinate frames and their hierarchical relationship
 * The diagram doesn't display the actual transform just the relationships
 * To see those we need to echo the transform:
 
-:source_begin :language-bash
+:source_begin :shell
 $ rosrun tf tf_echo turtle1 turtle2
+At time 1677784974.758
+- Translation: [0.000, 0.000, 0.000]
+- Rotation: in Quaternion [0.000, 0.000, -0.200, 0.980]
+            in RPY (radian) [0.000, 0.000, -0.402]
+            in RPY (degree) [0.000, 0.000, -23.046]
+
 $ rosrun tf tf_echo turtle1 world
+rosrun tf tf_echo turtle1 world
+At time 1677785078.262
+- Translation: [-5.544, -5.544, 0.000]
+- Rotation: in Quaternion [0.000, 0.000, 0.000, 1.000]
+            in RPY (radian) [0.000, -0.000, 0.000]
+            in RPY (degree) [0.000, -0.000, 0.000]
 :source_end
 
-:slide_break
-
-:h3 You can see the transform needed to get from turtle1 to turtle2 is different from the one between turtle1 and world. Why is that?
+* You can see the transform needed to get from turtle1 to turtle2 is different from the one between turtle1 and world. Why is that?
 
 :slide_title Visualization
 
-:source_begin :language-bash
+:source_begin :shell
 $ rosrun rviz rviz -d `rospack find turtle_tf2`/rviz/turtle_rviz.rviz
 :source_end
+* You now visualize all three tfs. Why do two move and one stay still?
 
-:h3 You now visualize all three tfs. Why do two move and one stay still?
+:image :rviz_tf
 
 :slide_title Lets see how all this works: tf2_broadcaster
 
-* Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_broadcaster.py`
+* Examine the code in prrexamples: 
+  * [`tf2_demo.launch`](https://raw.githubusercontent.com/campusrover/prrexamples/master/launch/tf2_demo.launch): Our copy of the launch file
+  * [`turtle_tf2_broadcaster.py`](https://raw.githubusercontent.com/campusrover/prrexamples/master/src/turtle_tf2_broadcaster.py): Our copy of the tf2_broadcaster
+  * [`turtle_tf2_listener.py`](https://raw.githubusercontent.com/campusrover/prrexamples/master/src/turtle_tf2_listener.py): Our copy of the tf2_listener
 
-:source_begin :language-bash
+:source_begin :shell
 $ roslaunch prrexamples start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 :source_end
@@ -111,11 +135,8 @@ $ rosrun tf tf_echo /world /turtle1
 * Notice that it is publishing turtle1's `tf`s relative to world
 * Drive around and notice that it is updating turtle1's pose and also a transform
 
-:slide_title Lets see how all this works: tf2_listener
 
-* Examine the code in prrexamples: `tf2_demo.launch` and `turtle_tf2_listener.py`
-
-:source_begin :language-bash
+:source_begin :shell
 $ roslaunch prrexamples start_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 $ rosrun tf tf_echo /world /turtle2
@@ -123,18 +144,17 @@ $ rosrun tf tf_echo /world /turtle2
 
 :slide_title tf2 frames are organized in a tree
 
-:source_begin :language-bash
+:source_begin :shell
 $ rosrun tf2_tools view_frames.py
 $ evince frames.pdf
 :source_end
 
-* No cycles, one root
+* Notice, there are no cycles, one root
 * This ensures that there's only one path from one frame to another
 * Which ensure that we can compute the transform by following that path
 * New frame would be added as a child of an existing frame
 * How to decide what the parent frame should be?
 * Its the one that has the most obvious and simple transform
-
 
 :slide_title Defining TFs (transforms)
 
@@ -151,9 +171,8 @@ $ evince frames.pdf
 * TFs are fundamental to understanding anything relating to positions in ROS.
 * TFs are built on a hierarchical system of relative positions between different parts of a robot or different objects in the world.
 * The base_link is the “center” of the robot. You get to pick it but it should make some intuitive sense.
-* TFs allow all other parts of the robot to be described as a relative position to either the base_link directly or to other parts on the robot. For example a robots arm could be defined as a relative position to the base_link and a claw attached to the arm could be defined as a relative position to the arm. This hierarchy forms the TF tree of relative transforms between objects in the world.
-* Odometry is simply measuring the transform between the base_link and the origin point of your map (usually the position at which the robot started).
-* Continuing the example from before, lets say I need to know the relative positions of the hand on our robot and an lever in the world. The TF tree allow us to calculate this automatically, the hand position relative to the arm is know, the arm position relative to the base_link is known, the base_link position relative to the world or map is known through odometry, and the lever position relative to the world/map is know, problem solved.
-
+* TFs allow all other parts of the robot to be described as a relative position to either the base_link directly or to other parts on the robot. 
+* Odometry is simply measuring the transform between the base_link and the origin point of the odom tf (usually the position at which the robot started).
+* Continuing the example from before, lets say I need to know the relative positions of the hand on our robot and an lever in the world. 
 
 :lecture_end

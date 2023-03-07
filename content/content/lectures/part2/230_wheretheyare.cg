@@ -5,6 +5,18 @@ slides: yes
 ---
 :h2 logistics
 
+* New Lab Schedule
+* Some labs have important activities; not all, but some
+* Mandatory for all students
+* Thursday's from 3:55pm to 5:55pm
+* If you have a serious conflict, you can leave a little earlier
+* But you need to be there and you need to talk to me before leaving
+* Thursday morning 10-12 is still a lab with TA and/or Pito staffing
+
+:slide_bigtitle Before closing up Lab I saw this
+
+:image :500, :whatswrongwiththispicture
+
 :slide_bigtitle Localization
 
 * What exactly is the problem with knowing where you are?
@@ -18,43 +30,46 @@ slides: yes
 * Lidar detected fixed obstacles
 * Vision detected fixed obstacles
 * How can one obstacle be distinguished from another?
+* Color, Size, Shape
+* Note that in addition to recognizing, we need to know the distance
 
 :slide_title Lidar detection
 
 * Robot has a 'map' of fixed obstacles
 * Robot compares that map with the apparent, transient, map from Lidar
 * Calculates a probability distribution of where it might be on that map
-* Process is called AMCL
+* Process is called AMCL - Adaptive Monte Carlo Localization
 
 :slide_title Visual Detection
 
 * Robot has a collection of scenes it can recognize.
 * Needs to meet certain characteristics for it to work
-  1. CV (computer vision) algorithms need to be able to identify and differentiate it from other images
-  1. A coordinate in 3D space is required
-  1. It needs to stay put and not move
-  1. Examples: facade of a building, a particular tree, a wall, etc.
-  1. Bad examples: a parked car; a person
 * With each scene is the coordinates that correspond to the recognized scene
 * CV is constantly analyzing what is seen by the camera
 * As soon as it identifies an image, it can use that to figure out where it is
 * Note! It has to also figure out where it is relative to the image
 
-:slide_title Fiducials
+:slide_title Requirements Visual localization
 
-* Standardized image with known dimensions
-* Conceptually simple geometrical transformation
-* Perspective distortion is used to compute relative pose (orientation and distance)
-* Tricky business with TFs and POV!
+* CV (computer vision) algorithms need to be able to identify and differentiate it from other images
+* A coordinate in 3D space is required
+* It needs to stay put and not move
+* Examples: facade of a building, a particular tree, a wall, etc.
+* Bad examples: a parked car; a person
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Y8WEGGbLWlA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:slide_bigtitle What is needed?
 
-:slide_title AMCL
+* Goal: somehow we need to determine the TF between tf(Odom) and tf(Map)
+* Can you see how that single transform will do it?
+
+:slide_title AMCL - Important algorithm for localization
 
 * Adaptive Monte Carlo Localization
 * Very sophisticated (and standard) mathematical technique
 * Can be used with different kinds of sensors.
-* How it works with Lidar
+
+:slide_title How AMCL works with Lidar
+
   1. Requires a map of Lidar visible obstacles, with a coordinate system, and anchored in the real world
   1. Given a stationary robot, and a lidar scan, what does it see?
   1. Look for a match on the map

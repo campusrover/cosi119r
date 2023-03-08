@@ -5,31 +5,11 @@ slides: true
 ---
 :h2 Logistics
 
-:topic_include :prr_localization
+* :topic_link :prr_localization
 
-:slide_title AMCL in more detail
+:slide_bigtitle Localization
 
-* **AMCL**: Advanced Monte Carlo Localization** (I've also seen "Augmented" and "Adaptive". Go figure.)
-* You might be interested in these [Advanced Localization Slides](/content/topics/documents/localization.pdf).
 * I will be using these [Localization Slides](/content/topics/documents/f1slides.pdf) and information from [this very useful and in depth paper](https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume11/fox99a-html/jair-localize.html)
-* And another useful link: [Where am I](https://medium.com/@NickHortovanyi/where-am-i-6cc0f6608c4c)
-* And another great explanation: [Hector Mapping](https://youtu.be/Q4qM-Uzj1SI)
-
-:slide_title Monte Carlo
-
-* [Video about Monte Carlo](https://youtu.be/ELetCV_wX_c)
-* That's where the Casinos are!
-* Algorithms that incorporate random guesses when a direct solution is hard or not feasible
-* Diagram on the board how you would calculate Pi using a Monte Carlo Algorithm
-* Note for `PI` it's a very inefficient way to get an accurate result
-* But it illustrates the idea of Monte Carlo estimation
-
-:slide_title Localization
-
-* [Video About Localization](https://youtu.be/aUkBa1zMKv4)
-* Markov localization
-* Markov means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 
-* Markov localization = state estimation from sensor data
 * Probabilistic algorithm
 * See figure in PowerPoint
 * Belief, Sense, Update ... etc.
@@ -38,12 +18,32 @@ slides: true
 :slide_title AMCL Particles Display
 :image :montecarlo
 
+:slide_title Monte Carlo
+
+* **AMCL**: Advanced Monte Carlo Localization** (I've also seen "Augmented" and "Adaptive". Go figure.)
+* Why Monte Carlo? That's where the Casinos are!
+* Algorithms that incorporate random guesses when a direct solution is hard or not feasible
+* Diagram on the board how you would calculate Pi using a Monte Carlo Algorithm
+* Note for `PI` it's a very inefficient way to get an accurate result
+* But it illustrates the idea of Monte Carlo estimation
+
 :slide_title Particle Filter
 
+* Lets watch a short [Video About Particle FIlters](https://youtu.be/YBeVDxTHiYMz)
+* Markov localization means that the new state is dependent only on the previous state (and not the history) and that the probability distributions are 
+* Markov localization = state estimation from sensor data
 * Instead of "solving" the equation for all data and all points
 * Use a Monte-Carlo technique
 * Generate a random collection of candidate locations
 * Compute the motion
 * Adjust the probability of each particle
+
+:slide_title Further references
+
+* [Video about Monte Carlo](https://youtu.be/ELetCV_wX_c)
+* You might be interested in these [Advanced Localization Slides](/content/topics/documents/localization.pdf).
+* And another useful link: [Where am I](https://medium.com/@NickHortovanyi/where-am-i-6cc0f6608c4c)
+* And another great explanation: [Hector Mapping](https://youtu.be/Q4qM-Uzj1SI)
+
 
 :lecture_end

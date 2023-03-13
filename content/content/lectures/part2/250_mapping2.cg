@@ -5,14 +5,10 @@ desc: Deeper dive into Navigating
 ---
 :h2 Logistics
 
-* Secret attendance code is: 
-* Midterm 'grades'
-* In general what do I expect to see in a readme file?
-* Please keep Slack running all the time. We have important and interesting messages there all the time.
+* Projects
 
 :slide_bigtitle Review
 
-:slide_title Map
 1. Consists of a grid of "costs" (costmap) and a coordinate system
 1. Map server "publishes" the map on the /map topic
 :slide_title SLAM
@@ -25,13 +21,14 @@ desc: Deeper dive into Navigating
 1. This estimate is different from /odom (why?)
 1. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
 
-:slide_title move_base
+:slide_bigtitle move_base
 
 * A sophisticated, pluggable architecture
 * Allows for new algorithms to be designed and tested
 * Parameterized for configuration
 * Uses ROS "actions" to initiate, monitor, and report success
 * Initial goal is: /MoveBaseActionGoal
+* :topic_link :prr_actions
 
 :slide_title Components of move_base
 
@@ -44,6 +41,7 @@ desc: Deeper dive into Navigating
 :image :move_base
 
 :slide_title How move_base works - global planner
+
 1. Uses base_global planner to comnpute a path from current position to goal
 1. This plan is with respect to the global costmap (from /map topic and `map_server`)
 1. Look at [ROS global planner](http://wiki.ros.org/global_planner) for visuals
@@ -64,17 +62,10 @@ desc: Deeper dive into Navigating
 * :topic_link :prr_navigating
 * :topic_link :prr_move_base
 
-:slide_title Demo with MiniRover
-1. Show track
-1. Show urdf
-1. Show launch files and explain
-1. Start mr_slam
-1. Save map
-1. Start mr_amcl
-1. Discuss move_base
 
 :slide_title Topics for further study
 * The [SLAM Toolbox](https://docs.google.com/presentation/d/1S9aWpgOkojcgA691gmt-359m9RtjTR2Yhm9Zmjh5Yjg/edit)
+* The [Python Robotics Pacakge](https://github.com/AtsushiSakai/PythonRobotics#documentation)
 
 :lecture_end
 

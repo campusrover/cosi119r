@@ -4,15 +4,20 @@ desc: Look a little deeper at how its done
 slides: true
 ---
 :h2 Logistics
-* Secret code: 
+
+* Delay "hello robot" to Sunday, ok?
+* Please note how to submit team homework
+* Quiz is coming on March 29
+
+:topic_include :working_in_teams_key_challenges
 
 :slide_bigtitle Path Planning
 
 * For now, just focus on a mobile robot like a car
 * Goal of path planning: get the robot from where it is to a destination
 * Beyond that there are many variations
-  1. What kind of map is present?
-  2. Are the obstacles encountered known ahead of time, and can they move?
+* What kind of map is present?
+* Are the obstacles encountered known ahead of time, and can they move?
 
 :slide_title Types of maps - Graphs
 

@@ -33,12 +33,11 @@ slides: yes
 * e.g. [Aruco Markers Generator](https://chev.me/arucogen/)
 * You can choose the size, the number of bits, and the number of distinct tags
 
-
 :slide_title Tag Detection
 
 * How do we get the transform between a camera and fiducials?
 * Compare the orientation, size and transfor betwen the obsrved image and the known features of the fiducial
-* Demo!
+* [ROS Wiki with demo](http://wiki.ros.org/fiducials)
 
 :slide_title Tag Placement
 

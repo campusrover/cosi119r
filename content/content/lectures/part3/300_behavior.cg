@@ -4,9 +4,10 @@ desc: How to give robots intelligent behavior
 slides: true
 ---
 :h2 Logistics
-* Secret code:
+* Practical Details about Fiducials
+* Review of Fiducials PA
 
-:slide_title What do we mean by Complex Behavior?
+:slide_bigtitle What do we mean by Complex Behavior?
 
 * Obey a high level goal by creating subgoals, and responding to real time events
 * `move_base` behaviors are pretty complex
@@ -25,6 +26,7 @@ If Robot is stuck, then try the following, one after the other until the robot i
 
 :slide_title Introduction to Finite State Machines
 
+* [Finite Sate Machines](https://en.wikipedia.org/wiki/Finite-state_machine) also known as FSA - Finite State Automata or Deterministic Finite State Automata
 * Basic and very useful way to control behaviors
 * And with lots of other applications! (See Regular Expressions and Cosi 130A)
 * You have seen it before, whether you identified it as an FSM or not`

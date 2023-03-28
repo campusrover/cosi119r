@@ -21,20 +21,24 @@ slides: true
   5. Driver Distraction
   6. Redundancy
 
-:slide_title What kinds of cameras are available
+:slide_title Camera Types: Regular (webcam-like)
+1. RGB images
+1. Video is basically a stream of images
+1. Frame rate: How many images sent per second
+1. The higher, the more bandwidth and CPU is used
+1. Usually it is treated just that way
+1. Each image is analyzed individually
 
-* Regular (webcam-like) cameras
-  1. RGB images
-  1. Video is basically a stream of images
-  1. Usually it is treated just that way
-  1. Each image is analyzed individually
-* Other light bandwidth cameras
-  1. infrared, etc.
-  1. Not common
-* Depth cameras
-  1. Mobile phone facial recognition
-  1. Microsoft Kinnect
-  1. In addition to R,G and B, each pixel has a number saying how far away that surface is
+:slide_title Other light bandwidth cameras
+1. infrared, etc.
+1. Not common
+
+:slide_title Depth cameras
+
+1. Mobile phone facial recognition
+1. Microsoft Kinnect
+1. In addition to R,G and B, each pixel has a number saying how far away that surface is
+* *Demo*
 
 :slide_title Considerations
 
@@ -48,7 +52,7 @@ slides: true
 
 :slide_title Connections
 
-* USB or other Connections
+* USB, direct to Raspberry Pi
 * Image needs to be viewed through unix utility
 * Which is not always easy
 * Bandwidth and speed of connection

@@ -5,20 +5,28 @@ slides: true
 ---
 :h2 Logistics
 
-* Secret code: 
-* Final Project Dates
-  1. April 29: Final Demos in Lab of all projects
-  1. April 26: **Quiz in class**
-  1. May 6: Submit Final Deliverables (except that code can still be updated until day of demo)
-  1. May 12: Open House/Showcase
-* Last individual programming assignment due in 1 week
-* Lab open today right after class
-* Code review offer
+* Discuss lab situation
+* Fiducial Follow was the last PA!
+* Quiz on Wednesday
+  1. 11 short answer questions. 
+  1. 9 Points each.
+  1. It will count for 5% of the grade
+* Standups
+  1. 3 minutes each
+  1. Achievements this week
+  1. Plans next week
+  1. Blockers
 
-:slide_title Introducing
-
-* Adam who will talk about Behavior Trees
-* August who will talk about Global Positioning
+1. dynamaze
+1. cargo
+1. dashboard
+1. sort
+1. typist
+1. race
+1. convoy
+1. autopilot
+1. bowling
+1. guard
 
 :slide_title Introduction to Behavior Trees
 
@@ -27,6 +35,15 @@ slides: true
 * BTs have different `kinds` of nodes with very different semantics
 * The `leaves` represent the actual control actions
 * All the other nodes are part of the control logic
+
+:slide_title py_trees
+
+* This example uses this library: [py_trees](https://py-trees.readthedocs.io/en/devel/)
+* As we are using ROS1, you need to use py_trees 0.7 of this library
+* Latest version is not compatible with the current version of ROS
+* CampusRover has developed our own version of behavior trees
+* It is conceptually the same, but the details are totally different
+* Adam Ring will present it in a few minutes
 
 :slide_title Behavior Tree Execution
 
@@ -91,13 +108,12 @@ slides: true
 * Otherwise keeps ticking all the children
 * Depending on policy it will return when one or all the children have returned SUCCESS
 
-:slide_title Examples
+:slide_title Adam Ring's Package
 
 * Lets look at some code!
 
 :slide_title Papers and articles relevant to today
 
 * [Behavior Trees for AI: How They Work](https://www.gamasutra.com/blogs/ChrisSimpson/20140717/221339/Behavior_trees_for_AI_How_they_work.php)
-* Recommended library: [py_trees](https://py-trees.readthedocs.io/en/devel/)
 
 :lecture_end

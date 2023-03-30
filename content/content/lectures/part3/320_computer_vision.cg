@@ -33,12 +33,13 @@ slides: true
 1. infrared, etc.
 1. Not common
 
-:slide_title Depth cameras
+:slide_title Depth cameras and other special cameras
 
-1. Mobile phone facial recognition
-1. Microsoft Kinnect
-1. In addition to R,G and B, each pixel has a number saying how far away that surface is
-* *Demo*
+* Mobile phone facial recognition
+* Microsoft Kinnect
+* Many others
+* Conceptually, In addition to R,G and B, each pixel has a number saying how far away that surface is
+* Also, "AI" Cameras like HuskyLens
 
 :slide_title Considerations
 
@@ -56,6 +57,11 @@ slides: true
 * Image needs to be viewed through unix utility
 * Which is not always easy
 * Bandwidth and speed of connection
+
+:slide_title Role of TFs
+
+* What is the likely TF that would be needed?
+* What would that tell us?
 
 :slide_title Computer Vision (CV)
 

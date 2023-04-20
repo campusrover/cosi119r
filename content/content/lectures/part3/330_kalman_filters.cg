@@ -25,11 +25,11 @@ slides: true
 
 :slide_bigtitle Loose Ends
 
-* cvexample.py
-* dynamic_reconfigure
-* Aruco Fiducials and Aruco Detect
-* Maybe possible to have smaller aruco labels
-* An alternative: using fiducial_transform message
-* Git pull prrexamples for some new code (not yet working but mostly correct.
+* Lab Schedule is now up: https://docs.google.com/spreadsheets/d/1niXsW9Rl9B6JAgUKK6WpiWbaoL9c7gu3lqD-79qhArI/edit#gid=0
+* Discussion about images and performance
+* Camera Calibration can help a lot
+* Fiducials can be small if you need them
+
+:topic_include :kalman_filters
 
 :lecture_end

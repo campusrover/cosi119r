@@ -5,18 +5,20 @@ slides: true
 ---
 :h2 Logistics
 
-* Secret code
-* Schedule your project review meetings!
+1. dynamaze
+1. cargo
+1. dashboard
+1. sort
+1. typist
+1. race
+1. convoy
+1. autopilot
+1. bowling
+1. guard
 
-:slide_title Review and Reinforce
+:slide_title Final Projects
 
-* Robotics is not simple and there are no a-b-c recipes
-* You don't need to understand all of it but you do need to understand much of it
-* Final Project progress is important!
-
-:slide_title Supplemental Ideas about Fiducials
-
-* [Lab Notebook Working With Fiducials](https://campus-rover.gitbook.io/lab-notebook/faq/fiducial_follows)
+:topic_link :hw_119_final_projects
 
 :topic_include :joints_and_links
 

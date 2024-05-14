@@ -1,0 +1,45 @@
+---
+title: Autonomous Robotics
+desc: Syllabus for Cosi119a
+---
+
+:tbegin "table-striped table-sm table-responsive table-hover"
+:thead " ; "
+:trow "Instructors;Pito Salas"
+:trow "Classroom;Abelson-Bass: 131"
+:trow "Prerequisites ; Cosi21a and one programming intensive 100 level Cosi course, or permission of instructor"
+:trow "Lecture ; Tue + Thu:  3:55 PM - 5:15 PM"
+:trow "Lab 1 ; Fri: 9:00 AM - 11:00 AM"
+:trow "Lab 2 ; Fri: 2:20 PM - 4:20 PM"
+:trow "Expectations;Success in this 4 credit hour course is based on the expectation that students will spend a total of 12-15  hours every week on it"
+:trow "Email contact  ; rpsalas@brandeis.edu"
+:trow "Reserve time with Pito ; http://www.calendly.com/pitosalas/chat"
+:trow "Slack Channel ; https://campusrover.slack.com"
+:tend 
+
+:slide_bigtitle Syllabus
+
+:topic_include include_topic :cosi119a_learningobjectives
+
+:topic_include :modality_in_person
+
+:slide_bigtitle  General Policies
+
+:topic_include :general_grading_gradescope
+
+:topic_include :cosi119a_grading
+
+:slide_bigtitle Additional information
+
+:topic_include :syllabus_change_policy
+
+:topic_include :academic_integrity
+
+:topic_include :class_participation_in_person
+
+:topic_include :cosi119a_prerequisites
+
+:topic_include:cosi119a_course_materials
+
+:topic_include:robotics_lab_use
+

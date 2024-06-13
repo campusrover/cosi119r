@@ -19,7 +19,7 @@ desc: Syllabus for Cosi119a
 
 :slide_bigtitle Syllabus
 
-:topic_include include_topic :cosi119a_learningobjectives
+:topic_include :cosi119a_learningobjectives
 
 :topic_include :modality_in_person
 

@@ -2,6 +2,10 @@
 title: Autonomous Robotics
 desc: Syllabus for Cosi119a
 ---
+### Learning Objectives
+
+This course is a pragmatic introduction to autonomous robotics. Our goal is to introduce students to the "big questions" that need to be answered in order to build autonomous robots. Questions such as "How do I know where I am?" and "How do I decide what to do?" We will take a software engineering approach, always focusing on how to turn the concepts into actual robot behaviors in the real world. 
+
 
 :tbegin "table-striped table-sm table-responsive table-hover"
 :thead " ; "
@@ -11,7 +15,7 @@ desc: Syllabus for Cosi119a
 :trow "Lecture ; Tue + Thu:  3:55 PM - 5:15 PM"
 :trow "Lab 1 ; Fri: 9:00 AM - 11:00 AM"
 :trow "Lab 2 ; Fri: 2:20 PM - 4:20 PM"
-:trow "Expectations;Success in this 4 credit hour course is based on the expectation that students will spend a total of 12-15  hours every week on it"
+:trow "Expectations;Success in this 4 credit hour course is based on the expectation that students will invest a total of 12-15  hours every week on course work and meetings."
 :trow "Email contact  ; rpsalas@brandeis.edu"
 :trow "Reserve time with Pito ; http://www.calendly.com/pitosalas/chat"
 :trow "Slack Channel ; https://campusrover.slack.com"
@@ -19,15 +23,17 @@ desc: Syllabus for Cosi119a
 
 :slide_bigtitle Syllabus
 
-:topic_include :cosi119a_learningobjectives
+:topic_include :cosi119a_course_welcome
+
+:topic_include :cosi119a_course_learningobjectives2
 
 :topic_include :modality_in_person
 
 :slide_bigtitle  General Policies
 
-:topic_include :general_grading_gradescope
+:topic_include :general_grading
 
-:topic_include :cosi119a_grading
+:topic_include :cosi119a_grading2
 
 :slide_bigtitle Additional information
 
@@ -35,11 +41,13 @@ desc: Syllabus for Cosi119a
 
 :topic_include :academic_integrity
 
+:topic_include :cosi119a_course_ai_policy
+
+:topic_include :accomodations
+
 :topic_include :class_participation_in_person
 
 :topic_include :cosi119a_prerequisites
-
-:topic_include:cosi119a_course_materials
 
 :topic_include:robotics_lab_use
 

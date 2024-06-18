@@ -43,11 +43,11 @@ This course is a pragmatic introduction to autonomous robotics. Our goal is to i
 
 :topic_include :cosi119a_course_ai_policy
 
-:topic_include :accomodations
-
 :topic_include :class_participation_in_person
 
 :topic_include :cosi119a_prerequisites
 
-:topic_include:robotics_lab_use
+:topic_include :robotics_lab_use
+
+:topic_include :accomodations
 

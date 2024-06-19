@@ -113,7 +113,9 @@ SLIDES_CONFIG = {
 
   # Reveal.js specific options
   # See: https://revealjs.com/config/
+  
   revealjs_opts: {
-    transition: 'slide'
+    transition: 'none',
+    progress: true
   }
 }.freeze

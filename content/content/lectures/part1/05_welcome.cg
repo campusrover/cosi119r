@@ -16,15 +16,9 @@ slides: true
 :slide_title Overall Course Structure
 
 * Two lectures + 1 Lab
+* Robotics Lab - Abelson Basement (Room 24)
 * Lots of out-of-classroom work
 * Final Project - work alone or in a team
-
-:slide_title Course Resources
-
-* [Cosi119 Slack Channels](https://campusrover.slack.com)
-* Ad-hoc [Office Hours with Pito](http://calendly.com/pitosalas/)
-* Latte vs. This web site + Gradescope
-* Robotics Lab - Abelson Basement (Room 24)
 
 :slide_title Course Content
 
@@ -32,7 +26,7 @@ slides: true
 * :section_link :intro, :syllabus
 * :topic_link :cosi119a_course_materials
 
-:callout :small, "NOTE", " Monday there will be a quiz on Python, Wednesday there will one for Shell"
+:callout :small, "NOTE", "In 1 week there will be a quiz on Python, Wednesday there will one for Shell"
 
 :slide_title Lab
 

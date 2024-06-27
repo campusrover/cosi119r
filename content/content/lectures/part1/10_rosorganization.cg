@@ -3,7 +3,8 @@ title: ROS From the top
 desc: Looking at the key building blocks that we will be using
 slides: true
 ---
-:h3 Welcome
+:slide_bigtitle Welcome
+
 * :topic_link :cosi119a_grading
 * Python Quiz (25 minutes)
 

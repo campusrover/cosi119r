@@ -6,7 +6,7 @@ slides: true
 :h3 Welcome!
 
 * Any questions at the start?
-* Our [Autonomous Robotics Lab Notebook](https://campus-rover.gitbook.io/lab-notebook/)
+* Our [Autonomous Robotics Lab Notebook](https://campusrover.github.io/labnotebook2/)
 * Review first programming assignment: :topic_link :out_and_back
 
 :topic_include :intro_nodes_topics

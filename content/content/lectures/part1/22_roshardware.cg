@@ -3,7 +3,7 @@ title: Robot Hardware
 desc: How do our autonomous robots work?
 slides: true
 ---
-:h3  Logistics (15 minutes)
+:h3  Logistics
 
 :topic_include :prr_robot_hardware
 

@@ -3,7 +3,8 @@ title: Robot Hardware
 desc: How do our autonomous robots work?
 slides: true
 ---
-:h3  Logistics
+:slide_title Logistics
+* TBD
 
 :topic_include :prr_robot_hardware
 

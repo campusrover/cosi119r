@@ -3,13 +3,6 @@ title: Sensing with Lidar
 desc: How do we work with the LIDAR?
 slides: true
 ---
-:h3 How Projects Will Work
-
-* Final projects will be 35% of your grade
-* You may choose to work alone or on a team with 2 other students (3 total max)
-* You will be able to form your own teams
-* :topic_link :cosi119a_final_project
-
 :slide_title Review - how it works in ROS (5 minutes)
 
 * All your code (almost) in ROS is a node
@@ -18,18 +11,34 @@ slides: true
 :slide_title Sensors
 
 * Are electronic devices
-* Wired to the built in computer
-* In the case of the TB3, wired to the Arduino
-* Code on the Arduino read the i/o and participate as a node in ROS
+* Connected to the Robot's computer
+* Generatel data very fast
+* They require real-time processing
 * Publishing information
 
-:slide_title ROS info required
+:slide_title What kinds of sensors?
+* LIDAR: Rapidly rotates a laser, returns distance to nearest obstacle on each bearing
+* Camera: Measures color and brightness of light in a 2D grid
+* IMU: Measures accelration in 6 DOF. Sometimes also measures magnetic north
+* Odometry: Measures position of wheels as they rotate
+* GPS: Uses satelites to measure position on the earth
+
+:slide_title All Sensor Data is Noisy
+
+* The data you get from them is generally large arrays of floating point numbers
+* Even if nothing is changing, you will see it change a lot
+* Signal vs. Noise
+* There are many techniques for extracting the signatl
+
+:slide_title Sensor Data delivered as ROS topics
 
 * What is the "topic" that the device publishes to
 * How frequently does it publish (e.g. 10 times per second, once every second)
 * And what is the message type
+* Often 10 to 60 times per second. Real Time
 
 :slide_title Acting on the sensor data
+
 * A node subscribes to that topic
 * Writes a "handler" which is invoked each time the sensor node publishes
 
@@ -40,10 +49,6 @@ slides: true
 * Degree of "randomness"
 * Exact dimensions of robots, obstacles, etc.
 
-:slide_title Lets look at some code about sensors
-
-* Demonstrate code from [RPSExamples](https://raw.githubusercontent.com/campusrover/rpsexamples/main/src/outbackstraight2.py?token=AAAK5CK2M32BIJ4SOJKU6EDAH6CK6)
-* Demonstrate Laser data quality by [looking at it in a spreadsheet](https://docs.google.com/spreadsheets/d/1FmGs7XlWe9YGtRFutOiiqSNj7i2DxvQIfJmmn1yMBvw/edit?usp=sharing)
 
 :topic_include :lidar_sensor
 

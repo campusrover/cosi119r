@@ -1,6 +1,7 @@
 ---
 title: Autonomous Robotics
 desc: Syllabus for Cosi119a
+slides: true
 ---
 ### Learning Objectives
 
@@ -27,17 +28,15 @@ This course is a pragmatic introduction to autonomous robotics. Our goal is to i
 
 :topic_include :cosi119a_course_learningobjectives2
 
-:topic_include :modality_in_person
-
-:slide_bigtitle  General Policies
-
 :topic_include :general_grading
 
 :topic_include :cosi119a_grading2
 
-:slide_bigtitle Additional information
-
 :topic_include :syllabus_change_policy
+
+:topic_include :robotics_lab_use
+
+:topic_include :cosi119a_prerequisites
 
 :topic_include :academic_integrity
 
@@ -45,9 +44,7 @@ This course is a pragmatic introduction to autonomous robotics. Our goal is to i
 
 :topic_include :class_participation_in_person
 
-:topic_include :cosi119a_prerequisites
-
-:topic_include :robotics_lab_use
+:topic_include :modality_in_person
 
 :topic_include :accomodations
 

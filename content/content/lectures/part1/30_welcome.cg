@@ -5,6 +5,9 @@ slides: true
 ---
 :topic_include :slogan
 
+:slide_title Welcome
+* Prework: :topic_link :hw_119_prework
+
 :slide_title Introduction
 
 * Robotics is fun!

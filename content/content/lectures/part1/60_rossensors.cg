@@ -3,8 +3,9 @@ title: Sensing with Lidar
 desc: How do we work with the LIDAR?
 slides: true
 ---
-:slide_title Review - how it works in ROS (5 minutes)
+:slide_title Welcome
 
+* Review: how it works in ROS (5 minutes)
 * All your code (almost) in ROS is a node
 * All information (almost) is transferred in the form of messages
 
@@ -17,11 +18,13 @@ slides: true
 * Publishing information
 
 :slide_title What kinds of sensors?
+
 * LIDAR: Rapidly rotates a laser, returns distance to nearest obstacle on each bearing
 * Camera: Measures color and brightness of light in a 2D grid
 * IMU: Measures accelration in 6 DOF. Sometimes also measures magnetic north
-* Odometry: Measures position of wheels as they rotate
+* Motor encoders>: Measures position of wheels as they rotate
 * GPS: Uses satelites to measure position on the earth
+* And many more [types of sensors](https://www.wevolver.com/article/sensors-in-robotics)
 
 :slide_title All Sensor Data is Noisy
 

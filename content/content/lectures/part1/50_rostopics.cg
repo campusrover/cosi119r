@@ -3,11 +3,13 @@ title: ROS Nodes and Topics
 desc: Introducing ROS Fundamentals
 slides: true
 ---
+**Reading: :topic_link :hw_119_chapter3**
+
 :h3 Welcome!
 
 * Any questions at the start?
 * Our [Autonomous Robotics Lab Notebook](https://campusrover.github.io/labnotebook2/)
-* Review first programming assignment: :topic_link :out_and_back
+* Review first programming assignment: :topic_link :pa_basic_control
 
 :topic_include :intro_nodes_topics
 

@@ -3,9 +3,11 @@ title: ROS From the top
 desc: Looking at the key building blocks that we will be using
 slides: true
 ---
+
+**Reading :topic_link :hw_119_chapters12**
+
 :slide_title Welcome
 
-* Reading :topic_link :hw_119_chapters12
 * :topic_link :cosi119a_grading
 * Python Quiz (25 minutes)
 

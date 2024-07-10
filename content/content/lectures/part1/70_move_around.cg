@@ -3,19 +3,8 @@ title: "How do mobile Robots move?"
 desc: Wheels, legs and other ways for robots to move around 3D space
 slides: true
 ---
-:h3 Logistics
+**Read: :topic_link :hw_119_chapters6**
 
-* Project teams
-  1. I will review all the teams and make final decisions based on makeup and preferences
-  1. Teams will be no more than 3 students
-  1. I am going to want to have the more experienced students spread between the teams, not all together on one teams
-  1. This is necessary to help everyone be successful
-* Second Lab Time
-  1. Thursdays 10:00 to 12:00
-  1. Test, lets see how it goes
-* About "extra challenges"
-  1. You don't have to do all of them!
-  
 :slide_bigtitle Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.
@@ -48,6 +37,8 @@ slides: true
 
 :slide_title DOF: Considerations
 
+* How many axes can move
+* Within what is physically possible
 * Degrees of freedom:
   1. Vehicles
   1. But also grippers, arms, doors, anything that can move
@@ -56,11 +47,9 @@ slides: true
   1. Fixed attachments
   1. Single instantaneous motion
 
-:topic_include :pid_control
-
 :slide_bigtitle Locomotion: Holonomic vs. Non-Holonomic
 
-* Actual vs. Controllable degrees of freedom
+* Possible vs. Controllable degrees of freedom
 * If they are the same, then Holonomic
 * If they are different, then non-Holonomic
 * Car
@@ -134,6 +123,8 @@ slides: true
 
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
+
+:topic_include :pid_control
 
 :slide_title Links for further study
 

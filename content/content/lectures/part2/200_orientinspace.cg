@@ -11,6 +11,7 @@ slides: true
 :topic_include :prr_building_maps
 
 :slide_title References for further study
+
 * Learning Particle Filters: [Particle Filters Explained Without Math](https://www.youtube.com/watch?v=aUkBa1zMKv4)
 
 :lecture_end

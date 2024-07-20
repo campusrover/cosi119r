@@ -3,10 +3,6 @@ title: Autonomous Robotics
 desc: Syllabus for Cosi119a
 slides: true
 ---
-### Learning Objectives
-
-This course is a pragmatic introduction to autonomous robotics. Our goal is to introduce students to the "big questions" that need to be answered in order to build autonomous robots. Questions such as "How do I know where I am?" and "How do I decide what to do?" We will take a software engineering approach, always focusing on how to turn the concepts into actual robot behaviors in the real world. 
-
 
 :tbegin "table-striped table-sm table-responsive table-hover"
 :thead " ; "

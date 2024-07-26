@@ -9,7 +9,7 @@ slides: true
 :slide_title Welcome
 
 * :topic_link :cosi119a_grading
-* Python Quiz (25 minutes)
+* Python Quiz
 
 :topic_include :prr_ros_fundamentals
 

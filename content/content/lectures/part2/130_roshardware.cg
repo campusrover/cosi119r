@@ -1,0 +1,11 @@
+---
+title: Robot Hardware
+desc: How do our autonomous robots work?
+slides: true
+---
+
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
+
+:topic_include :prr_robot_hardware
+
+:lecture_end

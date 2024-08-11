@@ -3,6 +3,12 @@ title: Sensing with Lidar
 desc: How do we work with the LIDAR?
 slides: true
 ---
+
+**Reading: :topic_link :hw_119_chapter7**
+
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
+
+
 :slide_title Welcome
 
 * Review: how it works in ROS (5 minutes)

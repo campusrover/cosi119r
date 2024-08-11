@@ -3,15 +3,13 @@ title: Robot Orientation
 desc: The role of Maps in orientation and localization
 slides: true
 ---
-:h3 Logistics
+* **READING: [Particle Filters Explained Without Math](https://www.youtube.com/watch?v=aUkBa1zMKv4) **
 
-* Quick google form to get your feedback on the course
-* Quick review of the structure of the course: :section_link :background, :knowledge_map
+*Reminder: "Readings" are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
 :topic_include :prr_building_maps
 
 :slide_title References for further study
 
-* Learning Particle Filters: [Particle Filters Explained Without Math](https://www.youtube.com/watch?v=aUkBa1zMKv4)
 
 :lecture_end

@@ -3,33 +3,5 @@ title: Kalman Filters
 desc: About Kalman Filters and Sensor Fusion
 slides: true
 ---
-:h2 Logistics
-
-* Discuss lab situation
-* Standups
-  1. 3 minutes each
-  1. Achievements this week
-  1. Plans next week
-  1. Blockers
-
-1. dynamaze
-1. cargo
-1. dashboard
-1. sort
-1. typist
-1. race
-1. convoy
-1. autopilot
-1. bowling
-1. guard
-
-:slide_bigtitle Loose Ends
-
-* Lab Schedule is now up: https://docs.google.com/spreadsheets/d/1niXsW9Rl9B6JAgUKK6WpiWbaoL9c7gu3lqD-79qhArI/edit#gid=0
-* Discussion about images and performance
-* Camera Calibration can help a lot
-* Fiducials can be small if you need them
-
 :topic_include :kalman_filters
-
 :lecture_end

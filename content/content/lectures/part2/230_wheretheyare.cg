@@ -3,15 +3,24 @@ title: How do Robots Localize?
 desc: Using landmarks to determine location
 slides: yes
 ---
-:h2 logistics
+:slide_title Projects
 
-* New Lab Schedule
-* Some labs have important activities; not all, but some
-* Mandatory for all students
-* Thursday's from 3:55pm to 5:55pm
-* If you have a serious conflict, you can leave a little earlier
-* But you need to be there and you need to talk to me before leaving
-* Thursday morning 10-12 is still a lab with TA and/or Pito staffing
+* Thursday's Lab will be the Project Bazzaar
+* More ideas can be found at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713)
+* Projects will be done in groups of 1 to 3 people
+* The last ~6 weeks will be heavily focused on the projects
+
+:slide_title How to prepare for Thursday
+
+* Meet with potential teammates to discuss your project
+* Prepare a 5 minute pitch for your project for Thursday
+* What will the demo look like?
+* Whata are the big technical challenges?
+* How hard or easy will it be?
+* How interesting will it be to watch?
+* What will you learn?
+* :topic_link :hw_119_project_brainstorm
+
 
 :slide_bigtitle Localization
 

@@ -3,32 +3,14 @@ title: ROS Coordinates
 desc: How does ROS handle coordinates, frames, transforms
 slides: true
 ---
-:h2 Logistics
+* **READING: :topic_link :hw_119_chapter8**
 
-* Discussion about :topic_link :teleop_plus
-* Review of Chapters up to :topic_link :prr_teleop_bot
-
-:slide_title Projects
-
-* Thursday's Lab will be the Project Bazzaar
-* More ideas can be found at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713)
-* Projects will be done in groups of 1 to 3 people
-* The last ~6 weeks will be heavily focused on the projects
-
-:slide_title How to prepare for Thursday
-
-* Meet with potential teammates to discuss your project
-* Prepare a 5 minute pitch for your project for Thursday
-* What will the demo look like?
-* Whata are the big technical challenges?
-* How hard or easy will it be?
-* How interesting will it be to watch?
-* What will you learn?
-* :topic_link :hw_119_project_brainstorm
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
 
 :slide_bigtitle Coordinate systems
 
+* Review of Chapters up to :topic_link :prr_teleop_bot
 * Where is a robot? How do we designate the location?
 * If it's a surface moving mobile robot, then an x,y coordinate would seem to be sufficient
 * We need to determine the units: for us, usually Meters

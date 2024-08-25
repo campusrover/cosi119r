@@ -9,7 +9,7 @@ slides: true
 
 :slide_title Review
 
-* Quick review of :topic_link :pid_control
+* Quick review of :topic_link :pid_control_intro
 
 :topic_include :ros_best_practices
 

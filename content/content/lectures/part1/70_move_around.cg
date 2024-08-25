@@ -123,7 +123,7 @@ slides: true
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
 
-:topic_include :pid_control
+* :topic_link :pid_control_intro
 
 :slide_title Links for further study
 

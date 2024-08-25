@@ -6,11 +6,9 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/reveal.min.css" integrity="sha512-TBid8hOqczVxWUXQU5qvzVuui6s+TLG5FUeXNHKXzdDMHL7E3kDn3e0wetnk3+Rto9VGlSNYVsyWTEYoxqBJzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/theme/solarized.min.css" integrity="sha512-V8VzH1oZOKksN3BHgMaqU9mZBqST6lh6CKSGOz4/pXjOHXHvm4NdX753i8ImR18/IpQqXKG2mUUrnB/zc3nFHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/white.css" id="theme">
   <!--[if lt IE 9]>
   <script src="https://unpkg.com/reveal.js@4.0.2/lib/js/html5shiv.js"></script>
   <![endif]-->
@@ -31,9 +29,7 @@
     }
     <% end %>
   </style>
-
-
-  </head>
+</head>
 
 <body>
 <div class="reveal">
@@ -46,22 +42,17 @@
   </div>
 </div>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/reveal.min.js" integrity="sha512-BteOrv/3puAX6pddFoM7BvzFur+ksfk7ffHGwy4rz7nXZBhUiM5jkaCW/81YQtwIHDa064YkkS9ftDQ6lNfXfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://unpkg.com/reveal.js@4.0.2/dist/reveal.js"></script>
 <!-- Plugins -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/plugin/markdown/markdown.min.js" integrity="sha512-guKTp0XUnqVXjZtsa2+zQ8KVYoHjYM/MvoBlLiypVudmshBfMg0SeglTcPJGeRAqPyMp1Tcyu8+APV842XNB1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.0/plugin/markdown/plugin.min.js" integrity="sha512-MBzNjxlVTLeMKVnrRdiC3il7oz2T6B0EUzWlL4dspON9GrVfAHdEg2Xod1bltRNPvhCxR3vE4wQ67gg1Zc4xJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/reveal.js@4.0.2/plugin/markdown/markdown.js"></script>
+<script src="https://unpkg.com/reveal.js@4.0.2/plugin/highlight/highlight.js"></script>
 
 <script>
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-        minScale: 1.0,
-        maxScale: 1.0,
-        width: 1024,
+        minScale: 0.2,
+        maxScale: 1.4,
 
         markdown: {
             breaks: true
@@ -72,12 +63,7 @@
         <% end %>
 
         // Optional reveal.js plugins
-        plugins: [ RevealMarkdown ]
+        plugins: [ RevealMarkdown, RevealHighlight ]
     })
-
-
-    </script>
-
-
-
+</script>
 </body>

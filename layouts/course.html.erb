@@ -11,20 +11,18 @@
   <%= render "/banner.*", toc: Toc.instance, item: item, citem: @citem %>
   <%= render "/nav-menus.*", toc: Toc.instance, item: item, citem: @citem %>
   <section>
-    <div class="container DocSearch-content">
+    <div class="container" id="docsearch">
       <div class="row">
         <div class="col-md-9">
           <%= render "/body_header.*", toc: Toc.instance, item: item, citem: @citem %>
-          <%= yield %>
+          <div class="cg-content"><%= yield %></div>
         </div>
         <%= render "/sidebar.*" %>
       </div>
     </div>
   </section>
   <%= render "/bottom_includes.*" %>
-  <footer>
-    <%= render "/body_footer.*" %>
-  </footer>
+  <%= render "/body_footer.*" %>
 </body>
 
 </html>

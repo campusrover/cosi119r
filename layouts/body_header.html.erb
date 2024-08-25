@@ -1,7 +1,6 @@
 <div class="row">
   <div class="col-12">
-    <h1>
-      <%= citem.title %>
+    <h1 class="title cg-title"><%= citem.title %>
       <span style="font-size: 1rem;">
         <% if citem.lecture? %>
           (<%= citem.lecture_date_s %>, lect <%= citem.lecture_number.to_s %>)
@@ -24,7 +23,7 @@
     </h1>
   </div>
 </div>
-<div class="subheader">
+<div class="subheader cg-subtitle">
   <% if citem.desc %>
     <%= citem.desc %>
   <% end %>

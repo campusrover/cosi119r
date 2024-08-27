@@ -4,8 +4,6 @@ desc: First day of class
 slides: true
 ---
 :topic_include :slogan
-:slide_title
-* :topic_link :homebrewclub_presentation
 
 :slide_title Welcome
 * Prework: :topic_link :hw_119_prework

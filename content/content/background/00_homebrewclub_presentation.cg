@@ -3,11 +3,15 @@ title: Home Brew Robotics Talk
 slides: true
 ---
 :slide_title Housekeeping
-* Using my course materials as a place to write my presentaation!
+:image :hbr4, {class="float-right" style="margin-right: 30px; height:200px"}
+
+* Using my course materials as a place to write my presentation!
 * Yes, I will remove this before the class starts
+* Forgive typos!
 * Ok with me to record this
 * Happy to be interrupted with questions at any time
-  
+<div style="clear:both; height:20px;"></div>
+
 :slide_title About Me
 
 * Computer Science B.S. from Brandeis University
@@ -16,19 +20,19 @@ slides: true
   
 :slide_title Worked
 
-  * DEC (Digital)
-  * long-forgotten-database-company "Software House" (before relational was a thing!)
-  * Lotus Development (Jazz, Improv, Notes, ccMail)
-  * Founded eRoom Technology
-  * Consuted in tech strategy
-  * Brandeis (around 10 years ago)
+* DEC (Digital)
+* long-forgotten-database-company "Software House" (before relational was a thing!)
+* Lotus Development (Jazz, Improv, Notes, ccMail)
+* Founded eRoom Technology
+* Consuted in tech strategy
+* Brandeis (around 10 years ago)
 
 :slide_title What I know and don't know
 
 * "Software Engineer" not an academic
 * Although I've dabbled in research and have a handful of published papers
 * I've been a programmer for xx years! Many.
-* Age does change what you are good at and less good at
+* Age *does* change what you are good at and less good at
   
 :slide_title How I got into teaching
 
@@ -37,9 +41,11 @@ slides: true
 * Had built up a massive knowledge base in my head
 * How to share it? Sure, become a college professor!
 * How hard can it be?
-* No PhD. In my 50's. Hard to break into academia
+* No PhD. In my 50's.
+* Hard to break into academia
 
 :slide_title Brandeis
+:image :hbr3, {class="float-right" style="margin-right: 30px; height:200px"}
 
 * Multiple universities approached
 * Developed a few different ideas for courses
@@ -47,7 +53,9 @@ slides: true
 * Eventually full time "Professor of the Practice"
 * Yes, my alma mater but that was not the deciding factor
 * Brandeis, traditionally is a liberal arts college
-  
+
+<div style="clear:both; height:20px;"></div>
+
 :slide_title Computer Science at Brandeis
 
 * My one data point so YMMV
@@ -57,15 +65,29 @@ slides: true
 * Traditionally it was focused more on theory and research
 * Lately bringing in more "applied" people but still a minority
 
-:slide_title Brandeis Curriculum
+:slide_title Computer Science Curriculum
 
+* Courses offered [this semester](https://registrar-prod.unet.brandeis.edu/registrar/schedule/classes/2024/fall/1400/all)
 * Bretty broad coverage of the "basics" of computer science (a few gaps closed recently)
 * Very strong representation of AI, Machine Learning, Neural Nets, Computational Linguistics
 * Almost all the courses have a significant "programmning" component
 * Java, Python and then various other languages
 * Until the Robotics course there was no course that involved actual hardware
 
+
+:slide_title My Courses
+* It does vary depending on the semester
+* Electives
+  * Software Entrepreneurship (this semesster)[http://cosi102r.s3-website-us-east-1.amazonaws.com]
+  * Autonomous Robotics (this semester)[http://cosi119r.s3-website-us-west-2.amazonaws.com]
+  * Software Engineering Capstone (last year)[http://cosi166r.s3-website-us-east-1.amazonaws.com]
+  * Software Engineering for Scalability (last year)[http://cosi105b.s3-website-us-west-2.amazonaws.com]
+* Required Courses
+  * Introduction to Java Programming
+  * Operating Systems
+
 :slide_title Students
+
 * I teach both undergraduate and graduate students
 * There's no rhyme or reason
 * Most of  my courses are elective so I have to market them and make them engaging
@@ -76,7 +98,7 @@ slides: true
 * You need to be careful about assuming what you would consider obvious or common sense
 * Also you are often the first one to tell them an oldie-but-goodie joke or war story
 
-:slide_title Classroom
+:slide_title Classroom Facility
 * Classrooms come in all shapes and sizes
 * You have almost no control over what room or what time your class is going to be held
 * All classes have projectors and computer interfaces but also black boards (or white boards)
@@ -93,27 +115,125 @@ slides: true
 * They want to know "why" they are being given an assignment or other
 
 :slide_title General: Designing a course
+
+* Brandeis gives us a lot of freedom
+* 13 Week semesters, either 3 50 minute or two 80 minute classes per week
+* Number of students expected will affect the design (scaling)
+* Assessment and grading can be fraught
+* Many alternative grading schemes are discussed (e.g. specifications grading) 
 * how to design a course, learning objectives, homework assignments, assessment and grading
+
 :slide_title The genesis of the Robotics Course
 
+* I wanted to create something that would give students a taste of a real world large software project
+* Idea: Campus Rover
+* I thought it was a "solved" problem
+* As usual I didn't know what I didn't know (still don't)
+* That might be a strength :)
+
 :slide_title The Robotics course in context
-* what is it like to be the only Robotics course, is it too much to fit into one course
+
+* What is it like to be the only Robotics course
+* It too much to fit into one course
+* None of my students have any electronics engineering knowledge
+* Initially had no special budget for this
+* Used my tiny personal faculty budget
+* Initially a "special" independent study with 6 students
 
 :slide_title Pick your poison
-* selecting ROS, selecting the hardware, creating the Robotics Lab
+* Again, I didn't realize how complicated ROS is
+* "It's just another API, how hard can it be"?
+* Actually it's taken years (as you know)
+* Started with RObotis TB3. An excellent choice
+* Still not 100% sure that ROS was the right choice
 
 :slide_title About the course
-* building the course scaffolding, tools to allow students to be successful
-* Curriculum structure
+* It had to be hands on
+* It had to use python
+* It has to work with relatively cheap robots
+* Initially built it around the chapters in the PRR book
+* After looking at every single book about ROS and Robots I could find
+* (Brandeis has a subscription to all OReilly Publishing books
+
+:slide_title Building blocks
+* Learning objectices ("skills")
+* Homework assignments
+* Grading rubrics
+* Schedule of lectures
+
+:slide_title ROS in practice
+
+* Running ROS is a nightmare
+* Most students are not running Linux
+* And their computers are in widely varying conditions
+* Usually the first weeks of the course were spent getting students running
+* Then we built our cluster
+
+:slide_title About the Cluster
+
+* Kubernetes - K3S
+* Docker Images
+* Two pods per student, one for Linux Desktop and one for VS Code
+* Docker Images
+* Setup created by an excellent TA a few years ago
+* I had to learn it!
+
 
 :slide_title About the lab
+:image :hbr7, {class="float-right" style="margin-right: 30px; height:200px"}
+:image :hbr6, {class="float-right" style="margin-right: 30px; height:200px"}
+
 * Safety
 * LIPO batteries
 * Capacity of the lab
+* Space is at a premium so I've been in many different spaces
+
+<div style="clear:both; height:20px;"></div>
+
+:slide_title About the "Branbot"
+
+:image :hbr1, {class="float-right" style="margin-right: 30px; height:200px"}
+
+* Large wheels: Wanted it to be able to go outside (remember original vision)
+* Cheaper: Taking advantage of maker lab and free labor
+
+<div style="clear:both; height:20px;"></div>
+
+:slide_title Tradeoff: Build your own robot?
+
+:image :hbr5, {class="float-right" style="margin-right: 30px; height:200px"}
+
+* Learning: Turtlebot3 is manufactured professionally
+* I have to keep a "fleet" of about 10 robots running for students
+* We have gotten better at careful robust construction but it's still not as good
+
+<div style="clear:both; height:20px;"></div>
 
 :slide_title Team projects
 
-* open ended student projects - what’s the benefit and what are the risks
-* students working in teams, what can work well and what can go wrong
-:slide_title how has the course evolved over the years, what is my self-assessment of the course, 
-:slide_title what do I think students have really learned by the end of the course, has it met my aspirations, and is it considered a success?
+* Benefits
+* Risks
+* Choosing team members
+* Team dynamics
+* Projects need to be interesting and engaging
+* But plausible and doable.
+
+:slide_title Evolution
+
+* Over the first few years the evolution matched my learning curve
+* We now have home grown robots too (why)
+* Class sizes have steadily grown (reaching or passed a reasonable limit)
+
+:slide_title Self Assessment: What can be improved
+
+* Student wasted time trouble shooting "dumb stuff
+* Too much packed into one course
+* Because of that some of the learning is superficial
+
+:slide_title Self Assessment: What I am happy with
+
+* I am proud of the course
+* Students work very hard and learn a lot of the hard knocks of engineering
+* They certainly learn the basics of how autonomous robots work
+* Only a few of them go out for Robotics jobs (which is totally fine)
+

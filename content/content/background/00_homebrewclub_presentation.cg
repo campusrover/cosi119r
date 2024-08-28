@@ -114,15 +114,6 @@ slides: true
 * So they are always triaging their time
 * They want to know "why" they are being given an assignment or other
 
-:slide_title General: Designing a course
-
-* Brandeis gives us a lot of freedom
-* 13 Week semesters, either 3 50 minute or two 80 minute classes per week
-* Number of students expected will affect the design (scaling)
-* Assessment and grading can be fraught
-* Many alternative grading schemes are discussed (e.g. specifications grading) 
-* how to design a course, learning objectives, homework assignments, assessment and grading
-
 :slide_title The genesis of the Robotics Course
 
 * I wanted to create something that would give students a taste of a real world large software project
@@ -139,6 +130,17 @@ slides: true
 * Initially had no special budget for this
 * Used my tiny personal faculty budget
 * Initially a "special" independent study with 6 students
+
+:slide_title General: Designing a course
+:image :hbr8, {class="float-right" style="margin-right: 30px; height:200px"}
+
+* Brandeis gives us a lot of freedom
+* 13 Week semesters, either 3 50 minute or two 80 minute classes per week
+* Number of students expected will affect the design (scaling)
+* Assessment and grading can be fraught
+* Many alternative grading schemes are discussed (e.g. specifications grading) 
+* how to design a course, learning objectives, homework assignments, assessment and grading
+<div style="clear:both; height:20px;"></div>
 
 :slide_title Pick your poison
 
@@ -244,9 +246,13 @@ slides: true
   * Or info is valid but there is a much better way to do it
 
 :slide_title What about AI?
+:image :hbr9, {class="float-right" style="margin-right: 30px; height:200px"}
+
 * Has upset many academic applecarts
 * Everyone is deciding what their AI policy will be
-* 
+
+<div style="clear:both; height:20px;"></div>
+ 
 
 :slide_title Self Assessment: What can be improved
 

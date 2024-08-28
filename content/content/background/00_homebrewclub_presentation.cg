@@ -141,21 +141,25 @@ slides: true
 * Initially a "special" independent study with 6 students
 
 :slide_title Pick your poison
+
 * Again, I didn't realize how complicated ROS is
 * "It's just another API, how hard can it be"?
 * Actually it's taken years (as you know)
 * Started with RObotis TB3. An excellent choice
 * Still not 100% sure that ROS was the right choice
+* WHy ROS1 and not ROS2?
 
 :slide_title About the course
+
 * It had to be hands on
 * It had to use python
 * It has to work with relatively cheap robots
-* Initially built it around the chapters in the PRR book
+* Initially built it around the chapters in the [PRR](https://www.amazon.com/Programming-Robots-ROS-Practical-Introduction/dp/1449323898) book
 * After looking at every single book about ROS and Robots I could find
-* (Brandeis has a subscription to all OReilly Publishing books
+* Brandeis has a subscription to all OReilly Publishing books
 
 :slide_title Building blocks
+
 * Learning objectices ("skills")
 * Homework assignments
 * Grading rubrics
@@ -223,6 +227,26 @@ slides: true
 * Over the first few years the evolution matched my learning curve
 * We now have home grown robots too (why)
 * Class sizes have steadily grown (reaching or passed a reasonable limit)
+  
+:slide_title Continuity
+* Tried really hard to have each cohort build on the last one
+* Worked well when we thought we were jointly building "campus rover"
+* Now students contribute to Lab Notebook
+
+:slide_title Lab Notebook
+
+* [Lab Notebook](https://campusrover.github.io/labnotebook2/)
+* Useful for building "institutional memory"
+* Useful for assessment
+* Problems:
+  * Students may put in invalid info
+  * Or information becomes obsolete
+  * Or info is valid but there is a much better way to do it
+
+:slide_title What about AI?
+* Has upset many academic applecarts
+* Everyone is deciding what their AI policy will be
+* 
 
 :slide_title Self Assessment: What can be improved
 

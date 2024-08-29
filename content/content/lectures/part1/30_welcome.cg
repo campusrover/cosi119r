@@ -3,9 +3,9 @@ title: Welcome
 desc: First day of class
 slides: true
 ---
-:topic_include :slogan
+:slide_bigtitle Welcome
 
-:slide_title Welcome
+:callout :small, "NOTE", "In 1 week (next thursday) there will be a quiz on Python and the Shell"
 * Prework: :topic_link :hw_119_prework
 
 :slide_title Introduction
@@ -22,14 +22,20 @@ slides: true
 * Robotics Lab - Abelson Basement (Room 24)
 * Lots of out-of-classroom work
 * Still not sure about having a Term Project - work alone or in a team
+  
+:slide_bigtitle Your Responsiblities
+
+1. Put this web site on your favorites and refer to it
+3. Look at the page for the NEXT class and do the reading. In depth. Do the examples.
+4. Pay close attention because a lot of information will be given in class and in lab. Make notes
+5. Come to all classes and labs in person
+6. "Responsibilities" → Be responsible
 
 :slide_title Course Content
 
 * Tour of this web site
 * :section_link :intro, :syllabus
 * :topic_link :cosi119a_course_materials
-
-:callout :small, "NOTE", "In 1 week there will be a quiz on Python, Wednesday there will one for Shell"
 
 :slide_title Lab
 * There are two lab sessions, one for each "section"
@@ -42,3 +48,6 @@ slides: true
 :slide_title Why We Do This
 
 :image :thoughtitwouldbe
+
+:topic_include :slogan
+

@@ -73,9 +73,10 @@ HOME_PAGE = "/content/intro/10_syllabus.cg"
 # Examples:
 #   %w[HOME /content/index.md]
 #   %w[TOC /content/course_toc.md]
-MENULINKS = [%w[lectures /content/intro/20_coursetoc.md/],
-             %w[homeworks /content/intro/22_homeworks.md/],
-             ["lab notebook", "https://campusrover.github.io/labnotebook2/"]]
+MENULINKS = [
+             ["LAB NOTEBOOK", "https://campusrover.github.io/labnotebook2/"],
+            %w[MOODLE https://moodle.brandeis.edu/course/view.php?id=1374]
+]
 
 # Helpful_box provides a feedback box on the sidebar.
 #

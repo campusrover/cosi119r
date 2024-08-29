@@ -3,6 +3,10 @@ title: "Localization in practice"
 desc: Look at the mechanics of SLAM and AMCL
 slides: true
 ---
+* **Reading: :topic_link :hw_119_brookspaper**
+
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
+
 :h2 Logistics
 
 * :topic_link :prr_localization

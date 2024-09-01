@@ -61,7 +61,7 @@ If Robot is stuck, then try the following, one after the other until the robot i
 
 * You can decide whether you want to use a package or not
 * My favorite package is: [pytransitions](https://github.com/pytransitions/transitions)
-* And [implementation of the above FSM with pytransitions](https://github.com/campusrover/prrexamples/blob/master/src/fsm_example.py)
+* And an implementation of the above FSM with pytransitions in `samples` fsm_example.py
 
 :discussion "What are the tradeoffs in using a package or not?"
 

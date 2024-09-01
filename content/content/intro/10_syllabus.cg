@@ -31,6 +31,8 @@ slides: true
 
 :topic_include :robotics_lab_use
 
+:topic_include :cosi119a_course_materials
+
 :topic_include :cosi119a_prerequisites
 
 :topic_include :academic_integrity

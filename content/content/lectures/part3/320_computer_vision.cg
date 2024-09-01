@@ -72,8 +72,8 @@ slides: true
 :slide_title Code
 
 :callout :small, "Note", "Burger TB3 in Gazebo does not have a camera! Must use Waffle"
-* `roslaunch prrexamples linemission.launch model:=waffle`
-* Look at [cvexample.py](https://github.com/campusrover/prrexamples/blob/master/src/cvexample.py)
+* `roslaunch samples linemission.launch model:=waffle`
+* in `samples`, cvexample.py
 
 :slide_title Image Properties
 

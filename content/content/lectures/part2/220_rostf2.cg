@@ -121,13 +121,14 @@ $ rosrun rviz rviz -d `rospack find turtle_tf2`/rviz/turtle_rviz.rviz
 
 :slide_title Lets see how all this works: tf2_broadcaster
 
-* Examine the code in prrexamples: 
-  * [`tf2_demo.launch`](https://raw.githubusercontent.com/campusrover/prrexamples/master/launch/tf2_demo.launch): Our copy of the launch file
-  * [`turtle_tf2_broadcaster.py`](https://raw.githubusercontent.com/campusrover/prrexamples/master/src/turtle_tf2_broadcaster.py): Our copy of the tf2_broadcaster
-  * [`turtle_tf2_listener.py`](https://raw.githubusercontent.com/campusrover/prrexamples/master/src/turtle_tf2_listener.py): Our copy of the tf2_listener
-
+* Examine the code in `samples`: 
+  * tf2_demo_launch
+  * turtle_tf2_broadcaster.py
+  * turtle_tf2_listener.py
+  
 :source_begin :shell
-$ roslaunch prrexamples start_demo.launch
+
+$ roslaunch samples tf2_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 :source_end
 
@@ -137,7 +138,7 @@ $ rosrun tf tf_echo /world /turtle1
 
 
 :source_begin :shell
-$ roslaunch prrexamples start_demo.launch
+$ roslaunch samples tf2_demo.launch
 $ rosrun tf tf_echo /world /turtle1
 $ rosrun tf tf_echo /world /turtle2
 :source_end

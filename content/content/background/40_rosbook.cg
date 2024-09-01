@@ -2,5 +2,4 @@
 title: Book Supplements
 slides: true
 ---
-
-<%= include_topic :rosbooktoc %>
+:topic_include :prr_extras

@@ -7,11 +7,24 @@ slides: true
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
-:h3 Welcome!
+:slide_bigtitle **Quiz today!**
+* The quiz will take around 40 minutes
+
+:slide_bigtitle Logistics
 
 * Any questions at the start?
 * Our [Autonomous Robotics Lab Notebook](https://campusrover.github.io/labnotebook2/)
+
+:slide_bigtitle Coding Example
+
+* Goal: Accelerate from 0 to 1 m/s and back
+* Do it over a period of 60 seconds
+
+:slide_bigtitle Programming Assignment Discussion
+
 * Review first programming assignment: :topic_link :pa_basic_control
+
+:slide_bigtitle Chapter 3 Review
 
 :topic_include :intro_nodes_topics
 

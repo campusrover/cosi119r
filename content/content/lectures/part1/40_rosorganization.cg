@@ -13,7 +13,14 @@ slides: true
 
 * :topic_link :cosi119a_grading2
 * In class quiz next class
+  * Python and Shell
+  * Not too hard if you've done the pre-work
+* Ephraim - About the programming assignments
 
-:topic_include :prr_ros_fundamentals
+:slide_bigtitle Basics 
+
+* :topic_link :prr_ros_fundamentals
+* :topic_link :prr_ros_fundamentals_additional
+* :topic_link :prr_robots_simulators. 
 
 :lecture_end

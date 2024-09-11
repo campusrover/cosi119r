@@ -15,13 +15,9 @@ slides: true
 * Any questions at the start?
 * Our [Autonomous Robotics Lab Notebook](https://campusrover.github.io/labnotebook2/)
 
-:slide_bigtitle Coding Example
-
-* Goal: Accelerate from 0 to 1 m/s and back
-* Do it over a period of 60 seconds
-
 :slide_bigtitle Programming Assignment Discussion
 
+* I corrected some things in the online description. Please ASK QUESTIONS if something is confusing
 * Review first programming assignment: :topic_link :pa_basic_control
 
 :slide_bigtitle Chapter 3 Review

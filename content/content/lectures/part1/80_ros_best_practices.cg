@@ -3,7 +3,8 @@ title: ROS Programming Best Practices
 desc: How to write nice code in ROS
 slides: true
 ---
-**Reading: [A wall-following algorithm based on dynamic virtual walls for mobile robots navigation](/content/topics/documents/wallfollower.pdf)**
+* **Reading: [A wall-following algorithm based on dynamic virtual walls for mobile robots navigation](/content/topics/documents/wallfollower.pdf)**
+* **Reading: :topic_link :pid_control_intro**
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 

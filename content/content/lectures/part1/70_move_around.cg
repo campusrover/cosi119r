@@ -3,28 +3,22 @@ title: "How do mobile Robots move?"
 desc: Wheels, legs and other ways for robots to move around 3D space
 slides: true
 ---
+:slide_bigtitle Logistics
+
+* Thoughts about PA1
+* Lets take a quick look at :topic_link :prr_wander_bot
 
 :slide_bigtitle Steering and navigation
 
 * Focusing for now on autonomous, ground based mobile robots.
 * Software needs to be able to command the robot
 * Given wheels with motors, or tracks, or casters, or legs
-* See [Types of wheels used in robotics](https://roboticsshop.net/types-of-wheels-used-in-robotics)
 * Electricity controlled through software makes them move
 * So consider this...
 
-:slide_title What is needed (data, sensors, algorithms) 
-
-* Discuss in groups. Pick one of these problems and your approach to them. Create a 3 slide (either real or on paper), 3 minute presentation with details, code, diagrams or whatever you need to make it clear!
-
-  1. Drive in a straight road: how do you detect the road? How do you stay on your side? What sensors are needed?
-  1. Turn a corner: How do you identify a corner? Left vs Right Corner? What about a hallway? What about a dead end?
-  1. Make a 90 degree turn: Without any landmarks, in an open field? Is left or right different?
-  1. Stay in a lane: How do you identify the lane? What about road conditions? What about night vs. day?
-  1. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
-  1. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
-
 :slide_bigtitle Concept: Degrees of Freedom
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zI64DyaRUvQ?si=AW3-8cZewef4Qi7C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :slide_title DOF: How many does each one have?
 
@@ -40,11 +34,11 @@ slides: true
 * Within what is physically possible
 * Degrees of freedom:
   1. Vehicles
-  1. But also grippers, arms, doors, anything that can move
+  2. But also grippers, arms, doors, anything that can move
 * Subtleties of you look for them...
   1. Consider which coordinate system
-  1. Fixed attachments
-  1. Single instantaneous motion
+  2. Fixed attachments
+  3. Single instantaneous motion
 
 :slide_bigtitle Locomotion: Holonomic vs. Non-Holonomic
 
@@ -86,6 +80,17 @@ slides: true
 * Big deal is being aware of known errors from the manufacturer
 * We wont go into the detailed geometry and math but it is very well studied and understood
 
+:slide_bigtitle What is needed (data, sensors, algorithms) 
+
+* Discuss in groups. Pick one of these problems and your approach to them. 
+
+  1. Drive in a straight road: how do you detect the road? How do you stay on your side? What sensors are needed?
+  2. Turn a corner: How do you identify a corner? Left vs Right Corner? What about a hallway? What about a dead end?
+  3. Make a 90 degree turn: Without any landmarks, in an open field? Is left or right different?
+  4. Stay in a lane: How do you identify the lane? What about road conditions? What about night vs. day?
+  5. Steer from Shapiro to Usdan: How do you designate where Usdan is? What other information do you require?
+  6. Move at x Meters/second: Make it as precise as possible; even if the road is slippery or there's a steep hill
+
 :slide_bigtitle Introducing Kinematics
 
 * In general: given a pose, and a series of `commands`, calculate the new pose (forward kinematics)
@@ -122,8 +127,6 @@ slides: true
 
 * Self-sensors (like odometry)
 * External sensors (like LIDAR)
-
-* :topic_link :pid_control_intro
 
 :slide_title Links for further study
 

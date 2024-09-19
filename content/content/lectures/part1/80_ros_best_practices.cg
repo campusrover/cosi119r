@@ -8,10 +8,20 @@ slides: true
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
+:slide_bigtitle Logistics
+
+* PA Basic Control
+  * :topic_link :pa_basic_control
+  * Slow review of core program loop
+  * Slow review of my_odom
+* PA Wall follow
+  * :topic_link :pa_lidar_wall_follow
+  * Let's look at starter code
+
+:topic_include :ros_best_practices
+
 :slide_title Review
 
 * Quick review of :topic_link :pid_control_intro
-
-:topic_include :ros_best_practices
 
 :lecture_end

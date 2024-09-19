@@ -7,10 +7,10 @@ slides: true
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
-
 :slide_bigtitle Coordinate systems
 
 * Review of Chapters up to :topic_link :prr_teleop_bot
+* Who has implemented and run it?
 * Where is a robot? How do we designate the location?
 * If it's a surface moving mobile robot, then an x,y coordinate would seem to be sufficient
 * We need to determine the units: for us, usually Meters
@@ -74,13 +74,15 @@ slides: true
 * Very common calculation is to convert a certain actual point
 * From one coordinate system to another
 
-:slide_title ROS Units and data types
+:slide_title ROS Units and data types (see [Rep 103](https://www.ros.org/reps/rep-0103.html))
 
 * In ROS, we use the following units:
   1. Distance: Meter
   2. Velocity: Meters/Second
   3. Angles: Radians (sometimes degrees)
   4. Orientation: Euler angles (roll pitch yaw) or Quaternions
+  5. Right Hand Rule
+  6. "RPG" Mnemonic
 
 :slide_title Euler Angles
 
@@ -88,6 +90,8 @@ slides: true
 * Pitch, Roll, Yaw (from airplanes)
 * Can be radians or angles, but for ROS poses, it's radians
 * Reminder: Radians go from 0 (0 degrees) to 2 * PI (360 degrees == 0 degrees)
+* Howevever you will encounter negative radians for poses
+* Be careful when you add angles together (modulo!)
 
 :slide_title  Quaternions
 
@@ -97,6 +101,7 @@ slides: true
 * Don't try to interpret the x,y,z,r of a quaternion, it doesn't have an intuitive mapping to x,y and z euler angles.
 
 :source_begin :python
+
 # type(pose) = geometry_msgs.msg.Pose
 # convert from euler to quaternion
 

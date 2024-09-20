@@ -20,8 +20,4 @@ slides: true
 
 :topic_include :ros_best_practices
 
-:slide_title Review
-
-* Quick review of :topic_link :pid_control_intro
-
 :lecture_end

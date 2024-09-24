@@ -9,13 +9,12 @@ slides: true
 
 :slide_title Logistics
 
-* **Let's do the post-it-note exercise**
-
-:slide_bigtitle Real Robots Don't Drive Straight - random 2 person breakout
-
-* What was the "Real Robots Don't Drive Straight" about?
-* What is/or are your key takeaways What surprised you?
-* In breakout group - please nominate who will report out
+* Let's do the post-it-note exercise
+* Lets talk about the use of ChatGPT to produce code
+  * James asked in Lab last week, why not just use the PID algorithm that is provided by ChatGPT
+  * Further discussion...
+* Note about due dates for all assigments. There is always a 3 day grace period.
+* About the reading for today: [CLick Here](https://moodle.brandeis.edu/mod/assign/view.php?id=70275)
 
 :slide_title How do Robots Perceive? Sensors
 
@@ -33,11 +32,28 @@ slides: true
 * Active Vs. Passive
 * Sensor Fusion
 
+:slide_title What do all sensors have in common?
+
+* They generate a stream of data
+* They have an electrical connection to the computer onboard the robot
+* Usually it is to the microcontroller because of real time capability
+* Software on the microcontroller (e.g, arduino) is called firmware
+* Firware does some processing of the data (case by case)
+* Delivers it to the SBC (Single Board Computer, e.g. Rasberry Pi) in the form of topics published
+
+:slide_title What kinds of electrical connections?
+
+* Very dependent on the sensor
+* Analog and Binary pins
+* I2C Bus
+* And others
+* Almost always there is an arduino library to interface
+
 :slide_title Lidar
 
 * What is a Lidar
 * What does it look like and how does it work?
-* "Time of travel" detector
+* "Time of travel" or "Time of Flight"
 * What does the data look like? 
   * [Look here fore the message definition](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
   * `roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch`
@@ -61,11 +77,19 @@ slides: true
 * Documentation for [LaserScan Data](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
 * Given
    1. angle_min = 0 # exactly forward
-   1. angle_max = 359
-   1. range_min = 0.12
-   1. range_max = 3.5
+   2. angle_max = 359
+   3. range_min = 0.12
+   4. range_max = 3.5
 * With your teammates write a few lines of python
 * Set the variable wall_ahead to true or false
+
+:slide_title GPS
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FU_pY2sTwTA?si=6HHPovNbHvjVGizE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+* They vary tremendously in price
+* For example: [GPS Receiver Module](https://www.robotshop.com/products/dfrobot-gravity-gnss-gps-beidou-receiver-module-i2c-uart)
+
 
 :slide_title Motor (encoder)
 
@@ -83,31 +107,28 @@ slides: true
 
 * How it works
 * Key Characteristics or features
+* Example [ToF Camera](https://www.dfrobot.com/product-2740.html)
 * What data it provides
 
-:slide_title Sonar
+:slide_title Ultra Sonic Sensor
 
 * How it works
 * Key Characteristics or features
+* Example: [Ultrasonic Distance Sensor](https://www.sparkfun.com/products/15569)
 * What data it provides
 
-:slide_title Bump sensors
+:slide_title Bumper sensors
 
 * How it works
 * Key Characteristics or features
+* Example: [Bumper Sensopr](https://www.robotshop.com/products/bumper-sensor-robot)
 * What data it provides
 
 :slide_title IMU - Inertial Measurement Unit
 
-* See [Accelerometer, Gyro, IMU buying guide](https://www.sparkfun.com/pages/accel_gyro_guide)
 * Acceleration: dynamic and static (as in gravity)
+* See [Accelerometer, Gyro, IMU buying guide](https://www.sparkfun.com/pages/accel_gyro_guide)
 * Gyro: Angular velocity - how fast spinning around an acciss
 * Can have them independently or combined into an IMU
-
-:slide_title GPS
-
-* How it works
-* Key Characteristics or features
-* What data it provides
 
 :lecture_end

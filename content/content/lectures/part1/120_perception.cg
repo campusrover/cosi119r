@@ -77,11 +77,13 @@ slides: true
 * Documentation for [LaserScan Data](http://docs.ros.org/melodic/api/sensor_msgs/html/msg/LaserScan.html)
 * Given
    1. angle_min = 0 # exactly forward
-   2. angle_max = 359
-   3. range_min = 0.12
-   4. range_max = 3.5
+   2. angle_max = 359 (deg)
+   3. range_min = 0.12 (m)
+   4. range_max = 3.5 (m)
 * With your teammates write a few lines of python
 * Set the variable wall_ahead to true or false
+* One or two lines of python
+* True means that there's an obstacle ahead at < 0.3 m
 
 :slide_title GPS
 

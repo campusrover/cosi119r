@@ -3,24 +3,9 @@ title: How do Robots Localize?
 desc: Using landmarks to determine location
 slides: yes
 ---
-:slide_title Projects
+* **READING: :topic_link :hw_119_chapter9**
 
-* Thursday's Lab will be the Project Bazzaar
-* More ideas can be found at [ROS Robotics Projects](https://subscription.packtpub.com/book/hardware-and-creative/9781783554713)
-* Projects will be done in groups of 1 to 3 people
-* The last ~6 weeks will be heavily focused on the projects
-
-:slide_title How to prepare for Thursday
-
-* Meet with potential teammates to discuss your project
-* Prepare a 5 minute pitch for your project for Thursday
-* What will the demo look like?
-* Whata are the big technical challenges?
-* How hard or easy will it be?
-* How interesting will it be to watch?
-* What will you learn?
-* :topic_link :hw_119_project_brainstorm
-
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
 :slide_bigtitle Localization
 

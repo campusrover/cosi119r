@@ -3,13 +3,9 @@ title: Path Planning
 desc: Look a little deeper at how its done
 slides: true
 ---
-:h2 Logistics
+* **Reading: :topic_link :hw_119_prr10_2**
 
-* Delay "hello robot" to Sunday, ok?
-* Please note how to submit team homework
-* Quiz is coming on March 29
-
-:topic_include :working_in_teams_key_challenges
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
 :slide_bigtitle Path Planning
 

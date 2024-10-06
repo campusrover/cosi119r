@@ -5,8 +5,14 @@ slides: yes
 ---
 :h2 Logistics
 
+* How to submit homework:
+  * SURPRISE: Do *not* put your name in the files. The names are automatically provided by Moodle.
+  * If there's code, then it should be in a valid ROS package. Zip up that package and submit it.
+  * If there's a document, report, ansewr to a question, then it must be a pdf.
+  * If there's a video, then put the url of the video in a separate file called video.txt
+  * Summary: There will be between one and three files in your submission.
 
-:slide_title Review
+:slide_bigtitle Review
 
 * An x,y,z is always within a specific coordinate system
 * For example, is it relative to the bottom left corner of the room, or the center of the robot?

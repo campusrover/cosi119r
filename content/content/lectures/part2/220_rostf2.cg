@@ -11,6 +11,8 @@ slides: yes
   * If there's a document, report, ansewr to a question, then it must be a pdf.
   * If there's a video, then put the url of the video in a separate file called video.txt
   * Summary: There will be between one and three files in your submission.
+* Whoops, next Friday is also no-class, so, no-lab!
+  * Should we present project ideas on Thursday or a week from Friday?
 
 :slide_bigtitle Review
 
@@ -62,6 +64,10 @@ slides: yes
 * TF Listeners
 * If my node needs to interpret coordinates I might listen to tf messages
 * Allowing to convert coordinates between any two coordinate frames.
+
+:slide_title TF CheatSheet
+
+* :topic_link :tf_cheatsheet
 
 :slide_title Lets look at some code
 

@@ -3,20 +3,16 @@ title: How do Robots Localize?
 desc: Using landmarks to determine location
 slides: yes
 ---
-* **READING: :topic_link :hw_119_chapter9**
+* **Reading: :topic_link :hw_119_prr10_1**
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
-:slide_bigtitle Project Discussions
 
-* Discuss lab times
-* Discuss deputy teaching assistants
-* Questions about homeworks, submissions, etc?
-* Sorry we are late with PA2.
-* Have people prepared actual presentations?
+:slide_title Logistics
+* How is Lab time going?
+* Tour of Labnotebook2!
 
-
-:slide_bigtitle (Possubly moved to next week) Localization
+:slide_bigtitle Localization
 
 * What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!
@@ -56,16 +52,27 @@ slides: yes
 * Examples: facade of a building, a particular tree, a wall, etc.
 * Bad examples: a parked car; a person
 
-:slide_bigtitle What is needed?
+:slide_title Fiducial "SLAM"
 
-* Goal: somehow we need to determine the TF between tf(Odom) and tf(Map)
-* Can you see how that single transform will do it?
+* Special CV Algorithm identifies a known pattern -- a fiducial
+* Each fiducial has a unique ID and a known 3D pose in the room
+* Algorithm determines the TF relationship between camera and a fiducial
+* As fiducial has a known 3D pose relative to the room, this gives a 6D pose estimate for the camera
+* This is then used to localize the robot relative to the map
+* Need to be able to see the fiducial and identify it
+* Distance? Size of Fiducial? Is it in frame? Is it occluded?
+* Need to see more than one fiducial to get a position fix
 
-:slide_title AMCL - Important algorithm for localization
+:slide_bigtitle AMCL - Important algorithm for localization
 
 * Adaptive Monte Carlo Localization
 * Very sophisticated (and standard) mathematical technique
 * Can be used with different kinds of sensors.
+
+:slide_bigtitle SLAM and AMCL
+* :topic_link :prr_building_maps
+* :topic_link :prr_building_maps_additional
+
 
 :slide_title How AMCL works with Lidar
 
@@ -85,5 +92,12 @@ slides: yes
 * Move the robot a little and update the map
 * Travel through the relevant region (using e.g. Teleop)
 * Use the map to localize, or where there is no map yet, extend the map.
+
+:slide_title GOAT - Go To Any Thing
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ozb8YrVbPUM?si=m7TP1n3iciIHQc8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+* https://theophilegervet.github.io/projects/goat/
+* https://github.com/facebookresearch/home-robot
+
 
 :lecture_end

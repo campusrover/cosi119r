@@ -8,6 +8,17 @@ slides: true
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 :h2 Logistics
 
+* Overall impressions of wall follower submisions
+* Many algorithms looked similar. This is likely because of google, chatgpt, or student cooperation
+* And if that's as far as it went, that's perfect
+* You found that algorithms that work in sim dont work as is in real life. This is a well known fact.
+* The sim is never going to reproduce the quirks of a TB3
+* Try to modularize more
+* Write functions, methods, classes or nodes to represent separable algorithms
+* Especially Nodes
+* Lets slook at the Lidar Scan Message a little closer.
+
+
 :slide_bigtitle Localization
 
 * I will be using these [Localization Slides](/content/topics/documents/f1slides.pdf) and information from [this very useful and in depth paper](https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume11/fox99a-html/jair-localize.html)

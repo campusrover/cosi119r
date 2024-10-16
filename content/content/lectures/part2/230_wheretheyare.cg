@@ -7,6 +7,7 @@ slides: yes
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
+<<<<<<< HEAD
 * Feedback on Wall Follower
   * Please don't video your screen with your phone
   * Review of details of the Scan message
@@ -15,6 +16,18 @@ slides: yes
   * Try to break code down more. FUnctions, Methods, Nodes
 
 :slide_bigtitle Localization
+=======
+:slide_bigtitle Project Discussions
+
+* Discuss lab times
+* Discuss deputy teaching assistants
+* Questions about homeworks, submissions, etc?
+* Sorry we are late with PA2.
+* Have people prepared actual presentations?
+
+
+:slide_bigtitle (Possubly moved to next week) Localization
+>>>>>>> 8fcd7ca472ff58db16dae287b6e19197b7f2670c
 
 * What exactly is the problem with knowing where you are?
 * Remember all of this needs an agreed upon coordinate system!

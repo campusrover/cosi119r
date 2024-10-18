@@ -18,7 +18,6 @@ slides: true
 * Especially Nodes
 * Lets slook at the Lidar Scan Message a little closer.
 
-
 :slide_bigtitle Localization
 
 * I will be using these [Localization Slides](/content/topics/documents/f1slides.pdf) and information from [this very useful and in depth paper](https://www.cs.cmu.edu/afs/cs/project/jair/pub/volume11/fox99a-html/jair-localize.html)

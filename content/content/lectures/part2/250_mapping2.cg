@@ -6,21 +6,23 @@ desc: Deeper dive into Navigating
 
 :h2 Logistics
 
-* Projects
+* Oct 29: Team Project Proposals
+* Oct 31: OS Quiz on October 31
+* Oct 31: Line Follower Programming Assignment
 
 :slide_bigtitle Review
 
 1. Consists of a grid of "costs" (costmap) and a coordinate system
-1. Map server "publishes" the map on the /map topic
+2. Map server "publishes" the map on the /map topic
 :slide_title SLAM
 1. An algorithm that builds up a map while collecting sensor and analyzing it statistically
-1. The map as it is being built is published by the map_server
-1. You can save the map to a file so that it remembers it to the next run
+2. The map as it is being built is published by the map_server
+3. You can save the map to a file so that it remembers it to the next run
 :slide_title Navigation
 1. AMCL: Given lidar sensor data and a map, estimates the true location of the robot
-1. Calculation is reset when amcl receives a new pose_estimate
-1. This estimate is different from /odom (why?)
-1. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
+2. Calculation is reset when amcl receives a new pose_estimate
+3. This estimate is different from /odom (why?)
+4. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
 
 :slide_bigtitle move_base
 

@@ -4,34 +4,60 @@ slides: true
 desc: Deeper dive into Navigating
 ---
 
-:h2 Logistics
+:slide_bigtitle Review of Slam
 
-* Oct 29: Team Project Proposals
-* Oct 31: OS Quiz on October 31
-* Oct 31: Line Follower Programming Assignment
-
-:slide_bigtitle Review
-
-1. Consists of a grid of "costs" (costmap) and a coordinate system
-2. Map server "publishes" the map on the /map topic
-:slide_title SLAM
 1. An algorithm that builds up a map while collecting sensor and analyzing it statistically
 2. The map as it is being built is published by the map_server
 3. You can save the map to a file so that it remembers it to the next run
+4. Map Consists of a grid of "costs" (costmap) and a coordinate system
+2. Map server "publishes" the map on the /map topic
+3. Costmaps are actually multi-layered
+
+
 :slide_title Navigation
+
 1. AMCL: Given lidar sensor data and a map, estimates the true location of the robot
 2. Calculation is reset when amcl receives a new pose_estimate
 3. This estimate is different from /odom (why?)
 4. AMCL publishes a /tf transform between /map and /odom (note this is the "highest probability" location)
 
-:slide_bigtitle move_base
+:slide_title ROS Actions
 
+* Built on top of ROS Topics
+* Used for the key navigation service, `move_base`
+* Actions implement a protocol where a node (requestor) can request a long-running action from another node (actor)
+* Compare with topic publishing which are one-shot
+* Requestor:
+  * Does not need to know anything about how to actor works
+  * Can ask to initiate an action (e.g. navigate to x,y)
+  * Can find out the progress or status of the action (which can take many seconds)
+  * Is notified when the action is finished, either successfully or unsuccessfully
+* Actor:
+  * Receives the request from the requestor
+  * Proceeds to implement the action
+  * REports status as requested
+  * Reports completion, either successful or failure
+* Book: :topic_link :prr_actions
+
+:slide_title ROS Services
+
+* Built on top of ROS topics
+* Used as a way to allow a node to receive requests (synchronously) and return a response
+* Also used as part of move_base.
+
+:slide_bigtitle move_base - The big enchilada of ROS Navigation
+
+* Main entry point of ROS navigation algorithms
+* Conceptually: move_base(x,y) - causes the robot to do it's best to get to x,y
+* But there must be a lot more to it.
+:discussion "what else must be involved?"
+
+* A large diverse collection of packages and modules
 * A sophisticated, pluggable architecture
 * Allows for new algorithms to be designed and tested
 * Parameterized for configuration
 * Uses ROS "actions" to initiate, monitor, and report success
 * Initial goal is: /MoveBaseActionGoal
-* :topic_link :prr_actions
 
 :slide_title Components of move_base
 
@@ -46,9 +72,9 @@ desc: Deeper dive into Navigating
 :slide_title How move_base works - global planner
 
 1. Uses base_global planner to comnpute a path from current position to goal
-1. This plan is with respect to the global costmap (from /map topic and `map_server`)
-1. Look at [ROS global planner](http://wiki.ros.org/global_planner) for visuals
-1. Interesting parameters:
+2. This plan is with respect to the global costmap (from /map topic and `map_server`)
+3. Look at [ROS global planner](http://wiki.ros.org/global_planner) for visuals
+4. Interesting parameters:
 
 :source_begin :bash
 /use_dijkstra (bool, default: true) # If true, use dijkstra's algorithm. Otherwise, A*.

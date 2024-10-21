@@ -4,7 +4,10 @@ desc: Some basics about CV to get you started
 slides: true
 ---
 :h2 Logistics
-*** QUIZ *** TODAY
+
+* Oct 29: Team Project Proposals
+* Oct 31: OS Quiz on October 31
+* Oct 31: Line Follower Programming Assignment
 
 :slide_bigtitle Computer Vision
 
@@ -22,6 +25,7 @@ slides: true
   6. Redundancy
 
 :slide_title Camera Types: Regular (webcam-like)
+
 1. RGB images
 1. Video is basically a stream of images
 1. Frame rate: How many images sent per second
@@ -29,17 +33,23 @@ slides: true
 1. Usually it is treated just that way
 1. Each image is analyzed individually
 
-:slide_title Other light bandwidth cameras
-1. infrared, etc.
-1. Not common
+:slide_title Camera features and characteristics
 
-:slide_title Depth cameras and other special cameras
+* Field of view (wide angle, narrow angle)
+* Mount position (pose)
+* Stationary or movable
+* Means of connection to the robot
 
-* Mobile phone facial recognition
-* Microsoft Kinnect
-* Many others
-* Conceptually, In addition to R,G and B, each pixel has a number saying how far away that surface is
-* Also, "AI" Cameras like HuskyLens
+:slide_title Types of cameras
+
+* Basic RaspiCam (webcam-like)
+* Mobile phone camera
+* Depth cameras
+* Infrared cameras
+* ["AI Cameras"](https://www.raspberrypi.com/products/ai-camera/)
+
+:image :aicam1
+:image :aicam2
 
 :slide_title Considerations
 
@@ -106,7 +116,7 @@ slides: true
 * Value is how "bright" the color is
 * Sometimes its easier to think in terms of HSV
 
-:source_begin :bash
+:source_begin :python
 # Simple manipulations
 
 tl_pixel = image[0][0] 				# top left pixel

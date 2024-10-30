@@ -35,13 +35,14 @@ desc: Deeper dive into Navigating
 
 :slide_bigtitle Review of Slam
 
+* **[Great Resource](https://github.com/AtsushiSakai/PythonRobotics?tab=readme-ov-file)**
+
 1. An algorithm that builds up a map while collecting sensor and analyzing it statistically
 2. The map as it is being built is published by the map_server
 3. You can save the map to a file so that it remembers it to the next run
 4. Map Consists of a grid of "costs" (costmap) and a coordinate system
 2. Map server "publishes" the map on the /map topic
 3. Costmaps are actually multi-layered
-
 
 :slide_title Navigation
 

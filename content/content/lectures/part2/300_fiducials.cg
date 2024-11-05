@@ -3,7 +3,13 @@ title: Fiducials
 desc: Uses of Fiducials
 slides: yes
 ---
-:h3 Logistics
+:slide_bigtitle Logistics
+
+* People are taking too much advantage of the free extra three days, and then often even asking for an extension on that.
+* I feel very generous, but that is causing havoc in our grading.
+* So:
+
+:callout :big, "NEW POLICY", "Starting with the Stage 2 Deliverable, work submitted after the due date can never have an exceeds rating"
 
 :slide_bigtitle Introduction to Fiducials
 
@@ -21,11 +27,25 @@ slides: yes
 
 :slide_title Aruco Fiducials
 
-* We have used Ubiqutiy Robotics [aruco_detect](http://wiki.ros.org/aruco_detect)
+* The basic concept of Fiducials can be implemented in different ways
+* We use `aruco` fiducials. The other well known one are `apriltags`
+* They each have slightly different performance characteristics
+* `aruco` fiducials are supported directly by [OpenCV](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html)
+* We have also used Ubiqutiy Robotics [aruco_detect](http://wiki.ros.org/aruco_detect)
+
+:slide_title The Software
+
+* More generic CV: [OpenCV aruco detection](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html) 
+* ROS Oriented: [aruco_detect](http://wiki.ros.org/aruco_detect)
+* They are both useful depending on what you are doing
+
+:slide_title Characteristics of Aruco Fiducials
+
 * Easily recognized by camera using computer vision
 * Known dimensions
 * Known pose (location in 6d) within a certain coordinate system
-* Think of that as the map coordinate system
+* Encode a number so that your software can tell them apart if there is more than one
+
 
 :slide_title Creating Aruco Fiducials
 

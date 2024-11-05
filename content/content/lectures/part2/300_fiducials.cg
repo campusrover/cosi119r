@@ -11,6 +11,16 @@ slides: yes
 
 :callout :big, "NEW POLICY", "Starting with the Stage 2 Deliverable, work submitted after the due date can never have an exceeds rating"
 
+:slide_title Standups
+
+* A weekly new deliverable beteween now and the end of the term: :topic_link :hw_119_standups
+* The first one will be due next Tuesday
+
+:slide_title Lab Time
+
+1. To the student lab managers, please make sure you have 2 hours per week on the calendar
+2. If you have a problem with a robot that you cannot solve, please submit a [Lab Service Request](https://forms.gle/JV7DmjCQcPhkkATx6)
+
 :slide_bigtitle Introduction to Fiducials
 
 * A specific kind of graphical image combined with an algorithm

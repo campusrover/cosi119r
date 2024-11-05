@@ -45,7 +45,7 @@ slides: yes
 * Known dimensions
 * Known pose (location in 6d) within a certain coordinate system
 * Encode a number so that your software can tell them apart if there is more than one
-
+  
 
 :slide_title Creating Aruco Fiducials
 

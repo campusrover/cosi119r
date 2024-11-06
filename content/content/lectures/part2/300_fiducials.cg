@@ -86,7 +86,7 @@ slides: yes
 :slide_title Lab Notebook Entries
 
 * A coming homework asks that you write a "howto" for our lab notebook
-* Here's one about [Localization with Fiducials](https://campus-rover.gitbook.io/lab-notebook/cr-package/navigation/fiducials) from another semester
+* Here's one about [Localization with Fiducials](https://campusrover.github.io/labnotebook2/faq/fiducials/fiducial_follows/?h=fiducials) from another semester
 
 :slide_title Other Resources
 * [fiducial_follow](https://github.com/UbiquityRobotics/demos/tree/master/fiducial_follow)

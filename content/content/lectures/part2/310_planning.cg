@@ -17,7 +17,20 @@ slides: true
 * Quality: Does the project work on repeated runs (not just once)
 * Communication: How well explained is the project in the deliverable
 
+:slide_title Standups
+
+* Thank you for submitting
+* Reread the instructions!
+* Simple set of bullets, not a whole project plan
+
+:slide_title Lab
+* Link to [Lab coverage hours](https://docs.google.com/spreadsheets/d/1k_Cpw4YSBKJ2N_m8stS5crLlxtF16Nyu2nb_htBr6as/edit?gid=0#gid=0)
+* Are you able to use the lab
+* What additional time slots do you need?
+
 :slide_title Review of Fiducials PA
+* Fully updated details of the assignment: :topic_link :fiducials
+
 
 :slide_bigtitle Path Planning
 
@@ -46,6 +59,8 @@ slides: true
   1. access for different types of vehicles
   1. areas that are free but discouraged
 * Treat each cell in the grid as a `node` with 4 or 8 edges
+
+:topic_include :prr_move_base
 
 
 :lecture_end

@@ -1,5 +1,5 @@
 ---
-title: Path Planning 
+title: Movebase, Path Planning and maps
 desc: Look a little deeper at how its done
 slides: true
 ---
@@ -24,9 +24,13 @@ slides: true
 * Simple set of bullets, not a whole project plan
 
 :slide_title Lab
+
 * Link to [Lab coverage hours](https://docs.google.com/spreadsheets/d/1k_Cpw4YSBKJ2N_m8stS5crLlxtF16Nyu2nb_htBr6as/edit?gid=0#gid=0)
+* Link to [Report Robot Problems](https://forms.gle/55RRqHbqZ25pQpBHA)
 * Are you able to use the lab
 * What additional time slots do you need?
+* Remember: `sudo shutdown now` (onboard), power switch off, unplug battery.
+* `ROBB` is working again. Remember to report robot problems so we can track them and fix them
 
 :slide_title Review of Fiducials PA
 * Fully updated details of the assignment: :topic_link :fiducials

@@ -3,5 +3,11 @@ title: Kalman Filters
 desc: About Kalman Filters and Sensor Fusion
 slides: true
 ---
+* **Viewing: [Kalman Filters](https://www.youtube.com/embed/CaCcOwJPytQ)**
+
+*Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
+
+:slide_title Logistics
+
 :topic_include :kalman_filters
 :lecture_end

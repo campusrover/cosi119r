@@ -9,6 +9,16 @@ slides: true
 
 :h2 Logistics
 
+* What is move_base?
+    * Using the map and the current estimated position (AMCL)
+    * Plan a route to a destination, avoiding obstacles
+* Why is an estimate needed?
+    * Purely for AMCL
+    * Not related to navigation
+* 2D Destination?
+    * Why not 3D, after all Gazebo is a 3D world
+    
+
 :slide_bigtitle What do we mean by Complex Behavior?
 
 * Obey a high level goal by creating subgoals, and responding to real time events

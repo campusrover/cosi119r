@@ -84,7 +84,5 @@ If Robot is stuck, then try the following, one after the other until the robot i
 
 * [Finite State Machine in Python](https://www.python-course.eu/finite_state_machine.php)
 
-:topic_include :sample_robotics_challenges
-
-
+:lecture_end
 

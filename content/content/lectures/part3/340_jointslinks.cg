@@ -1,25 +1,30 @@
 ---
-title: Joints and Links
+title: Final Proects
 desc: Robots can have their own body parts that have to be controlled
 slides: true
 ---
-:h2 Logistics
+:slide_bigtitle Standups
 
-1. dynamaze
-1. cargo
-1. dashboard
-1. sort
-1. typist
-1. race
-1. convoy
-1. autopilot
-1. bowling
-1. guard
+:tbegin "table-striped table-sm table-responsive table-hover"
+:thead "Project;Team "
+:trow "Tom and Jerry: The Cheese Napping;Vedanshi Shah and Parthiv Ganguly"
+:trow "Red Object Picker; "Sonny George	and Alex Danilkovas"
+:trow "Starship Bot Clone; "Artem Lavrov, Zach Hovatter, Ephraim Zimmerman"
+:trow "Precision Agriculture Robot; Ming-Shih Wang	and Jiahao Li"
+:trow "Dungeons and Robot; "Yutian (Tim) Fan"
+:trow "Smart Cleaning Bot with Voice Control;Zhenxu Chen	Pang Liu"
+:trow "Rights of Robot;Haochen Lin and Zixin Jiang"
+:trow "Autonomous Taxi Sim;Chao An"
+:trow "Hide and Seek;Jungju Lee	Daphne Pissios abd Chloe Wahl-Dassule"
+:trow "Micro Mouse;Sam Herman"
+:trow "Bot Follower/Mapper;Eric Hurchey"
+:trow "Counter Strike Bot;Zared Cohen	Harry Yu and TsunOn Kwok"
+:trow "Gesture Control Bot;Leo Gao and Jeffrey Wang"
+:trow "Micro Mouse;Ben Zhang"
+:tend
 
 :slide_title Final Projects
 
 :topic_link :hw_119_final_projects
-
-:topic_include :joints_and_links
 
 :lecture_end

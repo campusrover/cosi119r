@@ -1,6 +1,6 @@
 ---
-title: Movebase, Path Planning and maps
-desc: Look a little deeper at how its done
+title: Movebase and Path Planning
+desc: Look a little deeper the concepts and algorithms
 slides: true
 ---
 * **Reading: :topic_link :hw_119_prr10_2**

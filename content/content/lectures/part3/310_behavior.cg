@@ -7,7 +7,27 @@ slides: true
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
-:slide_title Introduction to Behavior Trees
+:slide_bigtitle Team Standups
+
+:tbegin "table-striped table-sm table-responsive table-hover"
+:thead "Project;Team "
+:trow "Tom and Jerry: The Cheese Napping;Vedanshi Shah and Parthiv Ganguly"
+:trow "Red Object Picker; "Sonny George	and Alex Danilkovas"
+:trow "Starship Bot Clone; "Artem Lavrov, Zach Hovatter, Ephraim Zimmerman"
+:trow "Precision Agriculture Robot; Ming-Shih Wang	and Jiahao Li"
+:trow "Dungeons and Robot; "Yutian (Tim) Fan"
+:trow "Smart Cleaning Bot with Voice Control;Zhenxu Chen	Pang Liu"
+:trow "Rights of Robot;Haochen Lin and Zixin Jiang"
+:trow "Autonomous Taxi Sim;Chao An"
+:trow "Hide and Seek;Jungju Lee	Daphne Pissios abd Chloe Wahl-Dassule"
+:trow "Micro Mouse;Sam Herman"
+:trow "Bot Follower/Mapper;Eric Hurchey"
+:trow "Counter Strike Bot;Zared Cohen	Harry Yu and TsunOn Kwok"
+:trow "Gesture Control Bot;Leo Gao and Jeffrey Wang"
+:trow "Micro Mouse;Ben Zhang"
+:tend
+
+:slide_bigtitle Introduction to Behavior Trees
 
 * Some similarity to FSM, however...
 * BTs are specifically trees, with one root and leaves
@@ -86,7 +106,5 @@ slides: true
 * Returns FAILURE if any child returns FAILURE
 * Otherwise keeps ticking all the children
 * Depending on policy it will return when one or all the children have returned SUCCESS
-
-
 
 :lecture_end

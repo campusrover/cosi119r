@@ -1,4 +1,4 @@
 ---
 title: Key Papers in Robotics
 ---
-<%= include_topic :key_papers %>
+:topic_include :key_papers

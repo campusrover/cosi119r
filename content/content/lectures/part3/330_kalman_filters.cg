@@ -7,7 +7,11 @@ slides: true
 
 *Reminder: Readings are your responsibility. You will be expected to come to class prepared, having read the material, and ready to participate in the discussion*
 
-:slide_title Logistics
+:slide_title Projects
+* Tip from an article
+  * For outdoor localizatoin
+  * QR Code (not feducial) with the true GPS location encoded in the QR code
+* 
 
 :topic_include :kalman_filters
 

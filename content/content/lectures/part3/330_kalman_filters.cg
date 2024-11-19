@@ -11,7 +11,7 @@ slides: true
 * Tip from an article
   * For outdoor localizatoin
   * QR Code (not feducial) with the true GPS location encoded in the QR code
-* 
+* :topic_link :hw_119_proj_milestone
 
 :topic_include :kalman_filters
 

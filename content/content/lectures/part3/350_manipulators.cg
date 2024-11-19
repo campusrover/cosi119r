@@ -7,6 +7,8 @@ slides: true
 
 :slide_bigtitle Manipulators
 
+:topic_include :joints_and_links
+
 :slide_title Kinematic Chains
 
 * A set of links and joints together form a *kinematic chain*
@@ -35,10 +37,6 @@ slides: true
 :slide_title Simple case
 
 :youtube "https://www.youtube.com/embed/IKOGwoJ2HLk"
-
-:slide_title Charlie Arm
-
-:image :charliearm
 
 :slide_bigtitle PythonRobotics Learning Samples
 

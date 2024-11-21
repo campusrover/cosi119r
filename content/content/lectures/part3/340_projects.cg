@@ -25,6 +25,6 @@ slides: true
 
 :slide_title Final Projects
 
-:topic_link :hw_119_final_projects
+:topic_include :hw_119_final_projects
 
 :lecture_end

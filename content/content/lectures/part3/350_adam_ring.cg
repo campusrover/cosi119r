@@ -1,0 +1,24 @@
+---
+title: Real World Robotics
+desc: In class
+---
+:slide_title Logistics
+
+:slide_title Speaker: Adam Ring
+
+:image :240, :adamring
+
+:slide_title Topics
+
+* What does Vecna do?
+* What is interesting and complicated about it?
+* How is the development team organized
+* How do they use ROS
+* What other tools
+* What is your specific part in it
+* How you came to move from Gazebo to Unity
+* How did you land that job
+* Advice to students from your experiences
+* Q&A
+
+:lecture_end

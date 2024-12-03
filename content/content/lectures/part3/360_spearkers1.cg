@@ -1,24 +1,23 @@
 ---
-title: Real World Robotics
-desc: In class
+title: More Real World Robotics
+desc: Arjun Arlbert
+slides: true
 ---
-:slide_title Logistics
+:slide_title Speaker: Arjun Ablbert
 
-:slide_title Speaker: Adam Ring
-
-:image :300, :adamring
+:image :300, :arjunalbert
 
 :slide_title Topics
 
-* What does Vecna do?
+* What does Anduril do?
 * What is interesting and complicated about it?
 * How is the development team organized
 * How do they use ROS
 * What other tools
 * What is your specific part in it
-* How you came to move from Gazebo to Unity
 * How did you land that job
 * Advice to students from your experiences
 * Q&A
+
 
 :lecture_end

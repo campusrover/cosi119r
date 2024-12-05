@@ -7,17 +7,15 @@ slides: true
 
 :image :300, :arjunalbert
 
-:slide_title Topics
+Arjun Albert is currently a Software Engineer at Anduril Industries, they specialize in autonomous systems and robotics, having developed planning and control systems for self-driving vehicles at Motional and led motion planning projects at MIT's driverless team. He holds a BS and MS degrees in Computer Science from Brandeis University. I know Arjun from when he was one of the top Robotics students at Brandeis. Arjun will talk about how robotics is done "in the real world" and about careers in Robotics.  
 
-* What does Anduril do?
-* What is interesting and complicated about it?
-* How is the development team organized
-* How do they use ROS
-* What other tools
-* What is your specific part in it
-* How did you land that job
-* Advice to students from your experiences
-* Q&A
+:slide_title Speaker: Tom Rynden
+
+:image :tomryden, {class="float-right" style="margin-right: 30px; height:300px"}
+
+Mr. Ryden is the Executive Director of MassRobotics. He built pioneering robotics products deployed in factories, military operations, and hospitals. He also secured major contracts with automotive and healthcare companies. Advises startups and leads industry associations. He will tell us about some really interesting Robotics startups being incubated at MassRobotics.
+
+
 
 
 :lecture_end

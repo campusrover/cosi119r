@@ -3,21 +3,16 @@ title: More Real World Robotics - and LAST CLASS!
 desc: Last Class!
 slides: true
 ---
+
+:image :200, :adamring
+
+:image :200, :arjunalbert
+
+:image :200, :tomryden
+
 :slide_title Speaker: Charles Squires
 
-:image :400, :charliesquires
-
-:slide_title Topics: Hardware for the Computer Scientist
-
-* Volts, Amps, Watts, Ohms Law
-* Real Time
-* Interrupts
-* Actuators
-* Sensors
-* Converters
-* Power Supplies
-* Communications
-* More TBD  
+:image :200, :charliesquires
 
 :slide_bigtitle Last Class is Today!
 

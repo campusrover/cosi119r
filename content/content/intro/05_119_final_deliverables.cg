@@ -83,17 +83,15 @@ Your project will be assessed based on:
 * Each student is responsible for one FAQ.
 * Think about a how-to, tutorial, explanation, concept, that you had to figure out yourselves that was difficult to track down and write it up for the next generation of students
 * Here are some examples: [Communicating with Rosserial](https://campusrover.github.io/labnotebook2/faq/hardware/communicate-with-rosserial/?h=rosserial), [RUnning Multi Robot](https://campusrover.github.io/labnotebook2/faq/multi-robot/multi_robot_gazebo_real/?h=multi), [How to use UDP to communicate between robots](https://campusrover.github.io/labnotebook2/faq/OS/UDP-socket/)
+* Add it to [this section](https://campusrover.github.io/labnotebook2/faq/home/) of the LanNotebook.
 
 :slide_title Preparing your Final Report
 
-* It should be approximately 10 pages
-* It's more important to follow the prompts than to worry about the length
 * There are plenty of examples to look at
-* Your final report will be in the [Reports section]() of the labnotebook.
-* Report should be around 10 pages
+* Add it to [this section](https://campusrover.github.io/labnotebook2/reports/) of the labnotebook
 * We pay attention to appearance, quality of writing, "fit and finish". 
-* You will add it to the appropriate section of the Lab Notebook.
-* Here are instructions on how to do that: [Lab Notebook Final Reports Section](https://campus-rover.gitbook.io/lab-notebook/reports)
+* It should be approximately 10 pages (but in markdown)
+* It's more important to follow this outline than to worry about the length
 
 1. Introduction
     1. Problem statement, including original objectives
@@ -108,8 +106,15 @@ Your project will be assessed based on:
     1. Your own assessment
     1. problems that were solved, pivots that had to be taken
 
-:slide_title Contribution to Lab Notebook
+:slide_title Preparing your video
 
+* Very analogous to what you did for the various programming assignments
+* Requirements:
+    * Explanation of interesting parts of the code
+    * In your actual voice(s) 
+    * Around 4-5 minutes at most
+    * Include a video of the IRL demo
+* Upload to google drive or youtube
 
 
 

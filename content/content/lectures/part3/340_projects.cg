@@ -23,8 +23,4 @@ slides: true
 :trow "Micro Mouse;Ben Zhang"
 :tend
 
-:slide_title Final Projects
-
-:topic_include :hw_119_final_projects
-
 :lecture_end

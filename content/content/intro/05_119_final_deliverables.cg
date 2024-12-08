@@ -74,6 +74,13 @@ Your project will be assessed based on:
     * Repository should be portfolio-ready and professional enough to reference on your resume
     * Ensure all content represents your best work as it will be reviewed and may be used for future reference
 
+* Move it to the campusrover organizatoin
+    * Easiest way is to go to `settings` for the organization, to the very bottom, and look for `transfer ownership`. Indicate `campusrover`
+    * If you want to still have it in your github account then:
+        1. Make a full copy of your project's directory on your computer
+        2. Delete the .git subdirectory in the copy (which takes away it's `gitness`) 
+        3. Create a new repo in campusrover and point it at the copy directory
+
 **AGAIN**: You can keep on modifying your code up until the last minute
 
 :slide_title Preparing FAQ Entries in the LabNotebook
